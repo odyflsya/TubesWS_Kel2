@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/terms/"
+    xmlns:piringlokal="https://example.org/schema/piringlokal">
+
+<!-- Java Island -->
+        <rdf:Description rdf:about="http://example.org/recipe/Ayam_Penyet">
+        <dc:title>Ayam Penyet</dc:title>
+        <dc:description>Ayam Penyet adalah ayam goreng yang dihancurkan dengan cobek
+            bersama sambal terasi yang pedas dan gurih. Hidangan ini sering disajikan dengan
+            nasi hangat dan lalapan.</dc:description>
+        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:photo>https://i.pinimg.com/474x/e8/d1/3e/e8d13e68db0df839d96476d1d9e5d3ac.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            1 ekor ayam, potong menjadi beberapa bagian; 
+            2 sdm kecap manis; 1 sdt kunyit bubuk;
+            2 siung bawang putih, haluskan; 
+            2 sdm minyak untuk menggoreng; 
+            Sambal terasi: 5 buah cabai merah, 2 siung bawang putih, 1 sdt terasi</piringlokal:ingredients>
+        <piringlokal:steps>
+            Lumuri ayam dengan kunyit, bawang putih, dan kecap manis. Diamkan selama 30 menit. 
+            Goreng ayam hingga matang dan kecokelatan.
+            Haluskan bahan sambal terasi dengan ulekan.
+            Pilek ayam goreng dengan sambal terasi, penyetkan sedikit, sajikan dengan nasi dan lalapan.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Gudeg">
+        <dc:title>Gudeg</dc:title>
+        <dc:description>Gudeg adalah makanan khas Yogyakarta yang menggunakan nangka muda sebagai bahan utama. Gudeg memiliki rasa manis khas dan biasanya disajikan bersama opor ayam, sambal goreng krecek, dan telur pindang. Hidangan ini membutuhkan waktu memasak yang cukup lama untuk memastikan bumbu meresap sempurna.</dc:description>
+        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:photo>https://i.pinimg.com/474x/a4/34/c6/a434c67aeae5fba6c18ee8ae46a2c482.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            1 kg nangka muda, potong kecil; 
+            200 gr gula merah;
+            1 liter santan kental;
+            3 lembar daun salam;
+            3 cm lengkuas, memarkan;
+            5 butir telur rebus;
+            300 gr ayam potong;
+            Garam secukupnya;
+            Bumbu halus: 8 siung bawang merah, 4 siung bawang putih, 5 butir kemiri, 1</piringlokal:ingredients>
+        <piringlokal:steps>
+            Lumuri ayam dengan kunyit, bawang putih, dan kecap manis. Diamkan selama 30 menit. 
+            Goreng ayam hingga matang dan kecokelatan.
+            Haluskan bahan sambal terasi dengan ulekan.
+            Pilek ayam goreng dengan sambal terasi, penyetkan sedikit, sajikan dengan nasi dan lalapan.</piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Rawon">
+        <dc:title>Rawon</dc:title>
+        <dc:description>Rawon adalah sup daging khas Jawa Timur yang berwarna hitam pekat karena menggunakan kluwek sebagai bumbu utama. Daging sapi yang dimasak lama menghasilkan kuah yang gurih dan kaya rasa. Biasanya disajikan dengan nasi, sambal, tauge, dan kerupuk.</dc:description>
+        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:photo>https://i.pinimg.com/736x/a6/6f/a2/a66fa211d64a5b8c24ff189a7d071a45.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gr daging sapi (sandang lamur);
+            2 liter air;
+            4 butir kluwek, ambil isinya;
+            5 lembar daun jeruk;
+            3 batang serai, memarkan;
+            3 cm lengkuas, memarkan;
+            Garam dan gula secukupnya;
+            Minyak untuk menumis;
+            Bumbu halus: 6 siung bawang merah, 4 siung bawang putih, 5 butir kemiri, 1 sdm ketumbar, 2 cm kunyit, 1 cm jahe
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Rebus daging hingga empuk, potong kecil-kecil. Sisihkan air rebusannya sebagai kaldu.
+            Tumis bumbu halus hingga harum, tambahkan kluwek, daun jeruk, serai, dan lengkuas.
+            Masukkan tumisan ke dalam kaldu, tambahkan daging.
+            Masak hingga bumbu meresap, koreksi rasa dengan garam dan gula.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Soto_Betawi">
+        <dc:title>Soto Betawi</dc:title>
+        <dc:description>Soto Betawi merupakan soto khas Jakarta dengan kuah santan yang kaya rasa. Biasanya diisi dengan daging sapi atau jeroan, kentang goreng, dan tomat. Soto ini dikenal dengan kelezatan kuahnya yang gurih dan creamy.
+        </dc:description>
+        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:photo>https://i.pinimg.com/474x/f3/80/ce/f380ce84bab60653bba44fc2d44cf53f.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gr daging sapi;
+            1 liter santan;
+            5 lembar daun jeruk;
+            2 batang serai, memarkan;
+            3 cm jahe, memarkan
+            2 buah kentang, potong dadu, goreng;
+            2 buah tomat, potong-potong;
+            Bumbu halus: 6 siung bawang merah, 4 siung bawang putih, 3 butir kemiri, 1 sdt merica, 1 cm kunyit
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Rebus daging hingga empuk, potong kecil-kecil. Sisihkan air rebusan.
+            Tumis bumbu halus bersama daun jeruk, serai, dan jahe hingga harum.
+            Masukkan tumisan ke dalam air rebusan daging, tambahkan santan. Aduk perlahan.
+            Masukkan daging, kentang goreng, dan tomat. Masak hingga mendidih. Sajikan dengan pelengkap seperti emping dan sambal.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Pecel_Madiun">
+        <dc:title>Pecel Madiun</dc:title>
+        <dc:description>Pecel adalah salad tradisional dari Madiun yang terdiri dari sayuran rebus seperti kacang panjang, taoge, bayam, dan kenikir, yang disiram dengan bumbu kacang yang gurih dan sedikit pedas. Disajikan dengan peyek kacang untuk menambah tekstur renyah.</dc:description>
+        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:photo> https://i.pinimg.com/474x/6c/12/04/6c12046170384d55cc0699ef38477b3e.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            Sayuran: kacang panjang, taoge, bayam, daun kenikir (secukupnya);
+            Peyek kacang untuk pelengkap;
+            Bumbu kacang: 200 gr kacang tanah goreng, 3 siung bawang putih, 5 buah cabai rawit, 3 lembar daun jeruk, 1 sdt asam jawa, 100 ml air matang, gula merah dan garam secukupnya
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Rebus semua sayuran hingga matang, tiriskan.
+            Haluskan semua bahan bumbu kacang, tambahkan air hingga mencapai kekentalan yang diinginkan.
+            Sajikan sayuran dengan siraman bumbu kacang dan peyek.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Nasi_Liwet">
+        <dc:title>Nasi Liwet </dc:title>
+        <dc:description>Nasi liwet khas Solo adalah nasi gurih yang dimasak dengan santan, disajikan dengan opor ayam, sambal goreng labu siam, dan telur pindang. Hidangan ini memiliki rasa gurih dan aroma santan yang khas.</dc:description>
+        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:photo>https://i.pinimg.com/474x/4f/1c/ad/4f1cad78c058cd304a1814666c7597ae.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gr beras;
+            3 lembar daun salam;
+            2 cm lengkuas, memarkan;
+            Garam secukupnya;
+            Pelengkap: ayam opor, sambal goreng labu siam, telur pindang
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Cuci beras, masukkan ke dalam panci. Tambahkan santan, daun salam, lengkuas, dan garam.
+            Masak dengan api kecil hingga santan terserap dan nasi matang.
+            Sajikan nasi dengan ayam opor, sambal goreng labu siam, dan telur pindang.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Rujak_Cingur">
+        <dc:title>Rujak Cingur</dc:title>
+        <dc:description>Rujak cingur adalah makanan khas Surabaya yang menggabungkan potongan buah dan sayuran dengan irisan cingur (mulut sapi). Hidangan ini disiram dengan bumbu petis yang kental dan bercitarasa unik.</dc:description>
+        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:photo>https://i.pinimg.com/474x/0c/7a/9f/0c7a9f04d16905072f4ba0771461e116.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            Cingur sapi 200 gr, rebus hingga empuk;
+            Buah-buahan: mentimun, nanas, mangga muda, bengkuang;
+            Sayuran: kangkung, taoge (rebus);
+            Bumbu petis: 100 gr kacang tanah goreng, 3 siung bawang putih, 1 sdm petis udang, 2 sdt gula merah, cabai rawit (sesuai selera), garam, air matang secukupnya
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Haluskan semua bahan bumbu petis, tambahkan air hingga tekstur kental.
+            Campurkan semua bahan (cingur, buah, sayuran), aduk rata dengan bumbu.
+            Sajikan segera.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Tahu_Tek">
+        <dc:title>Tahu Tek</dc:title>
+        <dc:description>Tahu tek adalah makanan jalanan khas Surabaya yang menggunakan tahu goreng setengah matang, lontong, dan kentang goreng, disiram bumbu kacang dengan campuran petis. Rasanya gurih, manis, dan sedikit pedas.
+        </dc:description>
+        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:photo> https://i.pinimg.com/474x/a8/ad/8c/a8ad8c6c06b349abbc382fe4d582281c.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+           2 buah tahu putih, potong kecil, goreng setengah matang;
+            2 buah kentang, goreng;
+            2 buah lontong, potong-potong;
+            Bumbu kacang: 100 gr kacang tanah goreng, 1 sdm petis udang, 2 siung bawang putih, 5 buah cabai rawit, 1 sdm gula merah, 1 sdm kecap manis, air secukupnya
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Haluskan semua bahan bumbu kacang, tambahkan air hingga tekstur kental.
+            Susun tahu, lontong, dan kentang di piring, siram dengan bumbu kacang.
+            Sajikan dengan kerupuk dan taburan bawang goreng.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Sego_Kucing">
+        <dc:title>Sego Kucing</dc:title>
+        <dc:description>Sego kucing adalah nasi bungkus mini khas angkringan Yogyakarta, terdiri dari nasi, sambal, dan lauk sederhana seperti teri goreng atau tempe orek. Cocok untuk camilan atau makanan ringan.</dc:description>
+        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:photo>https://i.pinimg.com/736x/ac/ab/d4/acabd419ecfe66e802f02d0ba769fbf5.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gr nasi putih;
+            Sambal: 10 buah cabai rawit, 3 siung bawang merah, 1 siung bawang putih, garam, gula secukupnya;
+            Lauk: teri goreng atau orek tempe
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Goreng bahan sambal, ulek hingga halus.
+            Bungkus nasi dengan daun pisang, tambahkan sambal dan lauk.
+            Kukus sebentar untuk menghasilkan aroma daun pisang.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Soto_Kudus">
+        <dc:title>Soto Kudus</dc:title>
+        <dc:description>Soto Kudus adalah sup khas Kudus dengan kuah bening yang menggunakan daging ayam atau kerbau sebagai bahan utama. Rasanya gurih dan ringan, dengan tambahan tauge, seledri, dan bawang goreng. Biasanya disajikan dengan nasi dalam mangkuk kecil.
+        </dc:description>
+        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:photo>https://i.pinimg.com/474x/ae/84/20/ae8420bd65f663a913099399cf44c907.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            1 ekor ayam kampung, potong kecil
+            2 liter air
+            3 batang serai, memarkan
+            3 lembar daun salam
+            5 lembar daun jeruk
+            2 cm lengkuas, memarkan
+            Bumbu halus: 5 siung bawang putih, 7 siung bawang merah, 3 butir kemiri, 1 cm jahe, 1 sdt merica, 1 sdt ketumbar
+            Garam dan gula secukupnya
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Rebus ayam hingga empuk, ambil ayam, dan suwir-suwir dagingnya. Sisihkan air kaldu.
+            Tumis bumbu halus hingga harum, masukkan serai, daun salam, daun jeruk, dan lengkuas.
+            Tuang tumisan bumbu ke dalam air kaldu. Tambahkan garam dan gula, masak hingga mendidih.
+            Sajikan kuah soto dengan ayam suwir, tauge, seledri, dan bawang goreng.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Getuk">
+        <dc:title>Getuk</dc:title>
+        <dc:description>Getuk adalah camilan tradisional dari singkong yang dihaluskan dan dicampur dengan gula merah. Teksturnya lembut dan manis, sering disajikan dengan taburan kelapa parut. Cocok sebagai teman minum teh di sore hari.</dc:description>
+        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:photo> https://i.pinimg.com/474x/71/8a/63/718a63e64847bc4d886b3b1f28ee3321.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            1 kg singkong, kupas, potong-potong;
+            200 gr gula merah, sisir halus;
+            100 gr kelapa parut;
+            Sejumput garam
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Kukus singkong hingga empuk. Haluskan selagi panas.
+            Campurkan gula merah ke dalam singkong yang sudah halus. Aduk hingga merata.
+            Bentuk adonan sesuai selera, taburi kelapa parut yang sudah diberi sedikit garam.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Tahu_Gejrot">
+        <dc:title>Tahu Gejrot</dc:title>
+        <dc:description> Tahu gejrot adalah hidangan khas Cirebon yang terdiri dari tahu goreng yang disiram dengan kuah manis, asam, dan pedas. Kuah ini terbuat dari campuran gula merah, asam jawa, dan cabai rawit.
+        </dc:description>
+        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:photo>https://i.pinimg.com/474x/ce/58/37/ce5837042bc0d6edf7c83a89e0cc924c.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            10 potong tahu pong, goreng;
+            100 gr gula merah;
+            2 sdm air asam jawa;
+            2 siung bawang putih, iris tipis;
+            3 buah cabai rawit, iris;
+            Garam secukupnya;
+            Air secukupnya
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Rebus gula merah dengan air hingga larut. Tambahkan air asam jawa, bawang putih, cabai rawit, dan garam. Masak hingga mendidih.
+            Potong tahu menjadi bagian kecil, siram dengan kuah. Sajikan.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Nasi_Timbel">
+        <dc:title>Nasi Timbel</dc:title>
+        <dc:description>Nasi timbel adalah hidangan nasi yang dibungkus daun pisang, menghasilkan aroma khas. Biasanya disajikan dengan lauk seperti ayam goreng, tahu, tempe, lalapan, dan sambal.</dc:description>
+        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:photo>https://i.pinimg.com/474x/65/6f/cb/656fcb82711c97debe979570fc2dfb74.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gr beras;
+            500 ml air;
+            Daun pisang untuk membungkus;
+            Lauk pelengkap: ayam goreng, tahu, tempe, lalapan, sambal
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Masak nasi seperti biasa hingga matang.
+            Bungkus nasi dengan daun pisang, lalu kukus selama 10 menit agar aromanya meresap.
+            Sajikan nasi timbel dengan lauk pelengkap.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Sate_Maranggi">
+        <dc:title>Sate Maranggi</dc:title>
+        <dc:description>Sate Maranggi adalah sate khas Purwakarta yang menggunakan daging sapi atau kambing yang dibumbui sebelum dipanggang. Bumbunya terdiri dari rempah-rempah yang memberikan cita rasa manis dan gurih.
+        </dc:description>
+        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:photo>https://i.pinimg.com/474x/b9/8b/53/b98b534d5aca8f618859d1b38d05ed8d.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gr daging sapi, potong dadu;
+            100 gr gula merah, haluskan;
+            3 siung bawang putih, haluskan;
+            4 siung bawang merah, haluskan;
+            2 cm jahe, parut;
+            2 sdm ketumbar, haluskan;
+            3 sdm kecap manis;
+            1 sdt garam;
+            Tusuk sate secukupnya;
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Campurkan daging sapi giling, tepung tapioka, garam, dan merica. Bentuk bulatan bakso.
+            Masak bakso dalam air mendidih hingga mengapung.
+            Sajikan bakso dengan tahu goreng, pangsit goreng, mie kuning, dan kuah kaldu.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Bakso_Malang">
+        <dc:title>Bakso Malang</dc:title>
+        <dc:description>Bakso Malang adalah bakso khas Malang yang terdiri dari bakso daging sapi, tahu goreng, pangsit goreng, mie, dan kuah kaldu yang gurih. Hidangan ini sangat digemari di seluruh Indonesia.</dc:description>
+        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:photo>https://i.pinimg.com/474x/a9/46/9d/a9469de0af8b6cff873350f4c266a34c.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gr daging sapi giling;
+            100 gr tepung tapioka;
+            2 sdt garam;
+            1 sdt merica bubuk;
+            2 liter kaldu sapi;
+            Pelengkap: tahu goreng, pangsit goreng, mie kuning
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Rebus daging hingga empuk, potong kecil-kecil. Sisihkan air rebusannya sebagai kaldu.
+            Tumis bumbu halus hingga harum, tambahkan kluwek, daun jeruk, serai, dan lengkuas.
+            Masukkan tumisan ke dalam kaldu, tambahkan daging.
+            Masak hingga bumbu meresap, koreksi rasa dengan garam dan gula.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Kerak_Telor">
+        <dc:title>Kerak Telor</dc:title>
+        <dc:description>Kerak telor adalah makanan khas Betawi yang terbuat dari beras ketan, telur ayam atau bebek, dan serundeng kelapa yang dimasak tanpa minyak. Hidangan ini memiliki tekstur renyah di luar dan gurih di dalam.
+        </dc:description>
+        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:photo>https://i.pinimg.com/474x/f8/57/9e/f8579e61dec27e9a7db79e3edf427d90.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            100 gr beras ketan putih, rendam 2 jam;
+            2 butir telur bebek;
+            50 gr kelapa parut, sangrai;
+            1 sdm bawang merah goreng;
+            1 sdm ebi, haluskan;
+            Garam secukupnya
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Rebus daging hingga empuk, potong kecil-kecil. Sisihkan air rebusan.
+            Tumis bumbu halus bersama daun jeruk, serai, dan jahe hingga harum.
+            Masukkan tumisan ke dalam air rebusan daging, tambahkan santan. Aduk perlahan.
+            Masukkan daging, kentang goreng, dan tomat. Masak hingga mendidih. Sajikan dengan pelengkap seperti emping dan sambal.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Empal_Gentong">
+        <dc:title>Empal Gentong</dc:title>
+        <dc:description>Empal Gentong adalah gulai daging khas Cirebon yang dimasak dalam gentong tanah liat untuk menghasilkan rasa yang khas. Hidangan ini menggunakan daging sapi dan jeroan, disajikan dengan lontong atau nasi.</dc:description>
+        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:photo>https://i.pinimg.com/474x/4b/1d/a7/4b1da7f131eac445d45660512f970d50.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gr daging sapi, potong kecil;
+            2 liter santan encer;
+            3 batang serai, memarkan;
+            3 lembar daun salam;
+            5 cm lengkuas, memarkan;
+            Bumbu halus: 8 siung bawang merah, 4 siung bawang putih, 5 butir kemiri, 2 cm kunyit, 1 sdt ketumbar
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Rebus daging hingga empuk.
+            Tumis bumbu halus, tambahkan serai, daun salam, dan lengkuas.
+            Masukkan bumbu ke dalam rebusan daging, tambahkan santan. Masak dengan api kecil hingga matang.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Keripik_Tempe">
+        <dc:title>Keripik Tempe</dc:title>
+        <dc:description>Keripik tempe adalah camilan khas Jawa yang terbuat dari tempe yang dipotong tipis, kemudian digoreng hingga renyah. Camilan ini sangat populer di Jawa Tengah dan Jawa Timur. Keripik tempe memiliki rasa gurih dan sedikit asin, menjadikannya cocok sebagai pendamping minuman atau untuk camilan ringan.
+        </dc:description>
+        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:photo>https://i.pinimg.com/474x/cd/45/60/cd45605d1052a369efc39762abeccd58.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            1 papan tempe, potong tipis;
+            1 sdt garam;
+            200 ml air;
+            Minyak goreng
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Rendam potongan tempe dalam air garam selama 30 menit.
+            Goreng tempe dalam minyak panas hingga kecokelatan dan renyah.
+            Sajikan sebagai camilan.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Tahu_Tempe_Bacem">
+        <dc:title>Tahu Tempe Bacem</dc:title>
+        <dc:description>Tahu Tempe Bacem adalah tahu dan tempe yang dimasak dengan bumbu manis dan gurih, kemudian digoreng hingga berwarna kecokelatan. Hidangan ini biasanya disajikan dengan nasi.</dc:description>
+        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:photo>https://i.pinimg.com/474x/75/a9/24/75a924b4d026f8b8533f656fd39afad5.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            200 gr tempe, potong dadu;
+            200 gr tahu, potong dadu;
+            2 sdm kecap manis;
+            1 sdt gula merah;
+            1 sdt ketumbar;
+            3 siung bawang putih;
+            3 siung bawang merah;
+            1 batang serai;
+            1 lembar daun salam
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Tumis bawang putih dan bawang merah hingga harum.
+            Tambahkan kecap manis, gula merah, ketumbar, serai, dan daun salam.
+            Masukkan tempe dan tahu, aduk rata, tambahkan sedikit air, dan masak hingga bumbu meresap.
+            Goreng tahu tempe hingga garing dan sajikan.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Lontong_Balap_Surabaya">
+        <dc:title>Lontong Balap Surabaya</dc:title>
+        <dc:description>Lontong Balap adalah hidangan khas Surabaya yang terdiri dari lontong, tahu, dan tauge yang disiram dengan kuah yang terbuat dari kaldu sapi. Kuahnya yang gurih dan sedikit pedas memberikan cita rasa yang sangat khas. Lontong Balap biasanya disajikan dengan sambal petis dan krupuk sebagai pelengkap. Hidangan ini populer sebagai makan siang atau malam, terutama di Surabaya.
+        </dc:description>
+        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:photo>https://i.pinimg.com/474x/f8/5a/e0/f85ae0d8d5c678434e13e45a6cb6addf.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            2 buah lontong, potong-potong;
+            100 gr tauge;
+            100 gr tahu goreng, potong dadu;
+            500 ml kaldu sapi;
+            2 sdm sambal petis
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Rebus kaldu sapi hingga mendidih.
+            Sajikan lontong dengan tahu, tauge, dan siram dengan kaldu sapi.
+            Tambahkan sambal petis dan krupuk.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Soto_Ayam_Lamongan">
+        <dc:title>Soto Ayam Lamongan</dc:title>
+        <dc:description>Soto Ayam Lamongan adalah sup ayam khas dari Lamongan, Jawa Timur. Soto ini terkenal dengan kuah kuningnya yang kental dan penuh rasa, yang berasal dari campuran rempah-rempah seperti kunyit, serai, dan daun salam. Ayam yang digunakan untuk soto ini dimasak hingga empuk, dan disajikan dengan mie soun, telur rebus, dan kerupuk. Rasa soto ayam Lamongan yang gurih dan segar sangat cocok untuk dinikmati di siang hari atau saat cuaca dingin.</dc:description>
+        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:photo>https://i.pinimg.com/control2/474x/1d/e4/a1/1de4a19e2d70724d71ad912cec05885d.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            1 ekor ayam, potong-potong;
+            2 siung bawang merah, iris halus;
+            3 siung bawang putih, iris halus;
+            1 batang serai, memarkan;
+            2 lembar daun salam;
+            1 sdt kunyit bubuk;
+            100 gr mie soun;
+            2 butir telur rebus
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Rebus ayam bersama bawang merah, bawang putih, serai, daun salam, dan kunyit hingga ayam matang dan kuah harum.
+            Masukkan mie soun, masak hingga mie lunak.
+            Sajikan dengan telur rebus, kerupuk, dan sambal.
+        </piringlokal:steps>
+        </rdf:Description>
+
+<!-- Sumatera Island -->
+
+        <rdf:Description rdf:about="http://example.org/recipe/Getuk">
+        <dc:title>Getuk</dc:title>
+        <dc:description>Getuk adalah camilan tradisional dari singkong yang dihaluskan dan dicampur dengan gula merah. Teksturnya lembut dan manis, sering disajikan dengan taburan kelapa parut. Cocok sebagai teman minum teh di sore hari.</dc:description>
+        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:photo> https://i.pinimg.com/474x/71/8a/63/718a63e64847bc4d886b3b1f28ee3321.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            1 kg singkong, kupas, potong-potong
+            200 gr gula merah, sisir halus
+            100 gr kelapa parut
+            Sejumput garam
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Kukus singkong hingga empuk. Haluskan selagi panas.
+            Campurkan gula merah ke dalam singkong yang sudah halus. Aduk hingga merata.
+            Bentuk adonan sesuai selera, taburi kelapa parut yang sudah diberi sedikit garam.
+        </piringlokal:steps>
+        </rdf:Description>
+
+<!-- Sulawesi Island -->
+
+        <rdf:Description rdf:about="http://example.org/recipe/Getuk">
+        <dc:title>Getuk</dc:title>
+        <dc:description>Getuk adalah camilan tradisional dari singkong yang dihaluskan dan dicampur dengan gula merah. Teksturnya lembut dan manis, sering disajikan dengan taburan kelapa parut. Cocok sebagai teman minum teh di sore hari.</dc:description>
+        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:photo> https://i.pinimg.com/474x/71/8a/63/718a63e64847bc4d886b3b1f28ee3321.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            1 kg singkong, kupas, potong-potong
+            200 gr gula merah, sisir halus
+            100 gr kelapa parut
+            Sejumput garam
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Kukus singkong hingga empuk. Haluskan selagi panas.
+            Campurkan gula merah ke dalam singkong yang sudah halus. Aduk hingga merata.
+            Bentuk adonan sesuai selera, taburi kelapa parut yang sudah diberi sedikit garam.
+        </piringlokal:steps>
+        </rdf:Description>
+
+<!-- Borneo Island -->
+
+        <rdf:Description rdf:about="http://example.org/recipe/Getuk">
+        <dc:title>Getuk</dc:title>
+        <dc:description>Getuk adalah camilan tradisional dari singkong yang dihaluskan dan dicampur dengan gula merah. Teksturnya lembut dan manis, sering disajikan dengan taburan kelapa parut. Cocok sebagai teman minum teh di sore hari.</dc:description>
+        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:photo> https://i.pinimg.com/474x/71/8a/63/718a63e64847bc4d886b3b1f28ee3321.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            1 kg singkong, kupas, potong-potong
+            200 gr gula merah, sisir halus
+            100 gr kelapa parut
+            Sejumput garam
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Kukus singkong hingga empuk. Haluskan selagi panas.
+            Campurkan gula merah ke dalam singkong yang sudah halus. Aduk hingga merata.
+            Bentuk adonan sesuai selera, taburi kelapa parut yang sudah diberi sedikit garam.
+        </piringlokal:steps>
+        </rdf:Description>
+
+<!-- Papua Island -->
+
+        <rdf:Description rdf:about="http://example.org/recipe/Getuk">
+        <dc:title>Getuk</dc:title>
+        <dc:description>Getuk adalah camilan tradisional dari singkong yang dihaluskan dan dicampur dengan gula merah. Teksturnya lembut dan manis, sering disajikan dengan taburan kelapa parut. Cocok sebagai teman minum teh di sore hari.</dc:description>
+        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:photo> https://i.pinimg.com/474x/71/8a/63/718a63e64847bc4d886b3b1f28ee3321.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            1 kg singkong, kupas, potong-potong
+            200 gr gula merah, sisir halus
+            100 gr kelapa parut
+            Sejumput garam
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Kukus singkong hingga empuk. Haluskan selagi panas.
+            Campurkan gula merah ke dalam singkong yang sudah halus. Aduk hingga merata.
+            Bentuk adonan sesuai selera, taburi kelapa parut yang sudah diberi sedikit garam.
+        </piringlokal:steps>
+        </rdf:Description>
+</rdf:RDF>
