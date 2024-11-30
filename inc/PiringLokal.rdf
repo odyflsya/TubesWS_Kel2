@@ -7,13 +7,60 @@
     xmlns:dc="http://purl.org/dc/terms/"
     xmlns:piringlokal="https://example.org/schema/piringlokal">
 
+    <!-- Category: Papua Island -->
+    <rdf:Description rdf:about="http://example.org/category/Papua_Island">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Category"/>
+        <dc:title>Pulau Papua</dc:title>
+        <dc:description>
+            Papua memiliki keanekaragaman budaya, kuliner yang beragam serta keindahan alam yang luar biasa. Makanan khas Papua kaya akan cita rasa lokal dan bahan-bahan unik.
+        </dc:description>
+        <piringlokal:photo rdf:resource="https://i.pinimg.com/736x/5c/09/27/5c0927138144f6d9325a2eca60a0e020.jpg"/>
+    </rdf:Description>
+
+    <!-- Category: Kalimantan Island -->
+    <rdf:Description rdf:about="http://example.org/category/Kalimantan_Island">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Category"/>
+        <dc:title>Pulau Kalimantan</dc:title>
+        <dc:description>
+                Pulau Kalimantan terkenal dengan julukan “Pulau Seribu Sungai” karena banyaknya sungai yang mengalir di pulau ini. Selain itu, Kalimantan terkenal akan destinasi wisatanya yang menjadi surga para pecinta alam. Begitu juga dengan warisan budayanya yang masih kental. Di samping itu, makanan khas Kalimantan memiliki sajian yang berbeda di tiap daerah, salah satu keunikan tersebut terdapat pada olahan kulinernya. Memadukan antara berbagai sumber daya alam yang ada dengan rempah khasnya, membuat makanan khas Kalimantan memiliki cita rasa yang begitu lezat.
+        </dc:description>
+        <piringlokal:photo rdf:resource="https://i.pinimg.com/736x/f1/01/4a/f1014a539d540535b871268fc0288bfa.jpg"/>
+    </rdf:Description>
+
+    <!-- Category: Sumatera Island -->
+    <rdf:Description rdf:about="http://example.org/category/Sumatera_Island">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Category"/>
+        <dc:title>Pulau Sumatera</dc:title>
+        <dc:description>Sumatera adalah pulau terbesar keenam di dunia dan memiliki kekayaan budaya serta kuliner yang sangat beragam. Makanan-makanan khas Sumatera dipengaruhi oleh berbagai suku, agama, dan tradisi yang ada di pulau ini, yang membuat setiap daerah di Sumatera memiliki masakan yang unik.</dc:description>
+        <piringlokal:photo rdf:resource="https://i.pinimg.com/736x/93/c3/23/93c3233f7a3188cc9054ea1a0cdb0051.jpg"/>
+    </rdf:Description>
+
+    <!-- Category: Sulawesi Island -->
+    <rdf:Description rdf:about="http://example.org/category/Sulawesi_Island">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Category"/>
+        <dc:title>Pulau Sulawesi</dc:title>
+        <dc:description>Sulawesi merupakan pulau yang terletak di sebelah timur Indonesia, tepatnya terletak di antara pulau Kalimantan di sebelah barat serta Kepulauan Maluku sebelah di sebelah timur. Penduduk pulau Sulawesi rata- rata didominasi oleh suku Bugis- Makassar yang mayoritas dari mereka merupakan orang dagang. Keelokan alam serta laut pulau Sulawesi memunculkan energi tarik yang begitu kokoh sehingga membuat sekian banyak orang berbondong- bondong tiba ke pulau tersebut. Tidak hanya keelokan pariwisatanya, pulau Sulawesi pula populer dengan suguhan kuliner yang bermacam-macam.</dc:description>
+        <piringlokal:photo rdf:resource="https://i.pinimg.com/736x/dd/82/08/dd820886d9054015fa3507ce98edc890.jpg"/>
+    </rdf:Description>
+
+    <!-- Category: Java Island -->
+    <rdf:Description rdf:about="http://example.org/category/Java_Island">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Category"/>
+        <dc:title>Pulau Jawa</dc:title>
+        <dc:description>Pulau Jawa, sebagai pusat pemerintahan dan ekonomi Indonesia, menawarkan keindahan alam yang luar biasa dengan pegunungan, pantai, serta kota-kota besar seperti Jakarta, Yogyakarta, dan Surabaya yang kaya akan budaya dan sejarah. Selain itu, kuliner Jawa juga sangat beragam dan menggugah selera, seperti Gudeg dari Yogyakarta, Sate Maranggi dari Jawa Barat, hingga Rawon khas Jawa Timur yang pedas dan gurih. Makanan di Jawa tidak hanya sekadar hidangan, tetapi juga mencerminkan tradisi dan keramahan masyarakat, menjadikannya bagian penting dari identitas budaya pulau ini yang tak boleh dilewatkan.</dc:description>
+        <piringlokal:photo rdf:resource="https://i.pinimg.com/736x/ba/08/5b/ba085b5917aedbf79e8c85475486cb91.jpg"/>
+    </rdf:Description>
+
+
 <!-- Java Island -->
+
         <rdf:Description rdf:about="http://example.org/recipe/Ayam_Penyet">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
         <dc:title>Ayam Penyet</dc:title>
         <dc:description>Ayam Penyet adalah ayam goreng yang dihancurkan dengan cobek
             bersama sambal terasi yang pedas dan gurih. Hidangan ini sering disajikan dengan
             nasi hangat dan lalapan.</dc:description>
-        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:category rdf:resource="http://example.org/category/Java_Island"/>
         <piringlokal:photo>https://i.pinimg.com/474x/e8/d1/3e/e8d13e68db0df839d96476d1d9e5d3ac.jpg</piringlokal:photo>
         <piringlokal:ingredients>
             1 ekor ayam, potong menjadi beberapa bagian; 
@@ -30,9 +77,10 @@
         </rdf:Description>
 
         <rdf:Description rdf:about="http://example.org/recipe/Gudeg">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
         <dc:title>Gudeg</dc:title>
         <dc:description>Gudeg adalah makanan khas Yogyakarta yang menggunakan nangka muda sebagai bahan utama. Gudeg memiliki rasa manis khas dan biasanya disajikan bersama opor ayam, sambal goreng krecek, dan telur pindang. Hidangan ini membutuhkan waktu memasak yang cukup lama untuk memastikan bumbu meresap sempurna.</dc:description>
-        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:category rdf:resource="http://example.org/category/Java_Island"/>
         <piringlokal:photo>https://i.pinimg.com/474x/a4/34/c6/a434c67aeae5fba6c18ee8ae46a2c482.jpg</piringlokal:photo>
         <piringlokal:ingredients>
             1 kg nangka muda, potong kecil; 
@@ -52,9 +100,10 @@
         </rdf:Description>
 
         <rdf:Description rdf:about="http://example.org/recipe/Rawon">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
         <dc:title>Rawon</dc:title>
         <dc:description>Rawon adalah sup daging khas Jawa Timur yang berwarna hitam pekat karena menggunakan kluwek sebagai bumbu utama. Daging sapi yang dimasak lama menghasilkan kuah yang gurih dan kaya rasa. Biasanya disajikan dengan nasi, sambal, tauge, dan kerupuk.</dc:description>
-        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:category rdf:resource="http://example.org/category/Java_Island"/>
         <piringlokal:photo>https://i.pinimg.com/736x/a6/6f/a2/a66fa211d64a5b8c24ff189a7d071a45.jpg</piringlokal:photo>
         <piringlokal:ingredients>
             500 gr daging sapi (sandang lamur);
@@ -76,10 +125,11 @@
         </rdf:Description>
 
         <rdf:Description rdf:about="http://example.org/recipe/Soto_Betawi">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
         <dc:title>Soto Betawi</dc:title>
         <dc:description>Soto Betawi merupakan soto khas Jakarta dengan kuah santan yang kaya rasa. Biasanya diisi dengan daging sapi atau jeroan, kentang goreng, dan tomat. Soto ini dikenal dengan kelezatan kuahnya yang gurih dan creamy.
         </dc:description>
-        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:category rdf:resource="http://example.org/category/Java_Island"/>
         <piringlokal:photo>https://i.pinimg.com/474x/f3/80/ce/f380ce84bab60653bba44fc2d44cf53f.jpg</piringlokal:photo>
         <piringlokal:ingredients>
             500 gr daging sapi;
@@ -100,9 +150,10 @@
         </rdf:Description>
 
         <rdf:Description rdf:about="http://example.org/recipe/Pecel_Madiun">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
         <dc:title>Pecel Madiun</dc:title>
         <dc:description>Pecel adalah salad tradisional dari Madiun yang terdiri dari sayuran rebus seperti kacang panjang, taoge, bayam, dan kenikir, yang disiram dengan bumbu kacang yang gurih dan sedikit pedas. Disajikan dengan peyek kacang untuk menambah tekstur renyah.</dc:description>
-        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:category rdf:resource="http://example.org/category/Java_Island"/>
         <piringlokal:photo> https://i.pinimg.com/474x/6c/12/04/6c12046170384d55cc0699ef38477b3e.jpg</piringlokal:photo>
         <piringlokal:ingredients>
             Sayuran: kacang panjang, taoge, bayam, daun kenikir (secukupnya);
@@ -117,9 +168,10 @@
         </rdf:Description>
 
         <rdf:Description rdf:about="http://example.org/recipe/Nasi_Liwet">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
         <dc:title>Nasi Liwet </dc:title>
         <dc:description>Nasi liwet khas Solo adalah nasi gurih yang dimasak dengan santan, disajikan dengan opor ayam, sambal goreng labu siam, dan telur pindang. Hidangan ini memiliki rasa gurih dan aroma santan yang khas.</dc:description>
-        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:category rdf:resource="http://example.org/category/Java_Island"/>
         <piringlokal:photo>https://i.pinimg.com/474x/4f/1c/ad/4f1cad78c058cd304a1814666c7597ae.jpg</piringlokal:photo>
         <piringlokal:ingredients>
             500 gr beras;
@@ -136,9 +188,10 @@
         </rdf:Description>
 
         <rdf:Description rdf:about="http://example.org/recipe/Rujak_Cingur">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
         <dc:title>Rujak Cingur</dc:title>
         <dc:description>Rujak cingur adalah makanan khas Surabaya yang menggabungkan potongan buah dan sayuran dengan irisan cingur (mulut sapi). Hidangan ini disiram dengan bumbu petis yang kental dan bercitarasa unik.</dc:description>
-        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:category rdf:resource="http://example.org/category/Java_Island"/>
         <piringlokal:photo>https://i.pinimg.com/474x/0c/7a/9f/0c7a9f04d16905072f4ba0771461e116.jpg</piringlokal:photo>
         <piringlokal:ingredients>
             Cingur sapi 200 gr, rebus hingga empuk;
@@ -154,10 +207,11 @@
         </rdf:Description>
 
         <rdf:Description rdf:about="http://example.org/recipe/Tahu_Tek">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
         <dc:title>Tahu Tek</dc:title>
         <dc:description>Tahu tek adalah makanan jalanan khas Surabaya yang menggunakan tahu goreng setengah matang, lontong, dan kentang goreng, disiram bumbu kacang dengan campuran petis. Rasanya gurih, manis, dan sedikit pedas.
         </dc:description>
-        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:category rdf:resource="http://example.org/category/Java_Island"/>
         <piringlokal:photo> https://i.pinimg.com/474x/a8/ad/8c/a8ad8c6c06b349abbc382fe4d582281c.jpg</piringlokal:photo>
         <piringlokal:ingredients>
            2 buah tahu putih, potong kecil, goreng setengah matang;
@@ -173,9 +227,10 @@
         </rdf:Description>
 
         <rdf:Description rdf:about="http://example.org/recipe/Sego_Kucing">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
         <dc:title>Sego Kucing</dc:title>
         <dc:description>Sego kucing adalah nasi bungkus mini khas angkringan Yogyakarta, terdiri dari nasi, sambal, dan lauk sederhana seperti teri goreng atau tempe orek. Cocok untuk camilan atau makanan ringan.</dc:description>
-        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:category rdf:resource="http://example.org/category/Java_Island"/>
         <piringlokal:photo>https://i.pinimg.com/736x/ac/ab/d4/acabd419ecfe66e802f02d0ba769fbf5.jpg</piringlokal:photo>
         <piringlokal:ingredients>
             500 gr nasi putih;
@@ -190,10 +245,11 @@
         </rdf:Description>
 
         <rdf:Description rdf:about="http://example.org/recipe/Soto_Kudus">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
         <dc:title>Soto Kudus</dc:title>
         <dc:description>Soto Kudus adalah sup khas Kudus dengan kuah bening yang menggunakan daging ayam atau kerbau sebagai bahan utama. Rasanya gurih dan ringan, dengan tambahan tauge, seledri, dan bawang goreng. Biasanya disajikan dengan nasi dalam mangkuk kecil.
         </dc:description>
-        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:category rdf:resource="http://example.org/category/Java_Island"/>
         <piringlokal:photo>https://i.pinimg.com/474x/ae/84/20/ae8420bd65f663a913099399cf44c907.jpg</piringlokal:photo>
         <piringlokal:ingredients>
             1 ekor ayam kampung, potong kecil
@@ -214,14 +270,15 @@
         </rdf:Description>
 
         <rdf:Description rdf:about="http://example.org/recipe/Getuk">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
         <dc:title>Getuk</dc:title>
         <dc:description>Getuk adalah camilan tradisional dari singkong yang dihaluskan dan dicampur dengan gula merah. Teksturnya lembut dan manis, sering disajikan dengan taburan kelapa parut. Cocok sebagai teman minum teh di sore hari.</dc:description>
-        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:category rdf:resource="http://example.org/category/Java_Island"/>
         <piringlokal:photo> https://i.pinimg.com/474x/71/8a/63/718a63e64847bc4d886b3b1f28ee3321.jpg</piringlokal:photo>
         <piringlokal:ingredients>
-            1 kg singkong, kupas, potong-potong;
-            200 gr gula merah, sisir halus;
-            100 gr kelapa parut;
+            1 kg singkong, kupas, potong-potong
+            200 gr gula merah, sisir halus
+            100 gr kelapa parut
             Sejumput garam
         </piringlokal:ingredients>
         <piringlokal:steps>
@@ -232,10 +289,11 @@
         </rdf:Description>
 
         <rdf:Description rdf:about="http://example.org/recipe/Tahu_Gejrot">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
         <dc:title>Tahu Gejrot</dc:title>
         <dc:description> Tahu gejrot adalah hidangan khas Cirebon yang terdiri dari tahu goreng yang disiram dengan kuah manis, asam, dan pedas. Kuah ini terbuat dari campuran gula merah, asam jawa, dan cabai rawit.
         </dc:description>
-        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:category rdf:resource="http://example.org/category/Java_Island"/>
         <piringlokal:photo>https://i.pinimg.com/474x/ce/58/37/ce5837042bc0d6edf7c83a89e0cc924c.jpg</piringlokal:photo>
         <piringlokal:ingredients>
             10 potong tahu pong, goreng;
@@ -253,9 +311,10 @@
         </rdf:Description>
 
         <rdf:Description rdf:about="http://example.org/recipe/Nasi_Timbel">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
         <dc:title>Nasi Timbel</dc:title>
         <dc:description>Nasi timbel adalah hidangan nasi yang dibungkus daun pisang, menghasilkan aroma khas. Biasanya disajikan dengan lauk seperti ayam goreng, tahu, tempe, lalapan, dan sambal.</dc:description>
-        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:category rdf:resource="http://example.org/category/Java_Island"/>
         <piringlokal:photo>https://i.pinimg.com/474x/65/6f/cb/656fcb82711c97debe979570fc2dfb74.jpg</piringlokal:photo>
         <piringlokal:ingredients>
             500 gr beras;
@@ -271,10 +330,11 @@
         </rdf:Description>
 
         <rdf:Description rdf:about="http://example.org/recipe/Sate_Maranggi">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
         <dc:title>Sate Maranggi</dc:title>
         <dc:description>Sate Maranggi adalah sate khas Purwakarta yang menggunakan daging sapi atau kambing yang dibumbui sebelum dipanggang. Bumbunya terdiri dari rempah-rempah yang memberikan cita rasa manis dan gurih.
         </dc:description>
-        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:category rdf:resource="http://example.org/category/Java_Island"/>
         <piringlokal:photo>https://i.pinimg.com/474x/b9/8b/53/b98b534d5aca8f618859d1b38d05ed8d.jpg</piringlokal:photo>
         <piringlokal:ingredients>
             500 gr daging sapi, potong dadu;
@@ -295,9 +355,10 @@
         </rdf:Description>
 
         <rdf:Description rdf:about="http://example.org/recipe/Bakso_Malang">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
         <dc:title>Bakso Malang</dc:title>
         <dc:description>Bakso Malang adalah bakso khas Malang yang terdiri dari bakso daging sapi, tahu goreng, pangsit goreng, mie, dan kuah kaldu yang gurih. Hidangan ini sangat digemari di seluruh Indonesia.</dc:description>
-        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:category rdf:resource="http://example.org/category/Java_Island"/>
         <piringlokal:photo>https://i.pinimg.com/474x/a9/46/9d/a9469de0af8b6cff873350f4c266a34c.jpg</piringlokal:photo>
         <piringlokal:ingredients>
             500 gr daging sapi giling;
@@ -316,10 +377,11 @@
         </rdf:Description>
 
         <rdf:Description rdf:about="http://example.org/recipe/Kerak_Telor">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
         <dc:title>Kerak Telor</dc:title>
         <dc:description>Kerak telor adalah makanan khas Betawi yang terbuat dari beras ketan, telur ayam atau bebek, dan serundeng kelapa yang dimasak tanpa minyak. Hidangan ini memiliki tekstur renyah di luar dan gurih di dalam.
         </dc:description>
-        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:category rdf:resource="http://example.org/category/Java_Island"/>
         <piringlokal:photo>https://i.pinimg.com/474x/f8/57/9e/f8579e61dec27e9a7db79e3edf427d90.jpg</piringlokal:photo>
         <piringlokal:ingredients>
             100 gr beras ketan putih, rendam 2 jam;
@@ -338,9 +400,10 @@
         </rdf:Description>
 
         <rdf:Description rdf:about="http://example.org/recipe/Empal_Gentong">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
         <dc:title>Empal Gentong</dc:title>
         <dc:description>Empal Gentong adalah gulai daging khas Cirebon yang dimasak dalam gentong tanah liat untuk menghasilkan rasa yang khas. Hidangan ini menggunakan daging sapi dan jeroan, disajikan dengan lontong atau nasi.</dc:description>
-        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:category rdf:resource="http://example.org/category/Java_Island"/>
         <piringlokal:photo>https://i.pinimg.com/474x/4b/1d/a7/4b1da7f131eac445d45660512f970d50.jpg</piringlokal:photo>
         <piringlokal:ingredients>
             500 gr daging sapi, potong kecil;
@@ -358,10 +421,11 @@
         </rdf:Description>
 
         <rdf:Description rdf:about="http://example.org/recipe/Keripik_Tempe">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
         <dc:title>Keripik Tempe</dc:title>
-        <dc:description>Keripik tempe adalah camilan khas Jawa yang terbuat dari tempe yang dipotong tipis, kemudian digoreng hingga renyah. Camilan ini sangat populer di Jawa Tengah dan Jawa Timur. Keripik tempe memiliki rasa gurih dan sedikit asin, menjadikannya cocok sebagai pendamping minuman atau untuk camilan ringan.
+        <dc:description>Keripik tempe adalah camilan khas Jawa yang terbuat dari tempe yang dipotong tipis, kemudian digoreng hingga renyah. Camilan ini sangat populer di Jawa Tengah. Keripik tempe memiliki rasa gurih dan sedikit asin, menjadikannya cocok sebagai pendamping minuman atau untuk camilan ringan.
         </dc:description>
-        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:category rdf:resource="http://example.org/category/Java_Island"/>
         <piringlokal:photo>https://i.pinimg.com/474x/cd/45/60/cd45605d1052a369efc39762abeccd58.jpg</piringlokal:photo>
         <piringlokal:ingredients>
             1 papan tempe, potong tipis;
@@ -377,9 +441,10 @@
         </rdf:Description>
 
         <rdf:Description rdf:about="http://example.org/recipe/Tahu_Tempe_Bacem">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
         <dc:title>Tahu Tempe Bacem</dc:title>
         <dc:description>Tahu Tempe Bacem adalah tahu dan tempe yang dimasak dengan bumbu manis dan gurih, kemudian digoreng hingga berwarna kecokelatan. Hidangan ini biasanya disajikan dengan nasi.</dc:description>
-        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:category rdf:resource="http://example.org/category/Java_Island"/>
         <piringlokal:photo>https://i.pinimg.com/474x/75/a9/24/75a924b4d026f8b8533f656fd39afad5.jpg</piringlokal:photo>
         <piringlokal:ingredients>
             200 gr tempe, potong dadu;
@@ -401,10 +466,11 @@
         </rdf:Description>
 
         <rdf:Description rdf:about="http://example.org/recipe/Lontong_Balap_Surabaya">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
         <dc:title>Lontong Balap Surabaya</dc:title>
         <dc:description>Lontong Balap adalah hidangan khas Surabaya yang terdiri dari lontong, tahu, dan tauge yang disiram dengan kuah yang terbuat dari kaldu sapi. Kuahnya yang gurih dan sedikit pedas memberikan cita rasa yang sangat khas. Lontong Balap biasanya disajikan dengan sambal petis dan krupuk sebagai pelengkap. Hidangan ini populer sebagai makan siang atau malam, terutama di Surabaya.
         </dc:description>
-        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:category rdf:resource="http://example.org/category/Java_Island"/>
         <piringlokal:photo>https://i.pinimg.com/474x/f8/5a/e0/f85ae0d8d5c678434e13e45a6cb6addf.jpg</piringlokal:photo>
         <piringlokal:ingredients>
             2 buah lontong, potong-potong;
@@ -421,9 +487,10 @@
         </rdf:Description>
 
         <rdf:Description rdf:about="http://example.org/recipe/Soto_Ayam_Lamongan">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
         <dc:title>Soto Ayam Lamongan</dc:title>
         <dc:description>Soto Ayam Lamongan adalah sup ayam khas dari Lamongan, Jawa Timur. Soto ini terkenal dengan kuah kuningnya yang kental dan penuh rasa, yang berasal dari campuran rempah-rempah seperti kunyit, serai, dan daun salam. Ayam yang digunakan untuk soto ini dimasak hingga empuk, dan disajikan dengan mie soun, telur rebus, dan kerupuk. Rasa soto ayam Lamongan yang gurih dan segar sangat cocok untuk dinikmati di siang hari atau saat cuaca dingin.</dc:description>
-        <piringlokal:category>Java Island</piringlokal:category>
+        <piringlokal:category rdf:resource="http://example.org/category/Java_Island"/>
         <piringlokal:photo>https://i.pinimg.com/control2/474x/1d/e4/a1/1de4a19e2d70724d71ad912cec05885d.jpg</piringlokal:photo>
         <piringlokal:ingredients>
             1 ekor ayam, potong-potong;
@@ -442,83 +509,2243 @@
         </piringlokal:steps>
         </rdf:Description>
 
-<!-- Sumatera Island -->
-
-        <rdf:Description rdf:about="http://example.org/recipe/Getuk">
-        <dc:title>Getuk</dc:title>
-        <dc:description>Getuk adalah camilan tradisional dari singkong yang dihaluskan dan dicampur dengan gula merah. Teksturnya lembut dan manis, sering disajikan dengan taburan kelapa parut. Cocok sebagai teman minum teh di sore hari.</dc:description>
-        <piringlokal:category>Java Island</piringlokal:category>
-        <piringlokal:photo> https://i.pinimg.com/474x/71/8a/63/718a63e64847bc4d886b3b1f28ee3321.jpg</piringlokal:photo>
+        <rdf:Description rdf:about="http://example.org/recipe/Pecak_Kerang">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Pecak Kerang</dc:title>
+        <dc:description>Pecak kerang adalah hidangan khas Banten yang terbuat dari kerang yang dimasak dengan bumbu pecak khas yang pedas dan asam. Hidangan ini disajikan dengan sambal yang menyegarkan.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Java_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/736x/f5/f6/cb/f5f6cbb888b106f66b6840b2f24302b0.jpg</piringlokal:photo>
         <piringlokal:ingredients>
-            1 kg singkong, kupas, potong-potong
-            200 gr gula merah, sisir halus
-            100 gr kelapa parut
-            Sejumput garam
+            500 gr kerang laut (kerang dara atau kerang hijau);
+            5 siung bawang merah;
+            3 siung bawang putih;
+            4 buah cabai merah besar;
+            2 buah cabai rawit;
+            1 sdt terasi;
+            2 cm kunyit;
+            1 sdt air asam jawa;
+            1 sdt gula merah, serut;
+            1 sdm kecap manis;
+            Garam secukupnya;
+            Minyak goreng untuk menumis
         </piringlokal:ingredients>
         <piringlokal:steps>
-            Kukus singkong hingga empuk. Haluskan selagi panas.
-            Campurkan gula merah ke dalam singkong yang sudah halus. Aduk hingga merata.
-            Bentuk adonan sesuai selera, taburi kelapa parut yang sudah diberi sedikit garam.
+            Cuci bersih kerang dan rebus hingga matang. Angkat dan tiriskan.
+            Haluskan bawang merah, bawang putih, cabai merah, cabai rawit, kunyit, dan terasi.
+            Tumis bumbu halus dengan sedikit minyak hingga harum.
+            Tambahkan air asam jawa, gula merah, kecap manis, dan garam. Aduk rata hingga mendidih.
+            Masukkan kerang ke dalam bumbu, aduk hingga bumbu meresap ke dalam kerang.
+            Sajikan pecak kerang dengan sambal dan lalapan segar.
         </piringlokal:steps>
         </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Surabi">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Surabi</dc:title>
+        <dc:description>Surabi adalah makanan tradisional khas Jawa Barat berupa pancake kecil yang terbuat dari tepung beras dan santan, dimasak dengan cara dipanggang. Surabi biasanya disajikan dengan berbagai topping seperti oncom, kelapa parut, atau cokelat.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Java_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/736x/1e/49/1e/1e491e507ddf3e39bd74adf5c07c8f23.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            200 gr tepung beras;
+            100 gr kelapa parut kasar;
+            200 ml santan kental;
+            1 butir telur;
+            1 sdm gula pasir;
+            1 sdt ragi instan;
+            1/2 sdt garam;
+            Oncom atau topping sesuai selera (kelapa parut, cokelat, keju)
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Campurkan tepung beras, kelapa parut, santan, telur, gula pasir, ragi, dan garam dalam sebuah wadah. Aduk rata dan diamkan selama 30 menit untuk proses fermentasi.
+            Panaskan teflon datar, oleskan sedikit minyak agar surabi tidak lengket.
+            Tuang adonan ke dalam teflon, masak dengan api kecil hingga permukaannya mulai kering.
+            Tambahkan topping seperti oncom, kelapa parut, atau topping lainnya di atasnya, lalu tutup dan biarkan beberapa menit hingga matang.
+            Angkat dan sajikan surabi dengan tambahan saus atau sambal sesuai selera.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Betutu">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Betutu</dc:title>
+        <dc:description>Betutu adalah hidangan khas Bali yang terbuat dari ayam atau bebek yang dibumbui rempah-rempah khas, dibungkus daun pisang, lalu dipanggang dalam bara api. Hidangan ini memiliki cita rasa yang kaya dan aromatik.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Java_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/236x/91/22/9a/91229a6c2d34c32d71ad551db7ff6394.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            1 ekor ayam (atau bebek) utuh;
+            2 batang serai, memarkan;
+            4 lembar daun jeruk purut;
+            2 daun salam;
+            3 cm lengkuas, memarkan;
+            5 siung bawang putih;
+            7 siung bawang merah;
+            5 buah cabai merah besar;
+            5 buah cabai rawit;
+            1 sdt kunyit bubuk;
+            1 sdt ketumbar;
+            1 sdt garam;
+            200 ml santan kental;
+            Daun pisang untuk membungkus
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Haluskan bawang putih, bawang merah, cabai merah, cabai rawit, kunyit, dan ketumbar.
+            Tumis bumbu halus dengan serai, daun jeruk purut, daun salam, dan lengkuas hingga harum.
+            Lumuri ayam atau bebek dengan bumbu yang sudah ditumis dan biarkan meresap selama 1 jam.
+            Bungkus ayam atau bebek dengan daun pisang, pastikan rapat.
+            Panggang di atas bara api atau di dalam oven dengan suhu rendah selama 2-3 jam hingga matang sempurna.
+            Sajikan betutu dengan nasi hangat.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Pisang_Molen">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Pisang Molen</dc:title>
+        <dc:description>Pisang Molen adalah camilan manis yang sangat digemari di Bandung, Jawa Barat. Camilan ini terbuat dari pisang raja yang dibalut dengan adonan tepung yang ringan dan renyah, kemudian digoreng hingga berwarna kecokelatan. Pisang Molen memiliki tekstur yang lembut di dalam dan renyah di luar, memberikan sensasi yang lezat saat dimakan. Rasanya manis dari pisang dan sedikit gurih dari adonan tepungnya, menjadikannya camilan yang sempurna, baik untuk sarapan maupun sebagai teman minum teh di sore hari. Pisang Molen menjadi salah satu ikon makanan ringan di Bandung, mudah ditemukan di pasar-pasar tradisional atau dijadikan oleh-oleh khas daerah.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Java_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/736x/3c/0a/78/3c0a78d6d227034a9be7d98c8e042d4b.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            4 buah pisang raja, potong-potong;
+            100 gram tepung terigu;
+            50 gram tepung maizena;
+            Air secukupnya;
+            Minyak goreng
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+           Campur tepung terigu dan maizena, tambahkan air sedikit-sedikit hingga membentuk adonan kental.
+           Balut pisang dengan adonan tepung, goreng hingga berwarna keemasan.
+           Sajikan Pisang Molen dengan teh hangat.
+        </piringlokal:steps>
+        </rdf:Description>
+
+
+
+
+<!-- Sumatera Island -->
+
+        <rdf:Description rdf:about="http://example.org/recipe/Rendang">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Rendang</dc:title>
+        <dc:description>Rendang adalah makanan khas Minangkabau, Sumatera Barat, yang terkenal di seluruh dunia. Hidangan ini menggunakan daging sapi yang dimasak dalam waktu lama dengan santan dan rempah-rempah. Rendang memiliki rasa yang kaya dan tekstur daging yang lembut, sering disajikan dalam acara adat atau perayaan.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sumatera_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/736x/97/d0/21/97d02196deea630b66f9a2002c8f6ce8.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            1 kg daging sapi, potong besar;
+            2 liter santan dari 3 butir kelapa;
+            2 lembar daun kunyit, simpulkan;
+            5 lembar daun jeruk purut;
+            2 batang serai, memarkan;
+            Bumbu halus: 10 siung bawang merah, 5 siung bawang putih, 5 buah cabai merah besar, 1 sdt ketumbar, 2 cm jahe, 3 cm lengkuas
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Tumis bumbu halus hingga harum. Tambahkan daun kunyit, daun jeruk, dan serai.
+            Masukkan daging sapi, aduk hingga berubah warna.
+            Tuangkan santan, masak dengan api kecil sambil diaduk agar santan tidak pecah.
+            Masak hingga santan mengering dan bumbu meresap ke dalam daging.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Gulai_Ikan_Patin">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Gulai Ikan Patin</dc:title>
+        <dc:description>Gulai ikan patin adalah hidangan berkuah santan dengan cita rasa gurih dan sedikit pedas. Hidangan ini menjadi salah satu makanan khas Riau yang menggunakan ikan patin segar sebagai bahan utama.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sumatera_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/736x/b7/55/20/b755201dcbdea926436a95b4440211c9.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            1 kg ikan patin, potong sesuai selera;
+            1 liter santan kental;
+            3 lembar daun salam;
+            2 batang serai, memarkan;
+            2 cm lengkuas, memarkan;
+            Bumbu halus: 8 siung bawang merah, 5 siung bawang putih, 5 buah cabai merah, 2 cm kunyit, 1 cm jahe
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Tumis bumbu halus hingga harum. Masukkan daun salam, serai, dan lengkuas.
+            Tuang santan, masak hingga mendidih.
+            Masukkan ikan patin, masak dengan api kecil hingga matang.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Pempek">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Pempek</dc:title>
+        <dc:description>Pempek adalah makanan khas Palembang, Sumatera Selatan, yang terbuat dari campuran ikan dan tepung sagu, disajikan dengan kuah cuka yang asam, manis, dan pedas. Pempek memiliki banyak jenis, seperti kapal selam, lenjer, dan adaan.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sumatera_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/736x/5c/48/e9/5c48e9c63b36ee1ecd99703dedaf70b1.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gr daging ikan tenggiri giling;
+            250 gr tepung sagu;
+            200 ml air es;
+            1 sdt garam;
+            Kuah cuka: 200 gr gula merah, 5 buah cabai rawit, 3 siung bawang putih, 50 ml air asam jawa
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Campur ikan giling, air es, dan garam. Tambahkan tepung sagu, uleni hingga kalis.
+            Bentuk adonan sesuai jenis pempek yang diinginkan. Rebus hingga mengapung.
+            Untuk kuah cuka, rebus semua bahan hingga mendidih, saring.
+            Goreng pempek dan sajikan dengan kuah cuka.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Arsik_Ikan_Mas">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Arsik Ikan Mas</dc:title>
+        <dc:description>Arsik adalah makanan khas Batak, Sumatera Utara, yang menggunakan ikan mas sebagai bahan utama. Rasanya gurih dengan bumbu khas andaliman dan kecombrang.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sumatera_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/736x/fc/53/6f/fc536f2c4386602724eb8fa1c28a71e0.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            1 kg ikan mas, bersihkan;
+            3 batang serai, memarkan;
+            5 lembar daun jeruk;
+            2 cm jahe, iris tipis;
+            2 buah kecombrang, iris halus;
+            Bumbu halus: 8 siung bawang merah, 5 siung bawang putih, 5 buah cabai merah, 2 cm kunyit, 1 sdt andaliman
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Lumuri ikan dengan sedikit garam dan jeruk nipis. Diamkan 15 menit.
+            Tumis bumbu halus hingga harum. Tambahkan daun jeruk, serai, dan kecombrang.
+            Masukkan ikan mas, tambahkan sedikit air. Masak hingga bumbu meresap dan air menyusut.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Nasi_Goreng_Medan">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Nasi Goreng Medan</dc:title>
+        <dc:description>Nasi goreng Medan terkenal dengan cita rasanya yang kaya akan bumbu dan sedikit pedas. Biasanya menggunakan bahan seperti udang, ayam, dan telur, serta diberi tambahan kerupuk untuk menambah tekstur renyah.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sumatera_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/736x/f5/0f/5e/f50f5ec80fdabe9f2bca88a7b8972e6e.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            300 gr nasi dingin;
+            100 gr udang, kupas;
+            1 butir telur, kocok lepas;
+            2 siung bawang putih, cincang;
+            2 sdm kecap manis;
+            1 sdt cabai bubuk;
+            1 batang daun bawang, iris;
+            1 sdm minyak untuk menumis
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Tumis bawang putih hingga harum. Masukkan udang, tumis hingga berubah warna.
+            Tambahkan telur, orak-arik hingga matang.
+            Masukkan nasi, aduk rata dengan bumbu kecap manis dan cabai bubuk.
+            Sajikan nasi goreng dengan irisan daun bawang dan kerupuk.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Sate_Padang">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Sate Padang</dc:title>
+        <dc:description>Sate Padang adalah sate daging sapi yang disajikan dengan kuah kental berwarna kuning yang terbuat dari rempah-rempah. Kuah sate padang memiliki rasa pedas dan gurih.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sumatera_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/736x/4d/96/b6/4d96b69a18fd710fb312c34fd6794fcb.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gr daging sapi, potong dadu;
+            100 gr jeroan sapi (hati dan ampela);
+            5 batang serai, memarkan;
+            3 lembar daun jeruk;
+            1 sdt kunyit bubuk;
+            1 sdt ketumbar;
+            2 sdt cabai bubuk;
+            Bumbu halus: 8 siung bawang merah, 5 siung bawang putih, 2 cm jahe, 1 cm lengkuas;
+            500 ml air kaldu
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Rebus daging dan jeroan sapi hingga empuk.
+            Tumis bumbu halus, serai, daun jeruk, kunyit, ketumbar, dan cabai bubuk.
+            Tambahkan kaldu, masak hingga kuah mengental.
+            Sajikan sate dengan kuah kental dan taburan bawang goreng.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Dayok_Nabinatur">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Dayok Nabinatur</dc:title>
+        <dc:description>Dayok Nabinatur adalah masakan khas Simalungun, Sumatera Utara, berupa ayam panggang yang dimasak dengan bumbu rempah tradisional. Hidangan ini biasanya disajikan pada acara adat dan dianggap sebagai simbol kehormatan.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sumatera_Island"/>
+        <piringlokal:photo>https://indonesia.go.id/assets/upload/headline/1561429084_20190620_140842_0000_thumb.png</piringlokal:photo>
+        <piringlokal:ingredients>
+            1 ekor ayam kampung, potong sesuai selera;
+            5 siung bawang merah, haluskan;
+            3 siung bawang putih, haluskan;
+            3 buah cabai merah, haluskan;
+            2 cm jahe, haluskan;
+            2 cm kunyit, haluskan;
+            1 sdt andaliman;
+            1 batang serai, memarkan;
+            2 lembar daun salam;
+            Garam secukupnya
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Campurkan ayam dengan bawang merah, bawang putih, cabai, jahe, kunyit, andaliman, dan garam. Diamkan selama 30 menit agar bumbu meresap.
+            Panggang ayam di atas bara api atau oven hingga setengah matang.
+            Tumis serai dan daun salam hingga harum, lalu masukkan ayam yang sudah dipanggang.
+            Tambahkan sedikit air jika perlu, masak ayam hingga matang dan bumbu meresap.
+            Sajikan Dayok Nabinatur hangat dengan nasi dan sambal khas Simalungun.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Dendeng_Balado">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Dendeng Balado</dc:title>
+        <dc:description>Dendeng Balado adalah makanan khas Sumatera Barat, berupa daging sapi yang dipotong tipis, digoreng hingga garing, dan kemudian dibalut dengan sambal balado yang pedas dan menggugah selera.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sumatera_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/736x/1d/95/cd/1d95cdaee484810ebdbaea663f81e248.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gr daging sapi, iris tipis;
+            10 buah cabai merah;
+            3 siung bawang merah;
+            2 siung bawang putih;
+            1 sdt terasi;
+            2 sdm minyak goreng;
+            Garam dan gula secukupnya
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Goreng daging sapi hingga kering dan garing.
+            Tumis cabai merah, bawang merah, bawang putih, dan terasi hingga harum.
+            Tambahkan garam dan gula, masak hingga sambal mengental.
+            Campurkan daging goreng dengan sambal balado, sajikan.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Sate_Ikan_Tenggiri">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Sate Ikan Tenggiri</dc:title>
+        <dc:description>Sate ikan tenggiri adalah sate khas Bengkulu yang menggunakan ikan tenggiri sebagai bahan utama. Ikan ditusuk dengan tusuk sate, dipanggang, dan disajikan dengan sambal kecap.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sumatera_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/736x/14/86/01/1486015c69960462abd4ed200f108680.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gr ikan tenggiri, fillet;
+            2 sdm kecap manis;
+            1 sdt cabai bubuk;
+            2 siung bawang putih, cincang;
+            1 sdm minyak untuk memanggang
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Potong ikan tenggiri menjadi potongan kecil.
+            Lumuri ikan dengan kecap manis, cabai bubuk, dan bawang putih. Diamkan selama 30 menit.
+            Tusuk ikan tenggiri dengan tusuk sate dan panggang hingga matang.
+            Sajikan dengan sambal kecap.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Timphan">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Timphan</dc:title>
+        <dc:description>Timphan adalah kue tradisional khas Aceh yang terbuat dari adonan tepung ketan dan santan, diisi dengan serikaya atau kelapa parut manis, kemudian dibungkus daun pisang. Hidangan ini sering disajikan pada hari raya atau acara adat.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sumatera_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/236x/7e/54/81/7e548145a9d190664b4ce3c453532a4f.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gr tepung ketan;
+            200 ml santan kental;
+            2 sdm minyak kelapa;
+            Daun pisang untuk pembungkus (layukan terlebih dahulu)
+            Isian: 200 gr kelapa parut kasar, 100 gr gula merah, serut halus, dan 1 lembar daun pandan
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Masak kelapa parut, gula merah, dan daun pandan hingga tercampur rata dan harum. Sisihkan.
+            Campurkan tepung ketan, santan, dan minyak kelapa hingga kalis.
+            Ambil daun pisang, olesi sedikit minyak.
+            Letakkan adonan tepung ketan, pipihkan, beri isian, lalu bungkus seperti amplop.
+            Kukus timphan selama 20-30 menit hingga matang.
+            Sajikan timphan hangat atau dingin sebagai camilan khas Aceh.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Mi_Gomak">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Mi Gomak</dc:title>
+        <dc:description>Mi Gomak adalah mi khas Batak, Sumatera Utara, yang dimasak dengan bumbu kacang yang gurih dan pedas. Hidangan ini sering disajikan dengan lauk tambahan seperti ayam goreng atau ikan.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sumatera_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/736x/bc/93/ad/bc93addbdbeb2dab1d32fb52645cf33f.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            200 gr mi telur;
+            3 sdm kacang tanah, goreng;
+            2 siung bawang putih, goreng;
+            5 buah cabai merah, goreng;
+            1 sdm kecap manis;
+            1 sdt garam;
+            1 sdt gula;
+            1 batang daun bawang, iris;
+            1 sdm minyak goreng
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Rebus mi hingga matang, tiriskan.
+            Haluskan kacang tanah, bawang putih, cabai merah, kecap manis, garam, dan gula.
+            Tumis bumbu halus dengan minyak goreng hingga harum, lalu campurkan dengan mi.
+            Sajikan dengan taburan daun bawang dan lauk pelengkap.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Nasi_Usuk_Padang">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Nasi Uduk Padang</dc:title>
+        <dc:description>Nasi uduk Padang adalah nasi yang dimasak dengan santan dan rempah, disajikan dengan lauk yang beragam seperti ayam goreng, sambal, dan kerupuk.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sumatera_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/736x/a2/bf/0e/a2bf0ef521b948c328a9bcd187d3bef9.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gr beras;
+            400 ml santan kental;
+            2 batang serai, memarkan;
+            3 lembar daun salam;
+            1 sdt garam;
+            1 sdm minyak goreng;
+            Lauk pelengkap: ayam goreng, sambal, kerupuk
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Cuci beras, masak dengan santan, serai, daun salam, dan garam hingga matang.
+            Sajikan nasi uduk dengan ayam goreng, sambal, dan kerupuk.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Lemang">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Lemang</dc:title>
+        <dc:description>Lemang adalah makanan khas Riau yang terbuat dari ketan yang dimasak dengan santan dalam bambu. Lemang memiliki tekstur pulen dan aromanya harum karena dimasak dengan bambu.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sumatera_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/736x/60/22/47/602247062b8b407cc623fb9eb4b054af.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gr ketan putih, rendam 2 jam;
+            300 ml santan kental;
+            1 sdt garam;
+            2 batang bambu berdiameter besar
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Campurkan ketan dengan santan dan garam. Aduk rata.
+            Masukkan ketan ke dalam bambu, padatkan.
+            Panggang bambu di atas api hingga ketan matang.
+            Potong-potong lemang dan sajikan.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Harinake">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Harinake</dc:title>
+        <dc:description>Harinake adalah hidangan khas Nias yang biasanya disajikan saat acara adat. Hidangan ini terbuat dari daging babi atau ayam yang dimasak dengan bumbu rempah khas dan menggunakan asam cekeram sebagai penambah rasa.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sumatera_Island"/>
+        <piringlokal:photo>https://pdbifiles.nos.jkt-1.neo.id/files/2017/12/29/wulan_Harinake.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gr daging babi/ayam, potong kecil;
+            5 siung bawang merah, iris halus;
+            3 siung bawang putih, cincang halus;
+            3 buah cabai merah, iris tipis;
+            2 sdm asam cekeram (alternatif: air jeruk nipis);
+            1 batang serai, memarkan;
+            1 sdt garam;
+            1 sdt gula merah;
+            200 ml santan
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Tumis bawang merah, bawang putih, cabai merah, dan serai hingga harum.
+            Masukkan daging, aduk hingga berubah warna.
+            Tambahkan santan, asam cekeram, garam, dan gula merah. Masak hingga daging empuk dan bumbu meresap.
+            Sajikan dengan nasi hangat.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Cincang_Karo">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Cincang Karo</dc:title>
+        <dc:description>Cincang Karo adalah hidangan khas suku Karo yang menggunakan daging sapi atau kerbau yang dimasak dengan andaliman, bumbu khas Sumatera Utara yang memberikan rasa pedas khas.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sumatera_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/236x/68/ba/0c/68ba0c55412727fafb21281341a41e58.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gr daging sapi, potong dadu kecil;
+            3 siung bawang putih, cincang halus;
+            5 siung bawang merah, iris halus;
+            2 cm lengkuas, memarkan;
+            2 buah cabai merah besar, iris serong;
+            1 sdm andaliman (merica batak);
+            2 sdt garam;
+            1 sdt gula pasir;
+            1 sdm minyak untuk menumis
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Panaskan minyak, tumis bawang putih, bawang merah, lengkuas, dan cabai merah hingga harum.
+            Masukkan daging sapi, aduk hingga setengah matang.
+            Tambahkan andaliman, garam, dan gula, masak hingga daging matang dan bumbu meresap.
+            Angkat dan sajikan.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Bubur_Kampiun">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Bubur kampiun</dc:title>
+        <dc:description>Bubur Kampiun adalah bubur khas Padang, Sumatera Barat yang terbuat dari beras ketan hitam, santan, dan gula merah, disajikan dengan berbagai macam toping seperti kelapa parut, kacang hijau, dan pisang.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sumatera_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/236x/09/c9/ef/09c9ef32771625f77e5cb91f41970969.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            250 gr ketan hitam;
+            200 ml santan kental;
+            200 gr gula merah;
+            1 sdt garam;
+            100 gr kelapa parut;
+            1 buah pisang raja, potong-potong
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Rebus ketan hitam hingga empuk, tambahkan santan dan gula merah.
+            Masak hingga mengental dan bubur siap disajikan.
+            Sajikan dengan kelapa parut, pisang, dan kacang hijau.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Gulai_Kambing">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Gulai Kambing</dc:title>
+        <dc:description>Gulai Kambing adalah hidangan khas Padang, Sumatera Barat, yang menggunakan daging kambing yang dimasak dalam santan kental dengan rempah-rempah yang kuat. Gulai ini memiliki rasa gurih dan pedas.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sumatera_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/236x/00/50/8f/00508ffebec605f7809f366a8c01f793.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gr daging kambing, potong-potong;
+            400 ml santan kental;
+            3 batang serai, memarkan;
+            4 lembar daun jeruk;
+            Bumbu halus: 8 siung bawang merah, 4 siung bawang putih, 5 buah cabai merah, 1 cm jahe, 1 cm kunyit, 1 sdt ketumbar
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Rebus daging kambing hingga empuk.
+            Tumis bumbu halus dengan serai dan daun jeruk hingga harum.
+            Tambahkan santan dan daging kambing, masak hingga kuah mengental.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Lontong_Sayur">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Lontong Sayur</dc:title>
+        <dc:description>Lontong sayur adalah hidangan khas Palembang, Sumatera Selatan, yang berbahan lontong dan sayur labu yang dimasak dengan santan. Lontong sayur biasanya disajikan dengan sambal goreng dan telur rebus.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sumatera_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/236x/fe/58/17/fe58173f8714dad38abd688aadab0879.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            200 gr lontong, potong-potong;
+            100 gr labu kunir, potong kecil;
+            300 ml santan kental;
+            2 sdm minyak goreng;
+            1 sdt garam;
+            Pelengkap: sambal goreng, telur rebus
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Tumis labu kunir dengan minyak hingga matang.
+            Tambahkan santan dan garam, masak hingga mendidih.
+            Sajikan lontong sayur dengan sambal goreng dan telur rebus.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Mi_Aceh">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Mi Aceh</dc:title>
+        <dc:description>Mie Aceh adalah mi yang dimasak dengan bumbu kari yang pedas dan gurih, disajikan dengan daging sapi, ayam, atau udang. Mi Aceh terkenal dengan rasanya yang kaya rempah.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sumatera_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/736x/f8/8c/a8/f88ca863cdb3251fadf8c08c118f303c.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            200 gr mi kuning;
+            100 gr udang, kupas;
+            100 gr daging sapi, potong tipis;
+            1 sdm bumbu kari;
+            3 siung bawang putih, cincang;
+            2 sdm kecap manis;
+            1 sdt cabai bubuk
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Rebus mi hingga matang. Tiriskan.
+            Tumis bawang putih, bumbu kari, cabai bubuk, dan kecap manis.
+            Masukkan udang dan daging sapi, masak hingga matang.
+            Campurkan mi ke dalam tumisan, aduk rata, sajikan.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Kue_Lapis">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Kue Lapis</dc:title>
+        <dc:description>Kue lapis adalah kue basah yang memiliki lapisan warna-warni dengan tekstur kenyal. Kue ini berasal dari Bengkulu. Kue ini terbuat dari tepung beras, kelapa, dan santan, sangat populer di berbagai acara.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sumatera_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/236x/4e/e5/2f/4ee52fdfaeaaa3d4aa230285769e6045.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            200 gr tepung beras;
+            200 ml santan kental;
+            100 gr gula pasir;
+            1 sdt vanili;
+            Pewarna makanan secukupnya
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Campurkan tepung beras, santan, gula pasir, dan vanili. Aduk rata.
+            Bagi adonan menjadi beberapa bagian, beri pewarna pada masing-masing.
+            Kukus lapisan demi lapisan hingga matang.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Tempoyak_Ikan_Patin">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Tempoyak Ikan Patin</dc:title>
+        <dc:description>Tempoyak ikan patin adalah hidangan khas dari Jambi yang berbahan dasar ikan patin dan tempoyak, fermentasi durian. Hidangan ini memiliki cita rasa asam dan pedas yang khas.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sumatera_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/736x/3e/dd/54/3edd5478342aa063ef29ca0fd1af0196.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gr ikan patin;
+            200 gr tempoyak (fermentasi durian);
+            3 buah cabai merah besar;
+            5 buah cabai rawit;
+            5 siung bawang merah;
+            3 siung bawang putih;
+            1 batang serai, memarkan;
+            1 lembar daun kunyit;
+            500 ml air;
+            Garam dan gula secukupnya
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Bersihkan ikan patin, potong sesuai selera, dan lumuri dengan sedikit garam.
+            Haluskan cabai merah, cabai rawit, bawang merah, dan bawang putih.
+            Tumis bumbu halus bersama serai dan daun kunyit hingga harum.
+            Tambahkan tempoyak dan air, aduk rata, dan masak hingga mendidih.
+            Masukkan ikan patin, masak hingga matang dan bumbu meresap.
+            Tambahkan garam dan gula secukupnya. Angkat dan sajikan.
+        </piringlokal:steps>
+        </rdf:Description>
+
+
+        <rdf:Description rdf:about="http://example.org/recipe/Seruit">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Seruit</dc:title>
+        <dc:description>Seruit adalah makanan khas Lampung berupa ikan yang dibakar atau digoreng, kemudian dicampur dengan sambal dan tempoyak. Hidangan ini biasanya disantap bersama lalapan.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sumatera_Island"/>
+        <piringlokal:photo>https://cdn0-production-images-kly.akamaized.net/9qrmADUq4nd2nQoGDbyLV8uJoZg=/0x619:6000x4001/680x383/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3567268/original/078445800_1631247346-shutterstock_1859464168.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gr ikan (nila atau mujair);
+            200 gr tempoyak (fermentasi durian);
+            5 buah cabai merah;
+            5 buah cabai rawit;
+            5 siung bawang merah;
+            3 siung bawang putih;
+            1 buah jeruk nipis;
+            Garam secukupnya;
+            Lalapan (timun, daun kemangi) sesuai selera
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Bersihkan ikan, lumuri dengan garam dan perasan jeruk nipis, lalu bakar atau goreng hingga matang.
+            Haluskan cabai merah, cabai rawit, bawang merah, dan bawang putih. Campurkan dengan tempoyak.
+            Tambahkan garam secukupnya dan aduk hingga rata.
+            Sajikan ikan bersama sambal tempoyak dan lalapan sebagai pelengkap.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Lempah_Kuning">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Lempah Kuning</dc:title>
+        <dc:description>Lempah kuning adalah masakan khas Bangka Belitung yang berupa sup ikan dengan kuah berwarna kuning dari kunyit. Hidangan ini memiliki rasa asam dan segar, sering kali menggunakan ikan tenggiri atau kakap.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sumatera_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/736x/32/e2/3f/32e23fd562de6c959b76dfc98082a474.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gr ikan tenggiri (atau kakap);
+            2 buah jeruk nipis;
+            2 ruas kunyit;
+            5 buah cabai merah besar;
+            5 buah cabai rawit;
+            4 siung bawang merah;
+            3 siung bawang putih;
+            1 ruas lengkuas, memarkan;
+            1 batang serai, memarkan;
+            1 buah nanas, potong-potong;
+            800 ml air;
+            Garam dan gula secukupnya
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Bersihkan ikan, lumuri dengan garam dan perasan jeruk nipis. Diamkan selama 15 menit, lalu bilas.
+            Haluskan kunyit, cabai merah, cabai rawit, bawang merah, dan bawang putih.
+            Tumis bumbu halus bersama lengkuas dan serai hingga harum.
+            Tambahkan air dan masukkan potongan nanas. Biarkan mendidih.
+            Masukkan ikan dan masak hingga matang dan bumbu meresap.
+            Tambahkan garam dan gula secukupnya, lalu angkat dan sajikan.
+        </piringlokal:steps>
+        </rdf:Description>
+
+
+
 
 <!-- Sulawesi Island -->
 
-        <rdf:Description rdf:about="http://example.org/recipe/Getuk">
-        <dc:title>Getuk</dc:title>
-        <dc:description>Getuk adalah camilan tradisional dari singkong yang dihaluskan dan dicampur dengan gula merah. Teksturnya lembut dan manis, sering disajikan dengan taburan kelapa parut. Cocok sebagai teman minum teh di sore hari.</dc:description>
-        <piringlokal:category>Java Island</piringlokal:category>
-        <piringlokal:photo> https://i.pinimg.com/474x/71/8a/63/718a63e64847bc4d886b3b1f28ee3321.jpg</piringlokal:photo>
+        <rdf:Description rdf:about="http://example.org/recipe/Coto_Makassar">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Coto Makassar</dc:title>
+        <dc:description>Coto Makassar adalah sop daging sapi yang dimasak dengan berbagai rempah-rempah seperti daun salam, serai, dan kayu manis. Coto ini biasanya disajikan dengan ketupat atau buras.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sulawesi_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/736x/11/c3/4c/11c34c5fc5b213459af3b0de9cfa0224.jpg</piringlokal:photo>
         <piringlokal:ingredients>
-            1 kg singkong, kupas, potong-potong
-            200 gr gula merah, sisir halus
-            100 gr kelapa parut
-            Sejumput garam
+            500 gr daging sapi (paha atau sengkel);
+            1 liter air;
+            2 batang serai, memarkan;
+            3 lembar daun salam;
+            3 siung bawang putih, haluskan;
+            5 siung bawang merah, haluskan;
+            1 sdt ketumbar bubuk;
+            1 sdt jinten bubuk;
+            1 cm jahe, haluskan;
+            2 sdm minyak goreng;
+            Garam dan gula secukupnya;
+            Pelengkap: ketupat atau buras
         </piringlokal:ingredients>
         <piringlokal:steps>
-            Kukus singkong hingga empuk. Haluskan selagi panas.
-            Campurkan gula merah ke dalam singkong yang sudah halus. Aduk hingga merata.
-            Bentuk adonan sesuai selera, taburi kelapa parut yang sudah diberi sedikit garam.
+            Rebus daging sapi hingga empuk, angkat dan tiriskan.
+            Tumis bumbu halus dengan minyak goreng hingga harum.
+            Masukkan daging sapi dan air, masak hingga bumbu meresap dan kuah mengental.
+            Sajikan dengan ketupat atau buras.
         </piringlokal:steps>
         </rdf:Description>
 
-<!-- Borneo Island -->
-
-        <rdf:Description rdf:about="http://example.org/recipe/Getuk">
-        <dc:title>Getuk</dc:title>
-        <dc:description>Getuk adalah camilan tradisional dari singkong yang dihaluskan dan dicampur dengan gula merah. Teksturnya lembut dan manis, sering disajikan dengan taburan kelapa parut. Cocok sebagai teman minum teh di sore hari.</dc:description>
-        <piringlokal:category>Java Island</piringlokal:category>
-        <piringlokal:photo> https://i.pinimg.com/474x/71/8a/63/718a63e64847bc4d886b3b1f28ee3321.jpg</piringlokal:photo>
+        <rdf:Description rdf:about="http://example.org/recipe/Konro">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Konro</dc:title>
+        <dc:description>Konro merupakan makanan khas Sulawesi Selatan. Konro adalah iga sapi yang dimasak dengan kuah kental beraroma rempah dan santan, biasanya disajikan dengan nasi panas atau ketupat.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sulawesi_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/736x/6a/a9/13/6aa9135a7332cd920c448bfce43bd976.jpg</piringlokal:photo>
         <piringlokal:ingredients>
-            1 kg singkong, kupas, potong-potong
-            200 gr gula merah, sisir halus
-            100 gr kelapa parut
-            Sejumput garam
+            500 gr iga sapi;
+            1 liter air;
+            2 batang serai, memarkan;
+            3 lembar daun salam;
+            3 cm lengkuas, memarkan;        
+            3 siung bawang merah, haluskan;
+            3 siung bawang putih, haluskan;
+            1 sdt jintan bubuk;      
+            2 sdt ketumbar bubuk;
+            1 sdm gula merah;
+            300 ml santan kental;
+            Garam secukupnya
         </piringlokal:ingredients>
         <piringlokal:steps>
-            Kukus singkong hingga empuk. Haluskan selagi panas.
-            Campurkan gula merah ke dalam singkong yang sudah halus. Aduk hingga merata.
-            Bentuk adonan sesuai selera, taburi kelapa parut yang sudah diberi sedikit garam.
+            Rebus iga sapi hingga empuk.
+            Tumis bumbu halus bersama daun salam, serai, dan lengkuas hingga harum.
+            Tambahkan santan dan iga, masak hingga kuah mengental dan bumbu meresap.
+            Sajikan dengan nasi atau ketupat.
         </piringlokal:steps>
         </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Pallubasa">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Pallubasa</dc:title>
+        <dc:description>Pallubasa adalah hidangan sup khas Makassar yang terbuat dari daging sapi atau kambing dengan bumbu khas seperti kunyit, ketumbar, dan santan.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sulawesi_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/736x/83/9f/85/839f85df41fda521794716d3cb416d8c.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gr daging sapi, potong kecil;
+            1 liter air;
+            1 batang serai, memarkan;
+            2 lembar daun salam;
+            2 siung bawang putih, haluskan;
+            3 siung bawang merah, haluskan;
+            1 sdt ketumbar;
+            1 cm kunyit;
+            300 ml santan kental;
+            Garam dan gula secukupnya
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Rebus daging sapi hingga empuk.
+            Tumis bumbu halus hingga harum, lalu masukkan ke dalam rebusan daging.
+            Tambahkan santan, garam, dan gula, masak hingga kuah meresap dan bumbu matang.
+            Sajikan dengan nasi hangat.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Ikan_Bakar_Manado">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Ikan Bakar Manado</dc:title>
+        <dc:description>Ikan Bakar Manado adalah ikan yang dibumbui dengan sambal rica-rica pedas dan dibakar hingga matang. Hidangan ini terkenal dengan rasa pedas dan segar.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sulawesi_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/736x/84/65/cd/8465cd88b1a896259e272538193fdd58.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            1 ekor ikan kakap (atau ikan lain sesuai selera);
+            3 siung bawang merah, haluskan;
+            3 siung bawang putih, haluskan;
+            5 buah cabai merah, haluskan;
+            1 buah tomat, haluskan;
+            1 sdt terasi;
+            2 sdm air jeruk nipis;
+            2 sdm minyak goreng;
+            Garam secukupnya
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Lumuri ikan dengan air jeruk nipis dan garam, diamkan 15 menit.
+            Tumis bumbu halus hingga harum, tambahkan sedikit air.
+            Bakar ikan sambil dioleskan dengan sambal rica-rica.
+            Sajikan dengan nasi putih.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Tinutuan">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Tinutuan</dc:title>
+        <dc:description>Tinutuan adalah bubur khas Manado yang terbuat dari campuran beras, jagung, labu kunir, dan daun kemangi. Hidangan ini sering dijadikan sarapan dengan pelengkap ikan asin atau sambal.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sulawesi_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/736x/22/61/69/22616961f9ab26ac00e377ee359e3b3b.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            100 gr beras;
+            100 gr jagung pipil;
+            100 gr labu kunir, potong dadu;
+            1 liter air;
+            2 lembar daun salam;
+            1 batang serai, memarkan;
+            1 sdt garam;
+            1 sdt gula;
+            1 genggam daun kemangi
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Rebus beras, jagung, dan labu kunir dengan daun salam dan serai hingga matang.
+            Tambahkan garam dan gula, masak hingga menjadi bubur kental.
+            Sajikan dengan daun kemangi dan pelengkap seperti ikan asin.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Nasi_Kuning_Palu">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Nasi kuning Palu</dc:title>
+        <dc:description>Nasi kuning Palu, khas Sulawesi Tengah, adalah nasi yang dimasak dengan santan, kunyit, dan rempah lainnya. Hidangan ini sering disajikan dalam acara-acara spesial atau perayaan.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sulawesi_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/736x/04/6d/c4/046dc457bce2337da0f98c7ec010329d.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gr beras;
+            400 ml santan kental;
+            1 sdt kunyit bubuk;
+            2 lembar daun salam;
+            1 batang serai, memarkan;
+            Garam secukupnya
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Cuci beras hingga bersih, tiriskan.
+            Masak santan dengan kunyit, daun salam, serai, dan garam hingga mendidih.
+            Masukkan beras, aduk rata, dan masak hingga nasi matang.
+            Sajikan dengan lauk pelengkap seperti ayam goreng atau ikan.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Ayam_Rica_Rica">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Ayam Rica Rica</dc:title>
+        <dc:description>Ayam Rica-Rica adalah ayam yang dimasak dengan sambal rica-rica yang pedas, terbuat dari cabai, bawang merah, dan tomat. Hidangan ini sangat populer di Manado.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sulawesi_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/736x/fa/2e/cf/fa2ecf9eb039e728a6cc71ee1b5b7c99.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            1 ekor ayam, potong-potong;
+            3 siung bawang merah, haluskan;
+            3 siung bawang putih, haluskan;
+            5 buah cabai merah, haluskan;
+            1 buah tomat, haluskan;
+            1 batang serai, memarkan;
+            2 sdm minyak goreng;
+            1 sdt garam;
+            1 sdt gula
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Tumis bumbu halus hingga harum.
+            Masukkan ayam, aduk rata dan masak hingga ayam berubah warna.
+            Tambahkan air, garam, dan gula, masak hingga ayam empuk dan kuah menyusut.
+            Sajikan dengan nasi putih.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Baje">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Baje</dc:title>
+        <dc:description>Baje adalah hidangan kue khas Sulawesi Selatan yang terbuat dari tepung beras, kelapa parut, dan gula merah. Kue ini dimasak dengan cara dikukus.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sulawesi_Island"/>
+        <piringlokal:photo>https://sulsel.jadesta.com/imgpost/117821.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            200 gr tepung beras;
+            100 gr kelapa parut kasar;
+            200 gr gula merah, serut halus;
+            1 sdt garam;
+            1 liter air
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Campurkan tepung beras, kelapa parut, gula merah, dan garam.
+            Tambahkan air sedikit-sedikit hingga adonan bisa dipadatkan.
+            Kukus adonan dalam cetakan hingga matang.
+            Sajikan kue baje dalam keadaan hangat.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Sambal_Tumatua">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Sambal Tumatua</dc:title>
+        <dc:description>Sambal Tumatua adalah sambal khas Sulawesi Selatan yang terbuat dari cabai rawit, ikan teri, dan tomat yang dihaluskan. Sambal ini biasanya disajikan sebagai pelengkap makanan laut atau nasi.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sulawesi_Island"/>
+        <piringlokal:photo>https://www.masakapahariini.com/wp-content/uploads/2023/03/resep-sambal-tomat.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            5 buah cabai rawit;
+            50 gr ikan teri;
+            2 buah tomat;
+            1 sdt terasi;
+            Garam secukupnya
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Goreng ikan teri hingga kering dan garing.
+            Haluskan cabai rawit, tomat, terasi, dan garam.
+            Campurkan ikan teri goreng dan aduk rata.
+            Sajikan sambal tumatua sebagai pelengkap nasi atau hidangan laut.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Sate_Meranggi">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Sate Meranggi</dc:title>
+        <dc:description>Sate Maranggi adalah sate khas Sulawesi yang terbuat dari daging sapi atau kambing, dibumbui dengan kecap manis, bawang merah, dan rempah-rempah, kemudian dipanggang hingga matang.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sulawesi_Island"/>
+        <piringlokal:photo>https://asset-2.tstatic.net/tribunnews/foto/bank/images/sate-maranggi-idul-adha.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gr daging sapi, potong dadu;
+            2 sdm kecap manis;
+            2 siung bawang putih, haluskan;
+            3 siung bawang merah, haluskan;
+            1 sdt ketumbar;
+            1 sdt kunyit bubuk;
+            1 sdt garam;
+            1 sdt gula merah
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Campurkan semua bahan bumbu dengan daging sapi, diamkan selama 30 menit.
+            Tusuk daging pada tusuk sate, panggang hingga matang.
+            Sajikan sate dengan nasi dan sambal.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Es_Pisang_Ijo">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Es Pisang Ijo</dc:title>
+        <dc:description>Es Pisang Ijo adalah minuman khas Sulawesi Selatan yang terbuat dari pisang yang dibalut dengan adonan tepung beras berwarna hijau, disajikan dengan es serut dan sirup manis.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sulawesi_Island"/>
+        <piringlokal:photo>https://travellingindonesia.com/wp-content/uploads/2022/06/Es-Pisang-Ijo-khas-Makassar-Dok.-Istimewa.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            4 buah pisang raja;
+            200 gr tepung beras;
+            100 ml air daun suji (untuk pewarna hijau);
+            200 ml santan kental;
+            100 gr es serut;
+            100 ml sirup manis;
+            2 sdm gula pasir
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Kukus pisang hingga matang.
+            Campurkan tepung beras dan air daun suji, aduk rata, dan kukus hingga matang.
+            Balut pisang dengan adonan tepung beras.
+            Sajikan dengan es serut, santan, sirup manis, dan gula pasir.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Mi_Cakalang">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Mi Cakalang</dc:title>
+        <dc:description>Mi Cakalang adalah mie yang disajikan dengan ikan cakalang fufu (ikan cakalang yang diasap) dan sambal pedas. Hidangan ini terkenal dengan rasa gurih dan pedas khas Manado.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sulawesi_Island"/>
+        <piringlokal:photo>https://assets.pikiran-rakyat.com/crop/0x0:0x0/1200x675/photo/2024/05/07/1333668471.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            200 gr mi telur;
+            100 gr ikan cakalang fufu;
+            1 batang daun bawang, iris;
+            3 siung bawang putih, haluskan;
+            5 buah cabai merah, haluskan;
+            1 sdt terasi;
+            1 sdt garam
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Rebus mi hingga matang dan tiriskan.
+            Goreng ikan cakalang fufu dan suwir-suwir.
+            Tumis bawang putih dan cabai hingga harum, tambahkan ikan cakalang dan sedikit air.
+            Sajikan mi dengan sambal cakalang dan taburi daun bawang.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Kakap_Merah_Bakar">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Kakap Merah Bakar</dc:title>
+        <dc:description>Kakap Merah Bakar adalah ikan kakap yang dibumbui dengan sambal rica-rica pedas, kemudian dibakar hingga matang. Hidangan ini sangat populer di Sulawesi Utara.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sulawesi_Island"/>
+        <piringlokal:photo>https://img-global.cpcdn.com/recipes/8a355f6e175a897b/400x400cq70/photo.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            1 ekor ikan kakap merah;
+            5 siung bawang merah;
+            3 siung bawang putih;
+            5 buah cabai merah;
+            1 buah tomat;
+            1 sdt terasi;
+            2 sdm kecap manis;
+            1 sdt garam
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Haluskan bawang merah, bawang putih, cabai merah, tomat, dan terasi.
+            Lumuri ikan dengan bumbu halus dan kecap manis, diamkan 15 menit.
+            Bakar ikan sambil diolesi sisa sambal hingga matang.
+            Sajikan dengan nasi dan lalapan.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Pallu_Butung">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Pallu Butung</dc:title>
+        <dc:description>Pallu Butung adalah hidangan berbahan dasar ikan atau ayam yang dimasak dalam bumbu rempah khas, dan disajikan dengan nasi.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sulawesi_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/736x/63/dd/77/63dd77e753e44e96a3e23ad787a63968.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gr ikan atau ayam;
+            2 batang serai, memarkan;
+            3 lembar daun salam;
+            3 siung bawang merah, haluskan;
+            3 siung bawang putih, haluskan;
+            1 sdt kunyit bubuk;
+            1 sdt garam;
+            1 sdt gula
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Rebus ikan atau ayam dengan daun salam dan serai.
+            Tumis bumbu halus hingga harum dan masukkan ke dalam rebusan ikan.
+            Masak hingga bumbu meresap dan sajikan dengan nasi putih.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Gulai_Ikan">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Gulai Ikan</dc:title>
+        <dc:description>Gulai Ikan adalah hidangan ikan yang dimasak dalam kuah santan kental dengan rempah-rempah seperti kunyit dan daun jeruk.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sulawesi_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/736x/b3/d5/b7/b3d5b75cc75a91f0d6d338cc288fea85.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gr ikan (misalnya ikan kakap);
+            300 ml santan;
+            3 batang serai, memarkan;
+            3 lembar daun salam;
+            1 sdt kunyit bubuk;
+            2 siung bawang putih, haluskan;
+            3 siung bawang merah, haluskan
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Rebus ikan dengan daun salam dan serai hingga ikan setengah matang.
+            Tumis bumbu halus hingga harum, masukkan ke dalam rebusan ikan.
+            Tambahkan santan, masak hingga ikan matang dan kuah meresap.
+            Sajikan dengan nasi putih.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Es_Kacang_Ijo">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Es Kacang Ijo</dc:title>
+        <dc:description>Es kacang ijo adalah minuman dingin yang terbuat dari kacang hijau rebus, kelapa muda, es serut, dan sirup manis. Hidangan ini sering disajikan saat cuaca panas.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sulawesi_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/736x/83/9a/f8/839af82145a902e47d47f51a65fff6e4.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            200 gr kacang hijau;
+            100 gr kelapa muda, serut;
+            100 gr es serut;
+            100 ml sirup manis;
+            1 sdm gula pasir
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Rebus kacang hijau hingga empuk, tiriskan.
+            Sajikan kacang hijau rebus dengan kelapa muda serut, es serut, dan sirup manis.
+            Tambahkan gula pasir jika perlu dan nikmati es kacang ijo yang segar.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Pindang_Ikan">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Pindang Ikan</dc:title>
+        <dc:description>Pindang ikan adalah masakan khas Sulawesi Selatan yang menggunakan ikan laut seperti ikan tenggiri, dimasak dengan bumbu pindang segar yang asam pedas.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sulawesi_Island"/>
+        <piringlokal:photo>https://img-global.cpcdn.com/recipes/2593512_f1d2ae2dc7653373/680x482cq70/pindang-ikan-simple-foto-resep-utama.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gr ikan tenggiri;
+            2 batang serai, memarkan;
+            3 lembar daun salam;
+            2 siung bawang putih, haluskan;
+            2 siung bawang merah, haluskan;
+            1 buah tomat, haluskan;
+            2 sdm air asam jawa;
+            Garam secukupnya
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Rebus ikan bersama daun salam dan serai hingga matang.
+            Tumis bumbu halus, tomat, dan air asam jawa hingga harum.
+            Masukkan bumbu ke dalam rebusan ikan, masak hingga bumbu meresap.
+            Sajikan dengan nasi putih.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Barongko">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Barongko</dc:title>
+        <dc:description>Barongko adalah makanan tradisional khas Bugis-Makassar yang terbuat dari pisang, santan, dan telur. Hidangan ini memiliki rasa manis, lembut, dan gurih, serta dibungkus dengan daun pisang sebelum dikukus.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sulawesi_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/236x/f2/3c/c3/f23cc3d13e0398949345ca3d8dee34bc.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            6 buah pisang kepok matang (haluskan);
+            200 ml santan;
+            3 butir telur;
+            100 gr gula pasir;
+            Sejumput garam;
+            Daun pisang untuk membungkus
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Campurkan pisang yang telah dihaluskan, santan, telur, gula pasir, dan garam hingga rata.
+            Ambil daun pisang, letakkan 2-3 sendok makan adonan, lalu lipat seperti amplop kecil.
+            Kukus barongko selama 30 menit hingga matang.
+            Sajikan barongko hangat atau dingin sebagai kudapan khas Sulawesi Selatan.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Ikan_Pepes_Mandar">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Ikan Pepes Mandar</dc:title>
+        <dc:description>Ikan Pepes Mandar adalah masakan khas Sulawesi Selatan yang menggunakan ikan segar, dibumbui dengan rempah-rempah, lalu dibungkus daun pisang dan dipanggang.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sulawesi_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/236x/7e/18/b8/7e18b82f88cdf2f1295eb6c354c9eef5.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gr ikan kembung atau bandeng;
+            2 batang serai, memarkan;
+            3 lembar daun jeruk, iris tipis;
+            Daun pisang secukupnya untuk membungkus;
+            3 siung bawang merah;
+            2 siung bawang putih;
+            5 buah cabai merah keriting;
+            1 sdt kunyit bubuk;
+            1 sdt garam;
+            1 sdt gula
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Bersihkan ikan dan buat beberapa sayatan di tubuhnya.
+            Haluskan bawang merah, bawang putih, cabai, kunyit, garam, dan gula. Tambahkan serai dan daun jeruk, lalu lumuri ikan dengan bumbu ini.
+            Bungkus ikan dengan daun pisang dan sematkan lidi pada ujung-ujungnya.
+            Panggang di atas bara api atau dalam oven hingga matang.
+            Sajikan dengan nasi hangat dan sambal khas Sulawesi.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Barobbo">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Barobbo</dc:title>
+        <dc:description>Barobbo adalah bubur jagung khas Sulawesi Selatan yang sering disajikan dengan campuran sayuran dan ikan cakalang suwir. Hidangan ini cocok untuk sarapan atau makan malam karena rasanya yang ringan dan gurih.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sulawesi_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/236x/0b/e5/31/0be5311b5cee59b3cc1220ff86f39475.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            200 gr jagung pipil;
+            100 gr beras;
+            150 gr ikan cakalang asap, suwir;
+            100 gr bayam atau kangkung;
+            2 siung bawang putih, cincang halus;
+            3 siung bawang merah, cincang halus;
+            2 batang daun bawang, iris tipis;
+            1 batang serai, memarkan;
+            3 lembar daun salam;
+            Garam dan merica secukupnya
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Rebus jagung dan beras bersama serai dan daun salam hingga menjadi bubur. Aduk sesekali agar tidak gosong.
+            Tumis bawang merah dan bawang putih hingga harum, lalu masukkan ikan cakalang suwir. Tumis hingga matang.
+            Masukkan tumisan ikan ke dalam bubur, aduk rata. Tambahkan garam dan merica sesuai selera.
+            Masukkan bayam atau kangkung, masak hingga layu.
+            Sajikan barobbo dengan taburan daun bawang dan bawang goreng di atasnya.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Binte_Biluhuta">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Binte Biluhuta</dc:title>
+        <dc:description>Binte Biluhuta, atau dikenal sebagai Milu Siram, adalah makanan khas Gorontalo berupa sup jagung dengan campuran udang dan ikan. Hidangan ini memiliki rasa gurih, asam, dan segar, sering disajikan hangat.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sulawesi_Island"/>
+        <piringlokal:photo>https://www.masakapahariini.com/wp-content/uploads/2020/08/binte-biluhuta.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            3 buah jagung manis, pipil;
+            200 gr udang, kupas;
+            200 gr ikan tongkol, kukus dan suwir;
+            3 buah cabai merah;
+            3 buah cabai rawit;
+            5 siung bawang merah;
+            2 siung bawang putih;
+            1 batang daun bawang, iris tipis;
+            1 buah jeruk nipis;
+            Garam dan gula secukupnya;
+            Air secukupnya
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Rebus jagung pipil dalam air hingga matang. Sisihkan.
+            Haluskan cabai merah, cabai rawit, bawang merah, dan bawang putih.
+            Tumis bumbu halus hingga harum, lalu tambahkan ke dalam rebusan jagung.
+            Masukkan udang dan ikan tongkol suwir ke dalam rebusan, masak hingga udang matang.
+            Tambahkan daun bawang, perasan jeruk nipis, garam, dan gula secukupnya. Koreksi rasa.
+            Sajikan binte biluhuta selagi hangat.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Kasuami">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Kasuami</dc:title>
+        <dc:description>Kasuami adalah makanan khas Sulawesi Tenggara yang terbuat dari singkong parut yang dikukus hingga padat. Hidangan ini sering dijadikan pengganti nasi dan disajikan dengan ikan bakar atau sup ikan.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sulawesi_Island"/>
+        <piringlokal:photo>http://1.bp.blogspot.com/-DPPNTl1rtWs/Up9k_Ec-dgI/AAAAAAAAADQ/_T-7u0LZR1E/s1600/kasuami+dan+temannya.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gr singkong parut;
+            1/2 sdt garam
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Campurkan singkong parut dengan garam, lalu aduk rata.
+            Bentuk adonan menjadi kerucut atau sesuai selera, lalu masukkan ke dalam kukusan.
+            Kukus selama 30-40 menit hingga matang dan padat.
+            Sajikan kasuami dengan ikan bakar atau sup ikan sebagai pendamping.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Bau_Peapi">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Bau Peapi</dc:title>
+        <dc:description>Bau Peapi adalah sup ikan khas Sulawesi Barat yang bercita rasa asam dan pedas. Hidangan ini sering menggunakan ikan segar seperti kakap atau tenggiri, dipadukan dengan bumbu rempah khas.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Sulawesi_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/736x/5d/5f/ba/5d5fba179d5fa79dbb4caf9a6102fada.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gr ikan kakap atau tenggiri;
+            3 siung bawang merah;
+            2 siung bawang putih;
+            3 buah cabai merah besar;
+            2 buah cabai rawit;
+            1 batang serai, memarkan;
+            2 buah tomat, potong-potong;
+            2 sdm air asam jawa;
+            Garam dan gula secukupnya;
+            Air secukupnya
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Bersihkan ikan, potong sesuai selera, dan lumuri dengan sedikit garam. Sisihkan.
+            Haluskan bawang merah, bawang putih, cabai merah, dan cabai rawit.
+            Tumis bumbu halus bersama serai hingga harum, lalu tambahkan air secukupnya dan didihkan.
+            Masukkan potongan ikan, tomat, air asam jawa, garam, dan gula. Masak hingga ikan matang dan bumbu meresap.
+            Sajikan sup ikan bau peapi selagi hangat.
+        </piringlokal:steps>
+        </rdf:Description>
+
+
+
+
+<!-- Kalimantan Island -->
+
+        <rdf:Description rdf:about="http://example.org/recipe/Soto_Banjar">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Soto Banjar</dc:title>
+        <dc:description>Soto Banjar adalah hidangan soto khas Kalimantan Selatan yang terkenal dengan rasa gurih dan aroma rempah-rempah yang khas. Soto ini menggunakan daging ayam kampung yang memiliki cita rasa lebih kaya dan kaya akan gizi. Selain ayam, soto ini dilengkapi dengan bihun yang lembut dan perkedel kentang yang renyah, memberikan tekstur dan rasa yang sangat lezat. Bumbu halus yang digunakan dalam soto ini terdiri dari bawang merah, bawang putih, kapulaga, dan kayu manis, memberikan aroma yang sangat harum saat dimasak. Soto Banjar sering dinikmati sebagai sarapan atau makan siang dengan nasi dan sambal sebagai pelengkap.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Kalimantan_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/736x/c0/07/7b/c0077bcdeab5d89b98553defa1c4519c.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            Bahan: 500 gram ayam kampung, 1 liter air, 100 gram bihun, rendam air panas, 3 butir telur rebus, Perkedel kentang secukupnya;
+            Bumbu Halus: 5 butir bawang merah, 3 siung bawang putih, 2 butir kapulaga, 2 cm kayu manis, Garam secukupnya
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Rebus ayam hingga empuk, suwir dagingnya, dan sisihkan.
+            Tumis bumbu halus hingga harum, masukkan ke dalam kuah ayam.
+            Sajikan dengan bihun, telur rebus, dan perkedel kentang.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Ketupat_Kandangan">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Ketupat Kandangan</dc:title>
+        <dc:description>Ketupat Kandangan adalah salah satu hidangan khas Kalimantan Selatan yang sangat digemari. Hidangan ini terdiri dari ketupat, yaitu nasi yang dimasak dalam anyaman daun kelapa, yang kemudian disajikan dengan kuah santan kental yang berwarna putih. Kuah santan ini dimasak dengan ikan gabus yang telah direbus, lalu dimasukkan kembali ke dalam kuah santan bersama dengan rempah-rempah khas seperti serai, daun salam, dan lengkuas. Rasa kuahnya gurih dengan sedikit manis yang berasal dari santan, memberikan cita rasa yang sangat khas dan lezat. Ketupat Kandangan sering disajikan dalam acara adat, serta untuk sarapan atau makan siang di Kalimantan Selatan. Hidangan ini memberikan sensasi yang unik dengan perpaduan rasa gurih dari ikan gabus dan ketupat yang lembut.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Kalimantan_Island"/>
+        <piringlokal:photo>https://indonesiakaya.com/wp-content/uploads/2024/03/DSC00398-1.jpeg</piringlokal:photo>
+        <piringlokal:ingredients>
+            10 buah ketupat siap pakai;
+            Bahan Kuah:500 gram ikan gabus, 800 ml santan kental, 2 batang serai, memarkan, 3 lembar daun salam, Garam secukupnya;
+            Bumbu Halus: 6 siung bawang merah, 4 siung bawang putih, 2 cm jahe, 2 cm lengkuas, 1 sdt ketumbar
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Rebus ikan gabus hingga matang, lalu tiriskan.
+            Tumis bumbu halus bersama serai dan daun salam hingga harum.
+            Tambahkan santan, aduk perlahan hingga mendidih.
+            Masukkan ikan gabus, masak hingga kuah meresap.
+            Sajikan ketupat dengan kuah santan dan ikan gabus.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Iwak_Pakasam">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Iwak Pakasam</dc:title>
+        <dc:description>Iwak Pakasam adalah hidangan khas Kalimantan Selatan, yang terbuat dari ikan yang sudah difermentasi. Ikan yang digunakan dalam hidangan ini biasanya adalah ikan gabus atau ikan sepat yang telah difermentasi selama beberapa hari, memberikan rasa asam-gurih yang khas. Setelah proses fermentasi selesai, ikan tersebut kemudian digoreng hingga kering dan dipadukan dengan bumbu tumis yang terdiri dari bawang putih dan cabai merah. Hidangan ini sangat cocok disajikan sebagai lauk pendamping nasi panas. Rasanya yang unik dan kuat sangat disukai oleh penduduk Kalimantan, meski mungkin terasa asing bagi mereka yang tidak terbiasa dengan rasa fermentasi.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Kalimantan_Island"/>
+        <piringlokal:photo>https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Iwak_Pakasam_Basanga.JPG/1200px-Iwak_Pakasam_Basanga.JPG</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gram ikan gabus atau sepat asin (fermentasi);
+            2 sdm minyak untuk menumis;
+            5 buah cabai merah, iris tipis;
+            2 siung bawang putih, cincang halus
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+           Goreng ikan pakasam hingga kering, sisihkan.
+           Tumis bawang putih dan cabai merah hingga harum.
+           Masukkan ikan, aduk rata, dan sajikan.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Juhu_Kujang">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Juhu Kujang</dc:title>
+        <dc:description>Juhu kujang merupakan sayuran khas Kalimantan Tengah yang berbahan dasar keladi. Ranaman jenis terna daunnya lebar dan berumbi, banyak ditemukan di alam liar. Biasanya tanaman ini digunakan untuk obat herbal, namun ada beberapa yang membuatnya menjadi masakan.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Kalimantan_Island"/>
+        <piringlokal:photo>https://cdn1-production-images-kly.akamaized.net/quRG192PYUx6lVCfdr_aeSqRYqU=/0x0:0x0/1200x1200/filters:quality(75):strip_icc():format(webp):watermark(kly-media-production/assets/images/watermarks/liputan6/watermark-gray-square-new.png,1100,20,0)/kly-media-production/medias/2860374/original/063107800_1563790615-juhu.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gram pucuk singkong muda (daun singkong), potong-potong;
+            200 gram ikan asin sepat atau gabus, potong kecil;
+            1 liter santan kental dari 1 butir kelapa;
+            2 buah cabai merah besar, iris tipis;
+            3 siung bawang putih, cincang halus;
+            3 butir bawang merah, iris tipis;
+            1 ruas lengkuas, memarkan;
+            2 lembar daun salam;
+            Garam secukupnya;
+            Gula pasir secukupnya
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Didihkan air, kemudian rebus daun singkong muda hingga empuk, tiriskan.
+            Goreng ikan asin hingga setengah kering, sisihkan.
+            Tumis bawang merah, bawang putih, cabai merah, lengkuas, dan daun salam hingga harum.
+            Masukkan santan kental, lalu tambahkan garam dan gula secukupnya.
+            Masukkan daun singkong dan ikan asin, masak dengan api kecil sambil diaduk perlahan agar santan tidak pecah.
+            Setelah matang, angkat dan sajikan.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Nasi_Kuning_Banjar">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Nasi Kuning Banjar</dc:title>
+        <dc:description>Nasi Kuning Banjar adalah hidangan nasi yang dimasak dengan santan dan kunyit, memberikan warna kuning yang cantik dan rasa gurih yang kaya. Nasi kuning ini sering disajikan dalam acara-acara spesial di Kalimantan Selatan seperti perayaan dan acara adat. Biasanya, nasi kuning disajikan bersama ayam masak habang (ayam yang dimasak dengan bumbu merah) dan telur pindang, memberikan kombinasi rasa yang sempurna. Nasi ini memiliki tekstur lembut dan aroma santan yang menggugah selera. Nasi Kuning Banjar adalah hidangan yang menyenangkan dan kaya akan budaya Kalimantan.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Kalimantan_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/736x/bd/8d/89/bd8d8972793480a3a5b3d622df559fdc.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gram beras;
+            400 ml santan;
+            2 cm kunyit, parut;
+            2 lembar daun pandan
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+           Rendam beras dengan air kunyit selama 30 menit, tiriskan.
+           Masak beras bersama santan dan daun pandan hingga matang.
+           Sajikan nasi dengan ayam masak habang dan pelengkap lainnya.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Gangan_Asam_Banjar">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Gangan Asam Banjar</dc:title>
+        <dc:description>Gangan Asam adalah sup ikan khas Kalimantan Selatan yang memiliki rasa asam segar berkat tambahan belimbing wuluh dan sayuran seperti labu siam. Sup ini menggunakan ikan patin atau ikan gabus sebagai bahan utama, yang dimasak dalam kuah asam segar dengan bumbu rempah. Rasa asam dari belimbing wuluh memberikan sensasi segar, sementara ikan yang lembut menambah kekayaan rasa sup ini. Gangan Asam merupakan hidangan yang sering dinikmati dalam makan siang atau makan malam, disajikan dengan nasi hangat dan sambal terasi sebagai pelengkap.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Kalimantan_Island"/>
+        <piringlokal:photo>https://jambiindependent.bacakoran.co/upload/b7b800f70d49b44195cdce801a044d18.jpeg</piringlokal:photo>
+        <piringlokal:ingredients>
+            Bahan: 500 gram ikan patin, 1 liter air, 5 buah belimbing wuluh, 1 buah labu siam, potong kecil, 2 batang serai;
+            Bumbu Halus: 5 siung bawang merah, 3 siung bawang putih, 3 buah cabai merah, Garam secukupnya
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+           Rebus air bersama bumbu halus dan serai.
+           Masukkan ikan, labu siam, dan belimbing wuluh.
+           Masak hingga ikan matang, lalu sajikan.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Mandai_Goreng">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Mandai Goreng</dc:title>
+        <dc:description>Mandai Goreng adalah hidangan khas suku Banjar di Kalimantan Tengah, yang menggunakan kulit cempedak sebagai bahan utama. Kulit cempedak ini melalui proses fermentasi terlebih dahulu, memberikan cita rasa unik yang asam-gurih. Setelah proses fermentasi selesai, kulit cempedak digoreng hingga kering dan renyah. Hidangan ini sangat populer di daerah Kalimantan, terutama di kalangan masyarakat Banjar. Mandai Goreng memiliki rasa yang khas, dengan tekstur renyah di luar dan sedikit kenyal di dalam, menjadikannya lauk yang sempurna untuk menyertai nasi hangat atau dijadikan cemilan.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Kalimantan_Island"/>
+        <piringlokal:photo>https://insidepontianak.com/wp-content/uploads/2023/10/WhatsApp-Image-2023-10-03-at-11.11.02.jpeg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gram kulit cempedak fermentasi (mandai);
+            2 siung bawang putih, haluskan;
+            Garam secukupnya
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Cuci mandai, rendam dalam air garam selama 10 menit.
+            Goreng mandai hingga kecokelatan, lalu sajikan.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Bubur_Pedas_Sambas">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Bubur Pedas Sambas</dc:title>
+        <dc:description>Bubur Pedas Sambas adalah makanan khas dari Sambas, Kalimantan Barat. Hidangan ini merupakan bubur yang terbuat dari beras tumbuk yang dimasak bersama berbagai rempah dan sayuran, memberikan rasa pedas yang khas. Keunikan bubur ini terletak pada rasa pedas dan gurih yang menyatu dengan rempah-rempah seperti serai dan daun kunyit. Bubur Pedas biasanya disajikan sebagai sarapan atau makan siang, dan sangat populer di kalangan masyarakat Sambas. Rasanya yang kaya akan rempah menjadikannya hidangan yang menyegarkan dan menghangatkan tubuh, terutama saat cuaca dingin.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Kalimantan_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/736x/e9/84/87/e984876800cad1c52bca78c4dda068d4.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            200 gram beras, sangrai dan haluskan;
+            1 liter kaldu ayam;
+            100 gram sayuran hijau (kangkung, bayam);
+            2 batang serai;
+            Garam secukupnya
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Rebus kaldu bersama serai hingga mendidih.
+            Masukkan beras tumbuk, aduk hingga kental.
+            Tambahkan sayuran, masak hingga matang, lalu sajikan.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Sate_Payau">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Sate Payau</dc:title>
+        <dc:description>Sate Payau adalah sate khas Kalimantan Timur yang menggunakan daging rusa sebagai bahan utama. Daging rusa memiliki rasa yang khas, lebih lembut, dan sedikit manis, yang sangat cocok dipadukan dengan bumbu kacang kaya rasa. Daging yang digunakan untuk sate ini biasanya dibumbui dengan rempah-rempah khas Kalimantan, memberikan aroma yang kuat dan rasa yang mendalam. Sate Payau biasanya disajikan dengan nasi panas dan sambal kacang, menjadi hidangan yang sangat menggugah selera, terutama saat disantap bersama keluarga atau teman-teman.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Kalimantan_Island"/>
+        <piringlokal:photo>https://rimbanusa.id/wp-content/uploads/2023/11/sate-payau-samarinda.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gram daging rusa;
+            3 siung bawang putih;
+            5 butir bawang merah;
+            Ketumbar;
+            kecap manis;
+            Garam dan gula secukupnya
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Potong daging rusa, marinasi dengan bumbu halus.
+            Tusuk daging dengan tusukan sate, bakar hingga matang.
+            Sajikan dengan sambal kacang atau kecap manis.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Juhu_Singkah">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Juhu Singkah</dc:title>
+        <dc:description>Juhu Singkah adalah makanan tradisional suku Dayak, Kalimantan Tengah, yang menggunakan umbut rotan sebagai bahan utama. Umbut rotan adalah bagian muda dari batang rotan yang memiliki tekstur lembut namun kenyal, dan ketika dimasak dengan santan dan rempah-rempah, rasanya sangat unik. Hidangan ini memiliki perpaduan rasa asam, gurih, dan sedikit pedas, yang sangat menggugah selera. Juhu Singkah biasanya disajikan dengan nasi dan menjadi hidangan favorit di kalangan masyarakat Dayak, terutama dalam acara-acara adat atau pertemuan keluarga.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Kalimantan_Island"/>
+        <piringlokal:photo>https://img-global.cpcdn.com/recipes/f35ab39342f27ee2/1200x630cq70/photo.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gram umbut rotan, potong kecil;
+            1 liter santan;
+            3 batang serai;
+            2 cm lengkuas, memarkan;
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Rebus umbut rotan hingga empuk, tiriskan.
+            Masak santan bersama serai dan lengkuas hingga mendidih.
+            Masukkan umbut rotan, masak hingga matang, lalu sajikan.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Amparan_Tatak">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Amparan Tatak</dc:title>
+        <dc:description>Amparan Tatak adalah kue tradisional khas Kalimantan Selatan, yang terbuat dari tepung beras dan santan. Kue ini memiliki tekstur yang lembut dan kenyal, dengan rasa manis yang pas. Selain tepung beras, kue ini biasanya dilengkapi dengan potongan pisang sebagai isiannya, memberikan rasa yang lebih kaya. Amparan Tatak sering dikukus dan dibungkus dengan daun pisang, yang memberi aroma khas dan membuatnya semakin lezat. Hidangan ini biasa disajikan sebagai camilan atau makanan penutup dalam acara adat atau perayaan.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Kalimantan_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/736x/75/4d/c3/754dc37b8674e9c0e17232214787944f.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            200 gram tepung beras;
+            500 ml santan;
+            5 buah pisang, potong-potong;
+            150 gram gula merah, serut halus;
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Campur tepung beras, santan, dan gula merah hingga rata.Tuang adonan ke loyang, tambahkan potongan pisang.Kukus selama 30 menit hingga matang, lalu sajikan.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Sambal_Goreng_Tahu_Tempe">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Sambal Goreng Tahu Tempe</dc:title>
+        <dc:description>Sambal Goreng Tahu Tempe adalah hidangan yang sangat populer di Kalimantan Selatan. Hidangan ini terbuat dari tahu dan tempe yang dipotong dadu, digoreng hingga kecokelatan, kemudian dicampur dengan sambal pedas yang terbuat dari cabai, bawang putih, dan tomat. Rasa pedasnya sangat menggugah selera, dengan tahu dan tempe yang kenyal dan empuk, memberikan keseimbangan yang sempurna. Hidangan ini biasanya disajikan dengan nasi putih hangat sebagai lauk yang nikmat. Sambal Goreng Tahu Tempe adalah contoh sederhana namun lezat dari masakan sehari-hari yang banyak ditemukan di rumah-rumah masyarakat Kalimantan.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Kalimantan_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/736x/0b/d4/f8/0bd4f8575ecef1987bb5afb4330477ba.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            200 gram tempe, potong dadu;
+            200 gram tahu, potong dadu;
+            3 buah cabai merah;
+            3 siung bawang putih;
+            1 buah tomat;
+            Garam secukupnya;
+            Minyak goreng
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Goreng tahu dan tempe hingga kuning keemasan, tiriskan.Haluskan cabai merah, bawang putih, dan tomat.
+            Tumis bumbu halus hingga harum, tambahkan tahu dan tempe.
+            Aduk rata, beri garam secukupnya, lalu sajikan.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Nasi_Bekepor">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Nasi Bekepor</dc:title>
+        <dc:description>Nasi Bekepor merupakan makanan khas Kalimantan Timur, yang dimasak dengan santan dan rempah-rempah, menghasilkan rasa gurih dan kaya. Makanan ini biasanya disajikan dengan lauk pauk khas seperti ayam goreng, ikan, atau sambal. Proses memasak yang menggunakan santan memberikan kelembutan pada nasi, sementara rempah seperti serai dan jahe memberi aroma yang harum. Nasi Bekepor sering dijadikan hidangan untuk acara spesial, seperti perayaan atau kumpul keluarga, karena rasa yang nikmat dan mengenyangkan. Sajian ini sangat cocok dipadukan dengan sambal terasi atau lalapan.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Kalimantan_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/736x/ca/f5/61/caf5615c6ecdea5059a11e09fc808ad6.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gram beras;
+            400 ml santan;
+            1 batang serai, memarkan;
+            2 cm jahe, memarkan;
+            Garam secukupnya
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Cuci beras, tiriskan.
+            Masak beras bersama santan, serai, jahe, dan garam hingga matang.
+            Sajikan nasi bekepor dengan lauk pauk.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Kerupuk_Basah">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Kerupuk Basah</dc:title>
+        <dc:description>Kerupuk Basah adalah kerupuk khas Pangkalan Bun, Kalimantan Tengah, yang unik karena disajikan dalam keadaan basah sebelum digoreng. Kerupuk ini terbuat dari ikan tenggiri yang dihaluskan, dicampur dengan tepung sagu, dan dibentuk bulat kecil sebelum dikukus. Setelah dikukus, kerupuk ini digoreng hingga crispy dan nikmat. Rasa kerupuk basah sangat gurih dan kenyal, dengan aroma ikan yang segar. Biasanya, kerupuk ini dimakan bersama sambal atau pelengkap lain seperti nasi atau lauk pauk. Kerupuk Basah adalah camilan yang banyak ditemukan di rumah-rumah masyarakat Kalimantan.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Kalimantan_Island"/>
+        <piringlokal:photo>https://kotawaringinbaratkab.go.id/sites/default/files/2023-09/basah.jpeg</piringlokal:photo>
+        <piringlokal:ingredients>
+            300 gram ikan tenggiri, haluskan;
+            200 gram tepung sagu;
+            1 sdt garam;
+            1 sdt kaldu bubuk
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Campurkan ikan halus, tepung sagu, garam, dan kaldu bubuk.
+            Uleni hingga adonan bisa dipulung.
+            Bentuk adonan menjadi bulatan, kukus selama 30 menit.
+            Sajikan kerupuk basah dengan sambal atau bumbu pilihan.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Sate_Bandeng">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Sate Bandeng</dc:title>
+        <dc:description>Sate Bandeng adalah hidangan khas dari Banjarmasin, Kalimantan Selatan, yang terbuat dari ikan bandeng (ikan susu) yang dipanggang setelah dibumbui dengan rempah-rempah seperti kunyit, bawang putih, dan bawang merah. Ikan ini biasanya dipisahkan dari durinya, sehingga lebih mudah dimakan.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Kalimantan_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/736x/27/2d/d1/272dd1084f72554619f8cb98d620c835.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            1 ekor ikan bandeng, dipisahkan dari duri;
+            3 siung bawang putih, cincang halus;
+            1 buah bawang merah, cincang halus;
+            2 sdm kunyit bubuk;
+            1 sdm air asam jawa;
+            1 sdm gula merah;
+            Garam dan merica secukupnya;
+            Tusuk sate
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Haluskan bawang putih, bawang merah, kunyit, air asam jawa, gula merah, garam, dan merica untuk membuat bumbu.
+            Lumuri ikan bandeng dengan bumbu dan diamkan selama 30 menit agar meresap.
+            Tusukkan ikan ke dalam tusuk sate dan panggang di atas arang hingga matang dan sedikit kecokelatan.
+            Sajikan dengan sambal atau kecap manis.
+        </piringlokal:steps>
+        </rdf:Description> 
+
+        <rdf:Description rdf:about="http://example.org/recipe/Ikan_Baramundi_Bakar">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Ikan Baramudi Bakar</dc:title>
+        <dc:description>Ikan Baramundi Bakar adalah hidangan ikan bakar khas Kalimantan yang sering disajikan dengan sambal khas yang pedas dan segar. Ikan Baramundi memiliki daging yang tebal dan lembut, cocok untuk dipanggang dengan bumbu yang meresap hingga ke dalam. Bumbu bakar biasanya terdiri dari bawang putih, cabai merah, dan kecap manis, memberikan rasa gurih dan sedikit manis pada ikan. Ikan Baramundi Bakar sering disajikan dengan nasi hangat dan sambal terasi, menjadi hidangan yang sangat nikmat, terutama saat disajikan dalam acara keluarga atau makan malam bersama.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Kalimantan_Island"/>
+        <piringlokal:photo>https://skitchen.id/wp-content/uploads/bb-plugin/cache/Anti_Lengket-landscape.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            1 ekor ikan baramundi;
+            3 siung bawang putih, haluskan;
+            2 buah cabai merah;
+            1 sdm kecap manis;
+            Garam secukupnya
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Lumuri ikan dengan bumbu halus, kecap manis, dan garam, diamkan 30 menit.
+            Panggang ikan hingga matang dan berwarna kecokelatan.
+            Sajikan dengan sambal dan nasi hangat.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Sup_Ikan_Kakap">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Sup Ikan Kakap</dc:title>
+        <dc:description>Sup Ikan Kakap khas Pontianak, Kalimantan Barat ini terkenal dengan rasa segar dari ikan kakap yang dimasak dalam kuah bening dengan bumbu rempah khas. Sup ini memiliki rasa yang ringan namun kaya akan rasa dari rempah-rempah seperti serai, lengkuas, dan cabai. Biasanya, sup ikan kakap disajikan dengan nasi panas dan sambal terasi, menjadikannya hidangan yang menggugah selera. Keunikan sup ikan kakap terletak pada kesegaran ikan yang dipadu dengan rasa pedas sambal, menjadikannya sangat populer di Kalimantan.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Kalimantan_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/736x/52/7c/ba/527cbaaabfec005ad70c859c22f33ac0.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gram ikan kakap, potong-potong;
+            1 liter air;
+            2 batang serai, memarkan;
+            2 cm lengkuas, memarkan;
+            3 buah cabai merah;
+            Garam dan merica secukupnya
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Rebus air bersama serai, lengkuas, dan cabai hingga mendidih.
+            Masukkan ikan kakap, masak hingga ikan matang.
+            Tambahkan garam dan merica, sajikan dengan nasi panas.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Gangan_Asam">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Gangan Asam</dc:title>
+        <dc:description>Gangan Asam adalah sup khas Kalimantan Selatan yang menggunakan ikan sebagai bahan utama. Sup ini memiliki rasa asam yang segar, biasanya menggunakan ikan patin atau ikan gabus. Belimbing wuluh adalah bahan yang memberi rasa asam pada sup ini, sementara sayuran seperti labu siam atau daun singkong menambah kesegaran. Gangan Asam sangat cocok untuk disajikan dalam cuaca panas, karena rasa asamnya yang menyegarkan.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Kalimantan_Island"/>
+        <piringlokal:photo>https://jambiindependent.bacakoran.co/upload/b7b800f70d49b44195cdce801a044d18.jpeg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gram ikan patin atau gabus;
+            1 liter air;
+            2 cm kunyit, memarkan;
+            2 batang serai, memarkan;
+            3 buah tomat, potong-potong;
+            Garam secukupnya
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Rebus air bersama kunyit dan serai hingga mendidih.
+            Masukkan ikan dan tomat, masak hingga ikan matang.
+            Tambahkan garam secukupnya, sajikan hangat.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Kue_Cucur">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Kue Cucur</dc:title>
+        <dc:description>Kue Cucur adalah kue tradisional Indonesia yang banyak ditemukan di Kalimantan Selatan. Kue ini memiliki tekstur kenyal di bagian dalam dan renyah di bagian luar. Rasanya manis dengan aroma gula merah yang khas, sering disajikan dengan taburan kelapa parut. Kue Cucur biasa ditemukan pada acara adat atau perayaan keluarga, seperti Idul Fitri dan acara penting lainnya di Kalimantan.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Kalimantan_Island"/>
+        <piringlokal:photo>https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivdg-lPthK8NE-vg0w9D19L0GlNEEFI9l3sus0ebV99ckL1nr1WIrqymQWzJtj-9EWe1J0re0AgrcLxT1AlFNrsT39TJr4a6SYPRCW7GMP2Jdk4uid3au0C2OYQky1KuyKieose4HYJEKC/s1600/Resep+Kue+Cucur+Khas+Kalimantan+Selatan.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            250 gram tepung beras;
+            200 gram kelapa parut kasar (untuk taburan);
+            1 sendok teh ragi instan;
+            200 ml air matang;
+            150 gram gula merah serut;
+            1/2 sendok teh garam;
+            1 sendok makan air daun pandan suji (optional, untuk warna hijau alami);
+            Minyak goreng secukupnya
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Campurkan Bahan Kering: Dalam sebuah wadah, campurkan tepung beras, ragi instan, dan garam. Aduk rata.
+            Larutkan Gula Merah: Rebus air bersama gula merah hingga gula larut dan air berwarna kecokelatan. Angkat dan biarkan sedikit mendingin.
+            Membuat Adonan: Tuangkan air gula merah yang sudah dingin ke dalam campuran tepung, aduk rata hingga adonan kental dan halus. Tambahkan air daun pandan jika diinginkan untuk warna hijau alami. Diamkan adonan selama 30 menit hingga ragi mengembang.
+            Panggang Kue Cucur: Panaskan minyak dalam wajan datar dengan api kecil. Ambil sedikit adonan menggunakan sendok dan tuangkan ke dalam minyak panas. Biarkan adonan mengembang dan membentuk kue dengan bagian tengah yang sedikit berlubang.
+            Goreng hingga Kuning Keemasan: Setelah kue mengembang dan bagian atasnya mulai mengeras, balikkan kue hingga kedua sisi matang dan berwarna keemasan.
+            Tiriskan: Angkat dan tiriskan Kue Cucur dari minyak, lalu taburi dengan kelapa parut kasar.
+            Sajikan: Sajikan Kue Cucur hangat sebagai camilan atau hidangan pada acara adat.
+        </piringlokal:steps>
+        </rdf:Description>  
+
+        <rdf:Description rdf:about="http://example.org/recipe/Lontong_Sayur_Banjar">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Lontong Sayur banjar</dc:title>
+        <dc:description>Lontong Sayur Banjar adalah hidangan khas Kalimantan Selatan yang sangat populer untuk sarapan. Lontong, yaitu nasi yang dibungkus daun pisang dan dikukus hingga padat, disajikan dengan sayur labu yang dimasak dalam kuah santan kental. Biasanya, hidangan ini juga dilengkapi dengan telur rebus, sambal goreng krecek, dan kadang-kadang ditambah dengan ayam atau daging sapi. Rasanya yang gurih dan sedikit manis dari santan serta pedas dari sambal memberikan perpaduan rasa yang menyegarkan. Lontong Sayur Banjar sering disantap di pagi hari atau saat acara adat, menjadi hidangan yang kaya akan rasa dan makna budaya.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Kalimantan_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/736x/c3/a4/d8/c3a4d822615c588672389428b2de3a70.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            4 potong lontong;
+            200 gram labu kunir, potong-potong;
+            2 butir telur rebus;
+            100 gram sambal goreng krecek;
+            Santan secukupnya
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+           Rebus labu dalam santan hingga empuk.
+           Sajikan lontong dengan sayur labu, telur rebus, dan sambal goreng krecek di atasnya.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Kepiting_Soka">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Kepiting Soka</dc:title>
+        <dc:description>Kepiting Soka Goreng Tepung adalah sajian khas Kalimantan Utara yang populer di Indonesia, termasuk di Kalimantan, di mana kepiting soka segar sering digunakan. Camilan atau lauk ini memiliki tekstur renyah dari lapisan tepung dan kelembutan dari daging kepiting yang gurih. Cocok disajikan dengan sambal atau saus cabai untuk menambah cita rasa.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Kalimantan_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/736x/a8/5a/ac/a85aac40a7df509abf12ab759eb36903.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gram kepiting soka, bersihkan;
+            100 gram tepung terigu;
+            50 gram tepung maizena;
+            1 butir telur, kocok lepas;
+            1 sdt bawang putih bubuk;
+            1 sdt garam;
+            1/2 sdt merica bubuk;
+            Minyak goreng untuk menggoreng.
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Campurkan tepung terigu, tepung maizena, bawang putih bubuk, garam, dan merica dalam wadah.
+            Celupkan kepiting soka ke dalam kocokan telur, lalu balurkan dengan campuran tepung hingga rata.
+            Panaskan minyak goreng dalam wajan, goreng kepiting soka hingga berwarna keemasan dan renyah.
+            Angkat, tiriskan, dan sajikan dengan saus cabai atau sambal kesukaan.
+        </piringlokal:steps>
+        </rdf:Description>   
+
+
+
 
 <!-- Papua Island -->
 
-        <rdf:Description rdf:about="http://example.org/recipe/Getuk">
-        <dc:title>Getuk</dc:title>
-        <dc:description>Getuk adalah camilan tradisional dari singkong yang dihaluskan dan dicampur dengan gula merah. Teksturnya lembut dan manis, sering disajikan dengan taburan kelapa parut. Cocok sebagai teman minum teh di sore hari.</dc:description>
-        <piringlokal:category>Java Island</piringlokal:category>
-        <piringlokal:photo> https://i.pinimg.com/474x/71/8a/63/718a63e64847bc4d886b3b1f28ee3321.jpg</piringlokal:photo>
+        <rdf:Description rdf:about="http://example.org/recipe/Ikan_Bakar_Manokwari">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Ikan Bakar Manokwari</dc:title>
+        <dc:description>Ikan Bakar Manokwari merupakan hidangan khas yang berasal dari daerah pesisir Papua, terutama sekitar kota Manokwari, Papua Barat. Ikan yang digunakan biasanya adalah ikan tongkol, kakap, atau ikan laut lainnya yang segar, dipilih karena dagingnya yang padat dan lezat. Proses pembakarannya memberikan aroma smokey yang khas dan rasa yang lebih dalam pada ikan. Ikan dibaluri dengan bumbu rempah lokal yang terdiri dari serai, daun jeruk, dan rempah khas Papua, serta dipadu dengan kecap manis yang memberikan rasa manis gurih. Disajikan dengan sambal khas Manokwari yang pedas dan segar, ikan bakar ini sangat cocok sebagai hidangan utama dalam acara makan keluarga atau perayaan adat.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Papua_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/474x/ba/ab/99/baab992655995b7fbe55a93b6badf45a.jpg</piringlokal:photo>
         <piringlokal:ingredients>
-            1 kg singkong, kupas, potong-potong
-            200 gr gula merah, sisir halus
-            100 gr kelapa parut
-            Sejumput garam
+            2 ekor ikan kakap atau ikan tongkol;
+            4 siung bawang merah, iris tipis;
+            3 siung bawang putih, iris tipis;
+            2 buah cabai merah, haluskan;
+            3 batang serai, memarkan;
+            5 lembar daun jeruk purut;
+            2 sdm kecap manis;
+            1 sdt garam;
+            1 sdt gula merah;
+            2 sdm minyak goreng
         </piringlokal:ingredients>
         <piringlokal:steps>
-            Kukus singkong hingga empuk. Haluskan selagi panas.
-            Campurkan gula merah ke dalam singkong yang sudah halus. Aduk hingga merata.
-            Bentuk adonan sesuai selera, taburi kelapa parut yang sudah diberi sedikit garam.
+            Lumuri ikan dengan bawang putih, bawang merah, cabai, serai, daun jeruk, kecap manis, garam, dan gula merah.
+            Diamkan selama 30 menit hingga bumbu meresap.
+            Panggang ikan di atas bara api atau panggangan dengan api sedang hingga matang dan berwarna kecokelatan.
+            Sajikan ikan bakar dengan sambal dan nasi putih.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Sate_Kelinci_Papua">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Sate Kelinci Papua</dc:title>
+        <dc:description>Sate Kelinci Papua adalah salah satu hidangan khas yang menggunakan kelinci sebagai bahan utama. Daging kelinci, yang terkenal dengan teksturnya yang empuk dan lembut, direndam dalam bumbu khas Papua yang kaya akan rempah. Proses pemanggangan sate kelinci dilakukan dengan hati-hati untuk memastikan dagingnya tetap juicy dan tidak kering. Hidangan ini sangat populer di kalangan masyarakat Papua, terutama bagi mereka yang tinggal di daerah pedalaman. Daging kelinci yang dipadukan dengan bumbu kacang dan sambal pedas membuat sate ini menjadi makanan yang sangat lezat dan menggugah selera.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Papua_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/474x/20/0a/43/200a4399a49f20d26a32c869b2a64846.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gr daging kelinci, potong-potong;
+            2 siung bawang putih, haluskan;
+            3 siung bawang merah, haluskan;
+            1 sdt ketumbar;
+            1 sdt kunyit bubuk;
+            1 sdt garam;
+            2 sdm kecap manis;
+            1 sdm minyak goreng;
+            100 gr kacang tanah, sangrai;
+            2 buah cabai merah, haluskan;
+            1 sdt gula merah, serut
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Marinasi potongan daging kelinci dengan bawang putih, bawang merah, ketumbar, kunyit, garam, dan kecap manis selama 1 jam.
+            Panggang daging kelinci yang telah dipotong-potong di atas arang hingga matang dan berwarna kecokelatan.
+            Haluskan kacang tanah, cabai, dan gula merah menjadi bumbu kacang.
+            Sajikan sate kelinci dengan bumbu kacang dan nasi putih.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Papeda_Ikan_Kuah_Kuning">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Papeda Ikan kuah Kuning</dc:title>
+        <dc:description>Papeda Ikan Kuah Kuning adalah hidangan tradisional khas Jayapura yang menggabungkan papeda (makanan berbahan dasar sagu) dengan ikan yang dimasak dalam kuah kuning yang kaya akan rempah. Papeda, yang dikenal dengan teksturnya yang kenyal dan elastis, disajikan dengan kuah ikan yang terbuat dari kunyit, daun jeruk, dan bumbu lainnya yang memberikan rasa pedas dan segar. Kuah kuning yang kaya rasa ini memberikan perpaduan yang sempurna dengan papeda. Hidangan ini sering dinikmati pada acara makan besar atau dalam perayaan adat, dan biasanya disajikan dengan sambal pedas sebagai pelengkap.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Papua_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/474x/2b/d5/cd/2bd5cd93ed6a7ed9b300ff449bef7fa5.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            1 ekor ikan laut (ikan kakap atau tenggiri);
+            3 batang serai, memarkan;
+            2 lembar daun salam;
+            1 sdt kunyit bubuk;
+            2 buah tomat, potong kasar;
+            2 sdm air asam jawa;
+            200 ml santan;
+            Papeda sagu
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Rebus ikan dengan daun salam, serai, kunyit, tomat, dan air asam jawa.
+            Tambahkan santan dan masak hingga ikan matang.
+            Sajikan dengan papeda sagu yang kenyal, dan nikmati hidangan khas Papua ini dengan sambal pedas.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Bubur_Sagu_Papua">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Bubur Sagu Papua</dc:title>
+        <dc:description>Bubur Sagu adalah hidangan penutup khas Papua yang terbuat dari tepung sagu yang dimasak bersama santan, gula merah, dan kelapa parut. Bubur ini memiliki tekstur kenyal dan lembut, serta rasa manis yang sangat khas. Bubur Sagu menjadi makanan penutup yang sangat disukai di Papua, baik dalam acara adat maupun sebagai camilan sehari-hari. Rasa manis dari gula merah yang larut dalam santan berpadu dengan kelapa parut yang gurih memberikan pengalaman kuliner yang khas. Banyak penduduk Papua yang menjadikan bubur sagu sebagai hidangan utama dalam acara keluarga besar.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Papua_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/474x/46/85/25/46852511dc0305a8385a585a2ef5d457.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            200 gr tepung sagu;
+            500 ml santan;
+            150 gr gula merah, serut halus;
+            1 sdt garam;
+            50 gr kelapa parut kasar
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Campurkan tepung sagu dengan santan dan aduk rata hingga tidak ada gumpalan.
+            Masak dengan api kecil sambil terus diaduk hingga mengental dan matang.
+            Tambahkan gula merah dan garam, aduk hingga gula larut.
+            Sajikan bubur sagu dengan kelapa parut di atasnya.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Udang_Selingkuh">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Udang Selingkuh</dc:title>
+        <dc:description>Udang Selingkuh adalah salah satu kuliner unik yang berasal dari Papua Tengah, terutama daerah Wamena. Nama "Udang Selingkuh" berasal dari bentuknya yang menyerupai udang yang "berselingkuh" dengan capit besar seperti kepiting. Hidangan ini sangat terkenal karena menggunakan udang air tawar asli dari sungai pegunungan Papua, yang memiliki tekstur daging yang tebal dan cita rasa yang manis alami. Dalam versi goreng saus pedas, Udang Selingkuh digoreng hingga renyah dan dilumuri saus pedas manis yang kaya rempah. Sausnya terbuat dari campuran cabai, bawang, dan kecap, memberikan rasa pedas yang menggigit sekaligus manis yang seimbang. Hidangan ini sangat cocok dinikmati dengan nasi panas, menjadikannya salah satu pilihan favorit bagi wisatawan yang ingin mencicipi cita rasa khas Papua. Udang Selingkuh juga menjadi simbol keunikan dan kekayaan kuliner Papua Tengah, memadukan bahan alami lokal dengan gaya masakan tradisional yang autentik.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Papua_Island"/>
+        <piringlokal:photo>https://cdn0-production-images-kly.akamaized.net/k1O2T6097apkRqLb7tRgsoSWetc=/1200x1200/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/2378853/original/019797000_1539078027-23735153_341125106361231_630538926045528064_n.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gram Udang Selingkuh (udang air tawar), bersihkan;
+            2 sdm tepung terigu;
+            2 sdm tepung maizena;
+            2 butir telur, kocok lepas;
+            Minyak goreng secukupnya;
+            5 buah cabai merah keriting, haluskan;
+            3 siung bawang putih, cincang halus;
+            3 butir bawang merah, iris tipis;
+            2 sdm kecap manis;
+            1 sdm saus tiram;
+            1 sdt gula merah, serut;
+            Garam secukupnya;
+            100 ml air
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Campurkan tepung terigu dan maizena. Celupkan Udang Selingkuh ke dalam telur kocok, kemudian balurkan dengan campuran tepung hingga merata.
+            Panaskan minyak, goreng Udang Selingkuh hingga matang dan berwarna keemasan. Angkat dan tiriskan.
+            Tumis bawang putih, bawang merah, dan cabai hingga harum.
+            Tambahkan kecap manis, saus tiram, gula merah, garam, dan air. Masak hingga saus mengental.
+            Masukkan Udang Selingkuh goreng ke dalam saus, aduk hingga semua udang terbalut sempurna.
+            Sajikan Udang Selingkuh Goreng Saus Pedas dengan nasi hangat.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Norohombi">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Norohombi</dc:title>
+        <dc:description>Norohombi adalah makanan tradisional khas masyarakat suku Dani di Jayawijaya, Papua, yang menggambarkan harmoni antara bahan-bahan alami dan teknik memasak yang diwariskan secara turun-temurun. Hidangan ini berbahan dasar daging babi (atau ayam sebagai alternatif) yang dimasak di dalam lubang tanah bersama umbi-umbian seperti ubi jalar, talas, dan singkong, serta sayuran hijau lokal. Proses memasaknya menggunakan batu panas yang telah dibakar di api, menciptakan rasa khas dan aroma alami yang sulit ditiru oleh teknik modern. Norohombi tidak hanya sekadar makanan, tetapi juga bagian penting dari budaya dan ritual adat suku Dani. Hidangan ini biasanya disajikan dalam acara-acara besar seperti pernikahan, pesta adat, atau sebagai bentuk penghormatan bagi tamu penting. Hidangan ini melambangkan kebersamaan, gotong-royong, dan rasa syukur. Rasanya gurih, alami, dan kaya akan tekstur, menjadikannya pengalaman kuliner unik yang tak terlupakan bagi siapa saja yang mencobanya.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Papua_Island"/>
+        <piringlokal:photo>https://assets.pikiran-rakyat.com/crop/216x109:1372x965/1200x675/photo/2024/09/24/2718819317.png</piringlokal:photo>
+        <piringlokal:ingredients>
+            1 kg daging babi segar (atau ayam sebagai alternatif);
+            500 gram ubi jalar, kupas dan potong-potong;
+            300 gram talas, kupas dan potong-potong;
+            300 gram singkong, kupas dan potong-potong;
+            200 gram sayur hijau (daun pepaya atau daun singkong);
+            Garam secukupnya;
+            Daun pisang untuk pembungkus;
+            Batu besar secukupnya, bersihkan.
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Panaskan batu besar dalam api hingga benar-benar panas selama sekitar 1-2 jam.
+            Siapkan lubang tanah berukuran sedang, lapisi bagian dasarnya dengan daun pisang.
+            Letakkan batu panas di dasar lubang, kemudian susun bahan secara berlapis: daging, umbi-umbian, sayuran, dan garam.
+            Tutup bahan dengan daun pisang, kemudian letakkan batu panas lainnya di atasnya. Pastikan lubang tertutup rapat dengan tanah atau daun untuk menjaga panas.
+            Biarkan masakan matang dengan panas batu selama 2-3 jam.
+            Setelah matang, buka tutup lubang, angkat bahan, dan sajikan Norohombi dengan saus sambal atau sesuai selera.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Annu_Senebre">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Annu Senebre</dc:title>
+        <dc:description>Annu Senebre adalah salah satu kuliner tradisional khas Papua Selatan yang menjadi lambang keakraban masyarakat setempat. Hidangan ini terdiri dari ikan bakar yang dimasak dengan bumbu khas Papua, disajikan bersama sagu lempeng atau papeda, serta sambal yang pedas dan segar. Nama "Annu Senebre" dalam bahasa lokal berarti "ikan bakar", menandakan pentingnya hasil laut bagi kehidupan masyarakat pesisir Papua Selatan. Proses memasak Annu Senebre dilakukan dengan teknik tradisional, di mana ikan dibakar di atas arang hingga kulitnya garing tetapi dagingnya tetap lembut dan juicy. Bumbunya yang sederhana namun kaya rasa, terbuat dari campuran rempah-rempah lokal seperti jahe, bawang merah, bawang putih, dan cabai, memberikan aroma khas yang menggugah selera. Hidangan ini sering disajikan dalam acara adat atau untuk menjamu tamu, menjadi simbol kebersamaan dan rasa syukur. Rasanya yang gurih, pedas, dan segar membuat Annu Senebre menjadi salah satu ikon kuliner Papua Selatan yang wajib dicoba.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Papua_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/736x/3b/2f/42/3b2f42c20438fdd3a3eec7265c75d7c6.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            1 kg ikan kakap merah atau baronang, bersihkan dan kerat badannya;
+            2 buah jeruk nipis, peras airnya;
+            1 sdt garam;
+            5 siung bawang putih, haluskan;
+            3 butir bawang merah, haluskan;
+            2 buah cabai merah keriting, haluskan;
+            1 ruas jahe, haluskan;
+            3 sdm minyak kelapa;
+            1 bungkus sagu lempeng atau 500 gram papeda siap saji;
+            Sambal dabu-dabu atau sambal terasi untuk pelengkap
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Lumuri ikan dengan air jeruk nipis dan garam, diamkan selama 15 menit.
+            Campurkan bawang putih, bawang merah, cabai, jahe, dan minyak kelapa untuk membuat bumbu oles.
+            Panaskan arang atau panggangan, bakar ikan sambil sesekali diolesi bumbu hingga matang merata dan berwarna keemasan.
+            Sajikan ikan bakar dengan sagu lempeng atau papeda, serta sambal dabu-dabu sebagai pelengkap.
+        </piringlokal:steps>
+        </rdf:Description>      
+
+        <rdf:Description rdf:about="http://example.org/recipe/Nasi_Kuning_Papua">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Nasi Kuning Papua</dc:title>
+        <dc:description>Nasi Kuning Papua adalah variasi nasi kuning yang kaya akan rempah dan bumbu khas Papua. Nasi kuning yang dimasak dengan santan dan kunyit memberikan rasa yang gurih dan sedikit pedas, serta warna kuning cerah yang menggugah selera. Hidangan ini sering disajikan dalam acara perayaan, seperti pesta adat atau makan besar. Nasi kuning ini biasanya disajikan dengan lauk pauk seperti ayam goreng, telur, dan sambal, menjadikannya hidangan yang kaya rasa dan sangat lezat. Nasi Kuning Papua menjadi simbol keberkahan dan kebahagiaan dalam tradisi masyarakat setempat.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Papua_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/control2/474x/3d/f7/81/3df78151b37f3a4f958a14a46f0aa357.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            2 gelas beras;
+            500 ml santan;
+            2 batang serai, memarkan;
+            1 sdt kunyit bubuk;
+            3 lembar daun salam;
+            1 sdt garam
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Cuci beras hingga bersih.
+            Masak santan dengan serai, daun salam, kunyit, dan garam hingga mendidih.
+            Masukkan beras ke dalam santan dan masak hingga nasi matang dan berwarna kuning cerah.
+            Sajikan nasi kuning dengan lauk pauk sesuai selera.
+        </piringlokal:steps>
+        </rdf:Description>
+        
+        <rdf:Description rdf:about="http://example.org/recipe/Ayam_Bumbu_Rujak_Papua">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Ayam Bumbu Rujak Papua</dc:title>
+        <dc:description>Ayam Bumbu Rujak Papua adalah hidangan yang menggabungkan rasa pedas, manis, dan asam, khas dari bumbu rujak yang segar. Ayam dipotong-potong dan dimasak dalam bumbu rujak yang terdiri dari cabai, gula merah, dan air asam, memberi rasa yang intens dan menggugah selera. Ayam bumbu rujak ini menjadi hidangan favorit dalam berbagai perayaan atau acara keluarga di Papua. Keunikan rasa bumbu rujak Papua terletak pada penggunaan bahan-bahan alami yang memberikan rasa autentik dan khas.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Papua_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/474x/58/fb/51/58fb51d60b8d14f4b838f106fb82a9e2.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            1 ekor ayam, potong-potong;
+            5 siung bawang merah, iris tipis;
+            3 siung bawang putih, iris tipis;
+            4 buah cabai merah, haluskan;
+            100 gr gula merah, serut;
+            1 sdt air asam jawa;
+            2 sdm minyak goreng
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Tumis bawang merah, bawang putih, dan cabai hingga harum.
+            Masukkan potongan ayam dan aduk hingga ayam berubah warna.
+            Tambahkan gula merah dan air asam jawa, masak hingga ayam empuk dan bumbu meresap.
+            Sajikan ayam bumbu rujak dengan nasi putih.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Sate_Merah_Papeda">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Sate Merah Papeda</dc:title>
+        <dc:description>Sate Merah Papeda adalah hidangan yang memadukan sate dengan papeda sagu. Sate ini menggunakan daging ayam atau daging sapi yang dipanggang dan disajikan dengan sambal pedas khas Papua. Papeda sagu yang kenyal dan lengket digunakan sebagai pelengkap yang menyatu sempurna dengan rasa pedas dan gurih dari sate. Hidangan ini sangat populer dalam acara keluarga besar atau perayaan adat di Papua, dan menjadi simbol dari kekayaan kuliner daerah.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Papua_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/474x/d2/03/d7/d203d7058ba7a477c8f9e69f5b566ff8.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gr daging ayam atau sapi;
+            2 sdm kecap manis;
+            2 siung bawang merah, haluskan;
+            2 siung bawang putih, haluskan;
+            1 sdt ketumbar;
+            1 sdt merica;
+            Papeda sagu
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Marinasi daging dengan bawang merah, bawang putih, kecap manis, ketumbar, dan merica. Diamkan selama 30 menit.
+            Panggang daging hingga matang dan berwarna kecokelatan.
+            Sajikan sate dengan papeda yang kenyal.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Ikan_Asar_Papua">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Ikan Asar Papua</dc:title>
+        <dc:description>Ikan Asar adalah hidangan ikan yang diasap, memberikan rasa yang unik dan aroma khas yang sangat kuat. Ikan yang digunakan biasanya ikan laut seperti ikan tenggiri atau kakap yang diasap hingga matang. Daging ikan asar sangat gurih, dan sering disajikan dengan sambal khas atau dengan nasi putih. Ikan Asar ini menjadi pilihan makanan yang sangat digemari oleh masyarakat Papua, terutama di daerah pesisir. Hidangan ini juga cocok dinikmati dengan sayuran segar atau lalapan.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Papua_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/474x/d2/7b/2c/d27b2c1f478d52f1a8d276770ebb81aa.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            1 ekor ikan tenggiri atau kakap;
+            1 sdm garam;
+            2 sdm air jeruk nipis;
+            2 sdm minyak goreng;
+            5 lembar daun jeruk
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Lumuri ikan dengan garam dan air jeruk nipis, diamkan selama 30 menit.
+            Asap ikan di atas bara api hingga matang dan berwarna kecokelatan.
+            Sajikan ikan asar dengan sambal atau lalapan.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Pepes_Ikan_Papua">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Pepes Ikan Papua</dc:title>
+        <dc:description>Pepes Ikan Papua adalah hidangan ikan yang dibungkus dengan daun pisang dan dibumbui dengan rempah khas Papua. Proses memasaknya yang dikukus membuat ikan tetap lembut dan beraroma segar. Hidangan ini menjadi favorit banyak orang, karena rasanya yang gurih dan pedas dengan campuran bumbu yang kaya. Pepes ikan ini sering dijadikan menu utama dalam acara keluarga di Papua.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Papua_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/474x/57/e2/3d/57e23dbdbe54eb38bf2cbe954bff28cf.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            2 ekor ikan kakap atau ikan tongkol;
+            2 siung bawang merah, iris tipis;
+            2 siung bawang putih, iris tipis;
+            1 batang serai, memarkan;
+            5 lembar daun jeruk;
+            2 sdm air jeruk nipis;
+            1 sdt garam
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Lumuri ikan dengan bawang merah, bawang putih, serai, daun jeruk, air jeruk nipis, dan garam. Diamkan selama 1 jam.
+            Bungkus ikan dengan daun pisang dan kukus selama 30 menit hingga matang.
+            Sajikan pepes ikan dengan nasi putih.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Soto_Papua">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Soto Papua</dc:title>
+        <dc:description>Soto Papua adalah sup ayam khas Papua yang dimasak dengan bumbu rempah yang kaya dan menggunakan santan. Soto ini memiliki rasa yang gurih, pedas, dan sedikit manis, sangat cocok untuk menikmati santapan hangat saat cuaca dingin. Daging ayam yang empuk dan kuah santan yang kental berpadu dengan nasi putih, memberikan rasa yang nikmat dan menyegarkan. Soto Papua ini juga sering disajikan dengan irisan telur rebus, sayuran, dan sambal pedas.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Papua_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/474x/4e/f4/ec/4ef4ec32cfa71c4cfbae335e84ce2b80.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gr ayam, potong-potong;
+            3 siung bawang merah, iris tipis;
+            3 siung bawang putih, iris tipis;
+            2 batang serai, memarkan;
+            2 lembar daun jeruk;
+            200 ml santan;
+            1 sdt kunyit bubuk
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Tumis bawang merah, bawang putih, dan serai hingga harum.
+            Masukkan potongan ayam, daun jeruk, kunyit, dan air. 
+            Masak hingga ayam matang.
+            Tambahkan santan dan masak hingga kuah mendidih dan kental.
+            Sajikan soto dengan nasi putih, telur rebus, dan sambal.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Ayam_Tepi_Laut">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Ayam Tepi Laut</dc:title>
+        <dc:description>Ayam Tepi Laut adalah hidangan khas Papua yang menggabungkan cita rasa gurih dari ayam yang dimasak dengan bumbu khas Papua yang kaya akan rempah-rempah. Ayam dimasak dengan santan kelapa yang menambah kelembutan dan kekayaan rasa. Hidangan ini sering dinikmati dengan nasi putih hangat dan sambal pedas. Cita rasa yang kuat dari bumbu dan santan menjadikan Ayam Tepi Laut menjadi pilihan utama dalam berbagai perayaan atau acara keluarga di Papua.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Papua_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/474x/27/18/f8/2718f8ecbe9ea20c77e76e90eb83be27.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            1 ekor ayam, potong-potong;
+            3 batang serai, memarkan;
+            5 lembar daun jeruk purut;
+            2 buah cabai merah besar, iris tipis;
+            5 siung bawang merah, haluskan;
+            3 siung bawang putih, haluskan;
+            2 sdm ketumbar bubuk;
+            200 ml santan kental;
+            1 sdt kunyit bubuk;
+            Garam dan gula secukupnya
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Tumis bawang merah, bawang putih, dan cabai hingga harum.
+            Masukkan ketumbar bubuk, kunyit, serai, dan daun jeruk, tumis hingga bumbu matang.
+            Tambahkan ayam yang sudah dipotong-potong, aduk rata dan masak hingga ayam berubah warna.
+            Tuangkan santan kental dan tambahkan garam serta gula sesuai selera.
+            Masak hingga ayam empuk dan bumbu meresap.
+            Sajikan ayam dengan nasi hangat dan sambal.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Panggang_Ubi_Papua">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Panggang Ubi Papua</dc:title>
+        <dc:description>Panggang Ubi Papua adalah hidangan sederhana namun kaya rasa yang berasal dari Papua. Ubi jalar yang manis dibakar hingga matang sempurna, kemudian dihidangkan dengan taburan kelapa parut atau sambal. Panggang ubi menjadi makanan yang sering ditemukan di acara-acara adat atau di rumah-rumah penduduk Papua, terutama yang tinggal di pedalaman atau daerah pesisir. Ubi yang lembut dan manis dikombinasikan dengan rasa gurih kelapa, menjadikannya makanan penutup atau camilan yang populer.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Papua_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/474x/81/de/76/81de76616922f6ea1373842548aad620.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            5 buah ubi jalar ukuran sedang;
+            100 gr kelapa parut kasar;
+            1 sdt garam;
+            2 sdm gula merah serut;
+            1 sdt vanili
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Cuci bersih ubi jalar, lalu bakar atau panggang hingga kulitnya menghitam dan bagian dalamnya terasa empuk.
+            Setelah matang, kupas ubi dan potong-potong sesuai selera.
+            Taburkan kelapa parut, gula merah serut, dan sedikit garam di atas ubi bakar.
+            Sajikan selagi hangat sebagai camilan atau hidangan penutup.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Pindang_Ikan_Laut">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Pindang Ikan Laut</dc:title>
+        <dc:description>Pindang Ikan Laut adalah hidangan dengan cita rasa asam pedas khas Papua, yang terbuat dari ikan laut segar. Ikan dimasak dalam kuah yang menggunakan bahan-bahan alami seperti air asam jawa, tomat, dan rempah-rempah. Hidangan ini memiliki rasa yang segar dan pedas, dan sangat cocok dinikmati dengan nasi putih. Pindang ikan sering disajikan dalam acara keluarga atau ketika memancing ikan di laut. Rasanya yang asam dan pedas sangat digemari oleh masyarakat Papua.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Papua_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/474x/e1/cc/a7/e1cca7b39a4df45cd09b0f2553c49e1e.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            2 ekor ikan laut segar (misalnya ikan tongkol atau ikan kerapu);
+            2 batang serai, memarkan;
+            5 lembar daun salam;
+            2 buah tomat, potong kasar;
+            1 sdm air asam jawa;
+            3 siung bawang merah, iris tipis;
+            2 siung bawang putih, iris tipis;
+            2 buah cabai merah, iris tipis;
+            1 sdt garam
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Rebus ikan dengan daun salam dan serai hingga ikan setengah matang.
+            Tumis bawang merah, bawang putih, cabai, dan tomat hingga harum.
+            Tambahkan air asam jawa, masukkan ke dalam rebusan ikan, dan masak hingga ikan matang sempurna.
+            Tambahkan garam sesuai selera dan sajikan pindang ikan dengan nasi.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Kue_Pisang_Papua">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Kue Pisang Papua</dc:title>
+        <dc:description>Kue Pisang Papua adalah salah satu kue khas yang terbuat dari pisang dan bahan-bahan sederhana lainnya, seperti tepung terigu, kelapa parut, dan gula. Kue ini memiliki tekstur lembut dengan rasa manis alami dari pisang, serta sensasi gurih dari kelapa parut. Biasanya, kue pisang disajikan di berbagai acara adat atau perayaan keluarga di Papua. Keunikan kue ini terletak pada penggunaan pisang yang matang sebagai bahan utama, yang memberikan cita rasa khas Papua.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Papua_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/474x/f6/c5/49/f6c5494c6bf5adb6478f84b5300e8278.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            4 buah pisang raja, haluskan;
+            100 gr tepung terigu;
+            50 gr kelapa parut kasar;
+            100 gr gula merah, serut halus;
+            1 sdt vanili;
+            1 butir telur
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Campurkan pisang yang telah dihaluskan dengan tepung terigu, kelapa parut, gula merah, telur, dan vanili.
+            Aduk rata hingga adonan tercampur sempurna.
+            Tuangkan adonan ke dalam cetakan kue dan kukus selama 30 menit hingga matang.
+            Sajikan kue pisang selagi hangat sebagai camilan atau hidangan penutup.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Kue_Vor_Vor">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Kue Vor Vor</dc:title>
+        <dc:description>Kue Vor Vor adalah salah satu kue tradisional khas Maluku yang sering disajikan dalam acara adat dan perayaan. Kue ini memiliki tekstur yang empuk dan rasa manis yang khas. Terbuat dari bahan dasar tepung terigu, gula, dan santan, kue ini sering dipanggang hingga berwarna keemasan. Kue Vor Vor tidak hanya menjadi simbol kekayaan kuliner Maluku tetapi juga merepresentasikan budaya kebersamaan masyarakatnya. Hidangan ini sangat cocok untuk menemani waktu santai bersama keluarga dan teman.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Papua_Island"/>
+        <piringlokal:photo>https://assets.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/2022/01/25/4193471462.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            250 gr tepung terigu;
+            200 gr gula pasir;
+            200 ml santan kental;
+            4 butir telur ayam;
+            1 sdt vanili bubuk;
+            1 sdt baking powder;
+            50 gr margarin cair.
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Kocok telur dan gula hingga mengembang dan berwarna pucat.
+            Masukkan tepung terigu, vanili, dan baking powder sedikit demi sedikit sambil diayak. Aduk rata.
+            Tambahkan santan dan margarin cair, aduk hingga adonan tercampur rata.
+            Tuang adonan ke dalam loyang yang telah diolesi margarin dan dialasi kertas roti.
+            Panggang dalam oven dengan suhu 180°C selama 30-40 menit hingga matang dan berwarna keemasan.
+            Angkat, dinginkan, lalu potong-potong sesuai selera. Sajikan.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Kikil_Bumbu_Papuan">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Kikil Bumbu Papuan</dc:title>
+        <dc:description>Kikil Bumbu Papuan adalah hidangan khas Papua yang terbuat dari kikil sapi yang dimasak dengan bumbu rempah-rempah yang kuat dan kaya rasa. Kikil dimasak dengan santan dan bumbu khas seperti kunyit, serai, dan daun jeruk, sehingga menghasilkan rasa yang gurih dan pedas. Hidangan ini banyak disajikan dalam acara makan besar atau perayaan penting di Papua. Rasanya yang kenyal dan kaya akan bumbu menjadikan kikil ini sebagai salah satu makanan favorit.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Papua_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/474x/c1/0a/be/c10abe35169c03edbed5c25cc3d67cd4.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            500 gr kikil sapi;
+            3 batang serai, memarkan;
+            5 lembar daun jeruk;
+            1 sdt kunyit bubuk;
+            3 siung bawang merah, haluskan;
+            3 siung bawang putih, haluskan;
+            200 ml santan;
+            Garam secukupnya
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Rebus kikil sapi hingga empuk dan tiriskan.
+            Tumis bawang merah, bawang putih, kunyit, serai, dan daun jeruk hingga harum.
+            Masukkan kikil, tambahkan santan dan garam, masak hingga bumbu meresap dan kuah mengental.
+            Sajikan kikil bumbu Papuan dengan nasi putih hangat.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Sagu_Lempeng">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Sagu Lempeng</dc:title>
+        <dc:description>Sagu Lempeng adalah salah satu jenis kue tradisional yang berasal dari Papua. Kue ini terbuat dari tepung sagu, kelapa parut, dan gula merah, yang dipadukan dengan bahan-bahan lokal lainnya. Kue ini memiliki rasa yang manis dan gurih dengan tekstur yang kenyal dan lembut. Sagu Lempeng banyak ditemukan di rumah-rumah penduduk Papua, terutama di daerah pedalaman atau pesisir. Makanan ini disajikan sebagai camilan sore atau makanan penutup setelah makan utama.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Papua_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/474x/3f/41/ce/3f41ce7c134198ed0837099d4525229a.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            200 gr tepung sagu;
+            100 gr kelapa parut kasar;
+            50 gr gula merah, serut halus;
+            1 sdt garam
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Campurkan tepung sagu, kelapa parut, gula merah, dan garam.
+            Aduk rata hingga adonan bisa dipulung.
+            Bulatkan adonan dan kukus selama 20-30 menit hingga matang.
+            Sajikan Sagu Lempeng sebagai camilan atau hidangan penutup.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Ikan_Bakar_Papeda">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Ikan Bakar Papeda</dc:title>
+        <dc:description>Ikan Bakar Papeda adalah salah satu hidangan khas Papua yang menggugah selera. Ikan yang digunakan biasanya adalah ikan laut segar yang dibakar dengan bumbu rempah khas Papua. Papeda, yang terbuat dari sagu, adalah pendamping yang tak terpisahkan dalam hidangan ini. Papeda memiliki tekstur kenyal dan elastis, yang disajikan dengan ikan bakar yang kaya akan rasa bumbu manis dan gurih. Ikan bakar ini biasanya disajikan dengan sambal dabu-dabu atau sambal khas Papua yang pedas. Hidangan ini adalah kombinasi yang sempurna antara rasa laut dan rempah yang kuat.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Papua_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/474x/e3/91/dd/e391dd992a761bd8e30441ac11eda377.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            2 ekor ikan tenggiri, bersihkan;
+            2 sdm air jeruk nipis;
+            1 sdt garam;
+            1 sdt gula merah;
+            1 sdt ketumbar bubuk;
+            2 sdm kecap manis;
+            1 sdm minyak goreng;
+            2 siung bawang merah, iris tipis;
+            3 cabai merah, iris tipis;
+            1 sdt terasi
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Lumuri ikan dengan air jeruk nipis, garam, dan ketumbar, diamkan selama 15 menit.
+            Tumis bawang merah, cabai, dan terasi hingga harum, tambahkan kecap manis dan gula merah.
+            Bakar ikan di atas bara api sambil diolesi bumbu hingga matang dan berwarna kecokelatan.
+            Sajikan dengan papeda dan sambal dabu-dabu.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Nasi_Sagu">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Nasi Sagu</dc:title>
+        <dc:description>Nasi Sagu adalah makanan pokok yang terbuat dari tepung sagu, yang menjadi alternatif nasi di Papua. Nasi ini memiliki tekstur kenyal dan sedikit lengket, sangat cocok disajikan dengan ikan atau daging yang dimasak dengan bumbu pedas. Nasi Sagu memiliki cita rasa yang lebih ringan dibandingkan dengan nasi beras, sehingga memberikan kesan berbeda bagi orang yang memakannya. Di beberapa daerah di Papua, nasi sagu ini disajikan bersama dengan sambal atau kuah ikan.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Papua_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/474x/bd/78/56/bd78561493e9c630a657ffc5f1132c77.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+           200 gr tepung sagu;
+           1 liter air;
+           1 sdt garam
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Campurkan tepung sagu dengan air dan garam dalam panci.
+            Masak dengan api kecil, sambil terus diaduk hingga sagu mengental dan matang.
+            Sajikan nasi sagu dengan lauk seperti ikan bakar, sambal, atau sayur.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Babi_Panggang_Papua">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Babi Panggang Papua</dc:title>
+        <dc:description>Babi Panggang Papua adalah hidangan babi yang dimasak dengan cara dipanggang menggunakan bumbu khas yang terbuat dari rempah-rempah Papua. Daging babi yang empuk dan beraroma khas dipadukan dengan bumbu rempah yang kaya rasa. Hidangan ini biasanya disajikan dengan nasi dan sambal pedas, dan sering kali menjadi pilihan utama dalam acara-acara besar atau perayaan di Papua. Keunikan rasa babi panggang Papua terletak pada penggunaan bumbu dan rempah yang memberi citarasa kuat dan menggugah selera.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Papua_Island"/>
+        <piringlokal:photo>https://i.pinimg.com/474x/cb/44/ec/cb44ec9aaf648c222a8c040a6cd5636a.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+           1 kg daging babi, potong-potong;
+           5 siung bawang putih, haluskan;
+           4 siung bawang merah, haluskan;
+           1 sdt ketumbar;
+           1 sdt lada bubuk;
+           2 sdm kecap manis;
+           1 sdt garam;
+           2 sdm air jeruk nipis;
+           2 sdm minyak goreng
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Lumuri daging babi dengan bawang putih, bawang merah, ketumbar, lada, kecap manis, garam, dan air jeruk nipis.
+            Diamkan selama 30 menit agar bumbu meresap.
+            Panggang daging babi di atas bara api atau oven dengan suhu 180°C selama 1 jam hingga matang dan berwarna kecokelatan.
+            Sajikan babi panggang dengan nasi putih dan sambal.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Sayur_Keladi_Papua">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Sayur Keladi Papua</dc:title>
+        <dc:description>Sayur Keladi adalah hidangan sayur yang terbuat dari umbi keladi yang dimasak dengan kuah santan yang kental. Keladi memiliki tekstur lembut namun sedikit kenyal, memberikan rasa yang unik saat dipadukan dengan santan. Hidangan ini sangat cocok untuk menemani hidangan daging atau ikan, terutama bagi mereka yang mencari rasa alami dan khas dari bahan-bahan Papua.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Papua_Island"/>
+        <piringlokal:photo>https://img-global.cpcdn.com/recipes/98990de03889940c/680x482cq70/keladi-tumbuk-foto-resep-utama.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+           300 gr umbi keladi, kupas dan potong;
+           200 ml santan kental;
+           1 batang serai, memarkan;
+           2 lembar daun salam;
+           1 sdt garam
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Rebus keladi dengan daun salam dan serai hingga empuk.
+            Tambahkan santan dan garam, masak hingga kuah sedikit mengental.
+            Sajikan sebagai pendamping hidangan utama.
+        </piringlokal:steps>
+        </rdf:Description>
+
+        <rdf:Description rdf:about="http://example.org/recipe/Abon_Gulung_Sorong">
+        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
+        <dc:title>Abon Gulung Sorong</dc:title>
+        <dc:description>Abon Gulung adalah camilan khas Sorong, Papua Barat Daya, yang terkenal dengan cita rasa gurih dan manisnya. Hidangan ini terbuat dari roti lembut yang diisi dengan abon sapi atau ikan cakalang, kemudian digulung rapi dan dipanggang hingga sedikit kecokelatan. Abon Gulung Sorong tidak hanya lezat tetapi juga praktis sebagai bekal atau oleh-oleh. Perpaduan roti yang lembut dengan abon yang gurih memberikan pengalaman rasa yang unik dan memanjakan lidah. Camilan ini sangat cocok untuk dinikmati kapan saja, baik sebagai sarapan ringan, camilan sore, atau teman perjalanan. Kelezatan Abon Gulung Sorong menjadi salah satu bukti kreativitas kuliner masyarakat Papua Barat.</dc:description>
+        <piringlokal:category rdf:resource="http://example.org/category/Papua_Island"/>
+        <piringlokal:photo>https://img-global.cpcdn.com/recipes/42d5b6cb2326cbff/680x482cq70/abon-gulung.jpg</piringlokal:photo>
+        <piringlokal:ingredients>
+            250 gr tepung terigu protein tinggi;
+            2 sdm gula pasir;
+            1 sdt ragi instan;
+            1 butir telur ayam;
+            50 ml susu cair hangat;
+            50 gr margarin;
+            1/4 sdt garam;
+            100 gr abon sapi atau ikan cakalang;
+            1 sdm mayones (opsional);
+            1 butir kuning telur untuk olesan.
+        </piringlokal:ingredients>
+        <piringlokal:steps>
+            Campurkan tepung, gula, dan ragi dalam mangkuk besar. Tambahkan telur dan susu hangat sedikit demi sedikit, uleni hingga setengah kalis.
+            Masukkan margarin dan garam, uleni kembali hingga adonan elastis. Diamkan selama 1 jam hingga mengembang dua kali lipat.
+            Pipihkan adonan dengan rolling pin, olesi permukaannya dengan mayones (jika menggunakan), lalu taburi abon secara merata.
+            Gulung adonan dengan rapi dan letakkan di atas loyang yang sudah diolesi margarin.
+            Olesi permukaan gulungan dengan kuning telur. Panggang dalam oven bersuhu 180°C selama 20-25 menit hingga matang dan berwarna keemasan.
+            Angkat, dinginkan sebentar, lalu potong-potong sesuai selera. Sajikan.
         </piringlokal:steps>
         </rdf:Description>
 </rdf:RDF>
