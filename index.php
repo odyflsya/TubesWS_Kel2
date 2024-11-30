@@ -59,8 +59,22 @@ $recipes = getDefaultRecipes();
     </div>
     
     <!-- Header Section -->
-    <?php include "header.php" ?>
-    <!-- Header Section End -->
+    <header class="header-section">
+        <div class="container">
+            <div class="logo" id="logo">
+                <a href="./index.php"><img src="assets/img/logon.png" alt=""></a>
+            </div>
+            <div class="nav-menu">
+                <nav class="main-menu mobile-menu">
+                    <ul>
+                        <li class="nav-item"><a href="index.php">Beranda</a></li>
+                        <li class="nav-item"><a href="recipe.php">Cari Resep</a></li>
+                        <li class="nav-item"><a href="about-me.php">Tentang Kami</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
     <script>
         document.getElementById('scrollToLogo').addEventListener('click', function() {
@@ -82,6 +96,7 @@ $recipes = getDefaultRecipes();
             });
         });
     </script>
+    <!-- Header Section -->
 
     <!-- Resep -->
     <div class="container pt-4 pb-2" style="max-width: 1200px;">
@@ -107,7 +122,6 @@ $recipes = getDefaultRecipes();
             <?php endif; ?>
         </div>
     </div>
-    <!-- Resep End -->
 
     <div style="display: flex; justify-content: space-between; align-items: flex-start; padding: 20px; background-color: #f9f9f9; font-family: Arial, sans-serif;">
     <!-- Resep Autentik -->
@@ -128,9 +142,9 @@ $recipes = getDefaultRecipes();
     </div>
     </div>
 
-    <!-- Footer Section Begin -->
+    <!-- Footer -->
     <?php include "footer.php" ?>
-    <!-- Footer Section End -->
+    <!-- Footer End -->
 
     <!-- Js Plugins -->
     <script src="assets/js/jquery-3.3.1.min.js"></script>
