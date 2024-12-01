@@ -1820,23 +1820,6 @@
         </piringlokal:steps>
         </rdf:Description>
 
-        <rdf:Description rdf:about="http://example.org/recipe/Gangan_Asam_Banjar">
-        <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
-        <dc:title>Gangan Asam Banjar</dc:title>
-        <dc:description>Gangan Asam adalah sup ikan khas Kalimantan Selatan yang memiliki rasa asam segar berkat tambahan belimbing wuluh dan sayuran seperti labu siam. Sup ini menggunakan ikan patin atau ikan gabus sebagai bahan utama, yang dimasak dalam kuah asam segar dengan bumbu rempah. Rasa asam dari belimbing wuluh memberikan sensasi segar, sementara ikan yang lembut menambah kekayaan rasa sup ini. Gangan Asam merupakan hidangan yang sering dinikmati dalam makan siang atau makan malam, disajikan dengan nasi hangat dan sambal terasi sebagai pelengkap.</dc:description>
-        <piringlokal:category rdf:resource="http://example.org/category/Kalimantan_Island"/>
-        <piringlokal:photo>https://jambiindependent.bacakoran.co/upload/b7b800f70d49b44195cdce801a044d18.jpeg</piringlokal:photo>
-        <piringlokal:ingredients>
-            Bahan: 500 gram ikan patin, 1 liter air, 5 buah belimbing wuluh, 1 buah labu siam, potong kecil, 2 batang serai;
-            Bumbu Halus: 5 siung bawang merah, 3 siung bawang putih, 3 buah cabai merah, Garam secukupnya
-        </piringlokal:ingredients>
-        <piringlokal:steps>
-           Rebus air bersama bumbu halus dan serai.
-           Masukkan ikan, labu siam, dan belimbing wuluh.
-           Masak hingga ikan matang, lalu sajikan.
-        </piringlokal:steps>
-        </rdf:Description>
-
         <rdf:Description rdf:about="http://example.org/recipe/Mandai_Goreng">
         <rdf:type rdf:resource="https://example.org/schema/piringlokal#Recipe"/>
         <dc:title>Mandai Goreng</dc:title>
