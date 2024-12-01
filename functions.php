@@ -59,7 +59,6 @@ function searchRecipes($keyword) {
 }
 
 
-
 // Query untuk mengambil detail resep berdasarkan keyword
 function getRecipeByKeyword($keyword) {
     $query = "

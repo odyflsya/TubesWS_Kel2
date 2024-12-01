@@ -569,7 +569,7 @@
         <dc:title>Betutu</dc:title>
         <dc:description>Betutu adalah hidangan khas Bali yang terbuat dari ayam atau bebek yang dibumbui rempah-rempah khas, dibungkus daun pisang, lalu dipanggang dalam bara api. Hidangan ini memiliki cita rasa yang kaya dan aromatik.</dc:description>
         <piringlokal:category rdf:resource="http://example.org/category/Java_Island"/>
-        <piringlokal:photo>https://i.pinimg.com/236x/91/22/9a/91229a6c2d34c32d71ad551db7ff6394.jpg</piringlokal:photo>
+        <piringlokal:photo>https://i.pinimg.com/736x/ec/f2/3f/ecf23f46abcf322dbf082cf7ed9f92b5.jpg</piringlokal:photo>
         <piringlokal:ingredients>
             1 ekor ayam (atau bebek) utuh;
             2 batang serai, memarkan;
@@ -2313,7 +2313,7 @@
         <dc:title>Annu Senebre</dc:title>
         <dc:description>Annu Senebre adalah salah satu kuliner tradisional khas Papua Selatan yang menjadi lambang keakraban masyarakat setempat. Hidangan ini terdiri dari ikan bakar yang dimasak dengan bumbu khas Papua, disajikan bersama sagu lempeng atau papeda, serta sambal yang pedas dan segar. Nama "Annu Senebre" dalam bahasa lokal berarti "ikan bakar", menandakan pentingnya hasil laut bagi kehidupan masyarakat pesisir Papua Selatan. Proses memasak Annu Senebre dilakukan dengan teknik tradisional, di mana ikan dibakar di atas arang hingga kulitnya garing tetapi dagingnya tetap lembut dan juicy. Bumbunya yang sederhana namun kaya rasa, terbuat dari campuran rempah-rempah lokal seperti jahe, bawang merah, bawang putih, dan cabai, memberikan aroma khas yang menggugah selera. Hidangan ini sering disajikan dalam acara adat atau untuk menjamu tamu, menjadi simbol kebersamaan dan rasa syukur. Rasanya yang gurih, pedas, dan segar membuat Annu Senebre menjadi salah satu ikon kuliner Papua Selatan yang wajib dicoba.</dc:description>
         <piringlokal:category rdf:resource="http://example.org/category/Papua_Island"/>
-        <piringlokal:photo>https://i.pinimg.com/736x/3b/2f/42/3b2f42c20438fdd3a3eec7265c75d7c6.jpg</piringlokal:photo>
+        <piringlokal:photo>https://www.gotravelly.com/blog/wp-content/uploads/2021/04/aunu-senebre.jpg</piringlokal:photo>
         <piringlokal:ingredients>
             1 kg ikan kakap merah atau baronang, bersihkan dan kerat badannya;
             2 buah jeruk nipis, peras airnya;
@@ -2726,7 +2726,7 @@
         <dc:title>Abon Gulung Sorong</dc:title>
         <dc:description>Abon Gulung adalah camilan khas Sorong, Papua Barat Daya, yang terkenal dengan cita rasa gurih dan manisnya. Hidangan ini terbuat dari roti lembut yang diisi dengan abon sapi atau ikan cakalang, kemudian digulung rapi dan dipanggang hingga sedikit kecokelatan. Abon Gulung Sorong tidak hanya lezat tetapi juga praktis sebagai bekal atau oleh-oleh. Perpaduan roti yang lembut dengan abon yang gurih memberikan pengalaman rasa yang unik dan memanjakan lidah. Camilan ini sangat cocok untuk dinikmati kapan saja, baik sebagai sarapan ringan, camilan sore, atau teman perjalanan. Kelezatan Abon Gulung Sorong menjadi salah satu bukti kreativitas kuliner masyarakat Papua Barat.</dc:description>
         <piringlokal:category rdf:resource="http://example.org/category/Papua_Island"/>
-        <piringlokal:photo>https://img-global.cpcdn.com/recipes/42d5b6cb2326cbff/680x482cq70/abon-gulung.jpg</piringlokal:photo>
+        <piringlokal:photo>https://i.pinimg.com/736x/25/a0/f7/25a0f78abb8e3f408c5f49800d647cf9.jpg</piringlokal:photo>
         <piringlokal:ingredients>
             250 gr tepung terigu protein tinggi;
             2 sdm gula pasir;

@@ -47,7 +47,7 @@
     <!-- Header End -->
 
     <!-- Bg Header -->
-    <div class="hero-search set-bg" data-setbg="assets/img/search-bg.jpg" style="margin-top: 15"></div>
+    <div class="hero-search set-bg" data-setbg="assets/img/search.png" style="margin-top: 15"></div>
     <!-- Bg Header -->
 
     <!-- About Me Section Begin -->
