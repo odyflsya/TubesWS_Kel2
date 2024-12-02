@@ -41,38 +41,36 @@ if ($categoryTitle) {
 <html lang="zxx">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Piring Lokal - Resep Nusantara">
+    <meta name="description" content="Yoga Studio Template">
+    <meta name="keywords" content="Yoga, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Piring Lokal - <?php echo $categoryTitle ? $categoryTitle : 'Semua Resep'; ?></title>
+    <title>Piring Lokal</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 </head>
 <body>
 
-    <!-- Header Section -->
-    <header class="header-section">
-        <div class="container">
-            <div class="logo" id="logo">
-                <a href="./index.php"><img src="assets/img/logon.png" alt=""></a>
-            </div>
-            <div class="nav-menu">
-                <nav class="main-menu mobile-menu">
-                    <ul>
-                        <li class="nav-item"><a href="index.php">Beranda</a></li>
-                        <li class="nav-item"><a href="recipe.php">Resep</a></li>
-                        <li class="nav-item"><a href="about-me.php">Tentang Kami</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+    <!-- Header -->
+    <?php include "header.php" ?>
+    <!-- Header End -->
 
     <!-- Recipe Display Section -->
     <div id="explore" style="padding: 100px 0; background-color: #ffffff;">
         <div class="container text-center">
             <h2><?php echo $categoryTitle ? $categoryTitle : 'Semua Resep'; ?></h2>
-            <p>Nikmati cita rasa asli dari berbagai pulau di Indonesia!</p>
+            <p></p>
             <div class="row justify-content-center">
                 <?php foreach ($recipes as $recipe): ?>
                     <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
@@ -98,25 +96,9 @@ if ($categoryTitle) {
         </div>
     </div>
 
-    <!-- Footer Section Begin -->
-    <footer class="footer-section" style="background-color: #970747; padding: 50px 0;">
-        <div class="container-fluid">
-            <div class="row justify-content-center">
-                <div class="col-lg-12">
-                    <div class="fs-left d-flex align-items-center justify-content-start">
-                        <div class="logo mr-4">
-                            <a href="">
-                                <img src="assets/img/footer-logoo.png" alt="Logo" style="max-width: 150px;">
-                            </a>
-                        </div>
-                        <p style="text-align: justify; color: white !important; margin: 0; padding: 0 15px;">
-                            Ruang untuk menggali lebih dalam keunikan masakan Nusantara yang kaya akan sejarah dan warisan tradisi yang tak ternilai.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!-- Footer -->
+    <?php include "footer.php" ?>
+    <!-- Footer End -->
 
     <!-- Js Plugins -->
     <script src="assets/js/jquery-3.3.1.min.js"></script>

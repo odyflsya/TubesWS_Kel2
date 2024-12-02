@@ -7,7 +7,7 @@
                 <nav class="main-menu mobile-menu">
                     <ul>
                         <li class="nav-item"><a href="index.php">Beranda</a></li>
-                        <li class="nav-item"><a href="recipe.php">Cari Resep</a></li>
+                        <li class="nav-item"><a href="recipe.php">Resep</a></li>
                         <li class="nav-item"><a href="about-me.php">Tentang Kami</a></li>
                     </ul>
                 </nav>

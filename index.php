@@ -1,16 +1,12 @@
 <?php
-
 require "functions.php";
-
-$recipes = getDefaultRecipes();
-
 use EasyRdf\Graph;
 
+// Load RDF data
 $graph = new Graph();
-
-// Load RDF data from a file
 $graph->parseFile('inc/PiringLokal.rdf');
 
+// Get categories from RDF data
 $categories = $graph->allOfType('https://example.org/schema/piringlokal#Category');
 
 ?>
@@ -184,110 +180,9 @@ $categories = $graph->allOfType('https://example.org/schema/piringlokal#Category
     }
 </style>
 
-<!-- Scrollable Content Section -->
-<div id="explore" style="padding: 100px 0; background-color: #ffffff;">
-    <div class="container text-center">
-        <h2>Petualangan Rasa dari Pulau ke Pulau</h2>
-        <p>Nikmati cita rasa asli dari berbagai pulau di Indonesia!</p>
-        <div class="scrollable-cards">
-            <?php foreach ($categories as $category): ?>
-                <div class="card" onclick="showDetails('<?php echo $category->getLiteral('dc:title'); ?>', '<?php echo $category->getLiteral('dc:description'); ?>')">
-                    <img src="<?php echo $category->getResource('piringlokal:photo'); ?>" alt="<?php echo $category->getLiteral('dc:title'); ?>">
-                    <h3><?php echo $category->getLiteral('dc:title'); ?></h3>
-                </div>
-            <?php endforeach; ?>
-        </div>
-    </div>
-    <div class="details-section">
-        <h3 id="details-title">Pilih sebuah kategori</h3>
-        <p id="details-description">Deskripsi kategori akan muncul di sini.</p>
-    </div>
-</div>
-
-
-<!-- JavaScript -->
-<script>
-    function showDetails(title, description) {
-        document.getElementById('details-title').innerText = title;
-        document.getElementById('details-description').innerText = description;
-    }
-</script>
-
-<!-- CSS -->
-<style>
-    .card {
-    flex: 0 0 auto;
-    width: 200px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background-color: #970747; /* Warna background */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    padding: 10px;
-    cursor: pointer; 
-    transition: transform 0.2s;
-    color: #0d47a1; /* Warna teks */ 
-    font-family: 'Arial', sans-serif; /* Font teks */
-}
-
-.card h3 {
-    font-size: 18px; /* Ukuran teks judul */
-    font-weight: bold; /* Tebal teks judul */
-    color: #ffffff; /* Warna teks judul */
-    margin: 10px 0;
-}
-
-.card:hover {
-    transform: scale(1.05);
-    background-color: #bbdefb; /* Warna saat di-hover */
-    color: #0d47a1; /* Warna teks saat di-hover */
-}
-
-.details-section {
-    color: #424242; /* Warna teks untuk bagian detail */
-    font-family: 'Georgia', serif; /* Font untuk bagian detail */
-}
-
-
-    .card:hover {
-        transform: scale(1.05);
-    }
-
-    .card img {
-        width: 100%;
-        height: 150px; /* Menyamakan tinggi semua gambar */
-        object-fit: cover; /* Memastikan gambar tidak terdistorsi */
-        border-radius: 10px;
-    }
-
-    .scrollable-cards {
-        scrollbar-width: thin;
-        scrollbar-color: #ccc #f8f9fa;
-    }
-
-    .scrollable-cards::-webkit-scrollbar {
-        height: 8px;
-    }
-
-    .scrollable-cards::-webkit-scrollbar-thumb {
-        background-color: #ccc;
-        border-radius: 10px;
-    }
-</style>
-
-<!-- Add Scroll Behavior with JavaScript -->
-<script>
-    // Get the button and scroll to the explore section
-    document.getElementById("exploreBtn").addEventListener("click", function(event) {
-        event.preventDefault(); // Prevent default anchor behavior
-        const exploreSection = document.getElementById("explore");
-        
-        // Scroll smoothly to the 'explore' section
-        exploreSection.scrollIntoView({ behavior: "smooth", block: "start" });
-    });
-</script>
 
 <!-- Carousel End -->
+
 
 <body>
     <!-- Page Preloder -->
@@ -305,7 +200,7 @@ $categories = $graph->allOfType('https://example.org/schema/piringlokal#Category
                 <nav class="main-menu mobile-menu">
                     <ul>
                         <li class="nav-item"><a href="index.php">Beranda</a></li>
-                        <li class="nav-item"><a href="recipe.php">Cari Resep</a></li>
+                        <li class="nav-item"><a href="recipe.php">Resep</a></li>
                         <li class="nav-item"><a href="about-me.php">Tentang Kami</a></li>
                     </ul>
                 </nav>
@@ -313,71 +208,40 @@ $categories = $graph->allOfType('https://example.org/schema/piringlokal#Category
         </div>
     </header>
 
-    <script>
-        document.getElementById('scrollToLogo').addEventListener('click', function() {
-        const logo = document.getElementById('logo');
-
-        window.scrollTo({
-            top: logo.offsetTop - 20,
-            behavior: 'smooth'
-        });
-        });
-
-        const navItems = document.querySelectorAll('.nav-item');
-
-        navItems.forEach(item => {
-            item.addEventListener('click', function () {
-                navItems.forEach(nav => nav.classList.remove('active'));
-
-                this.classList.add('active');
-            });
-        });
-    </script>
-    <!-- Header Section -->
-
-    <!-- Resep -->
-    <div class="container pt-4 pb-2" style="max-width: 1200px;">
+    <!-- Card Start -->
+<!-- Scrollable Content Section -->
+<div id="explore" style="padding: 100px 0; background-color: #ffffff;">
+    <div class="container text-center">
+        <h2>Petualangan Rasa dari Pulau ke Pulau</h2>
+        <p>Nikmati cita rasa asli dari berbagai pulau di Indonesia!</p>
         <div class="row justify-content-center">
-            <?php if ($recipes && $recipes->numRows() > 0): ?>
-                <?php foreach ($recipes as $row): ?>
-                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-                        <a href="detail_recipe.php?keyword=<?= urlencode($row->title) ?>" style="text-decoration: none; color: inherit;">
-                            <div class="team-item bg-dark text-white" style="border-radius: 10px; box-shadow: 0 3px 6px rgba(0,0,0,0.1);">
-                                <div class="team-img position-relative overflow-hidden" style="border-radius: 10px 10px 0 0;">
-                                    <img class="img-fluid w-100" src="<?= htmlspecialchars($row->photo) ?>" alt="Recipe Photo" style="height: 200px; object-fit: cover; transition: transform 0.3s ease, filter 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'; this.style.filter='brightness(0.85)';" onmouseout="this.style.transform='scale(1)'; this.style.filter='brightness(1)';">
-                                </div>
-                                <div class="text-center py-3" style="background-color: #970747; border-radius: 0 0 10px 10px;">
-                                    <h5 class="text-truncate text-white" style="margin-bottom: 5px; font-size: 16px;"><?= htmlspecialchars($row->title) ?></h5>
-                                    <p class="m-0 text-white" style="font-size: 12px;"><?= htmlspecialchars($row->categoryName) ?></p> <!-- Gunakan categoryName -->
-                                </div>
+            <?php foreach ($categories as $category): ?>
+                <div class="col-12 mb-4">
+                    <!-- Link to categories.php with the category name as a query parameter -->
+                    <a href="categories.php?category=<?php echo urlencode($category->getLiteral('dc:title')); ?>">
+                    <div class="team-item d-flex align-items-center" style="border-radius: 10px; box-shadow: 0 3px 6px rgba(0,0,0,0.1); width: 100%; padding: 10px 20px; background: linear-gradient(135deg, rgba(151, 7, 71, 0.95), rgba(151, 7, 71, 0.9));">
+                            <!-- Gambar kategori -->
+                            <div class="team-img" style="flex-shrink: 0; width: 200px; height: 200px; overflow: hidden; border-radius: 10px 0 0 10px;">
+                                <img class="img-fluid w-100 h-100" 
+                                     src="<?php echo $category->getResource('piringlokal:photo'); ?>" 
+                                     alt="<?php echo $category->getLiteral('dc:title'); ?>" 
+                                     style="object-fit: cover;">
                             </div>
-                        </a>
-                    </div>
-                <?php endforeach; ?>
-            <?php else: ?>
-                <p>No recipes found.</p>
-            <?php endif; ?>
+                            <!-- Info kategori -->
+                            <div class="team-info pl-3 pr-3 py-3" style="flex-grow: 1;">
+                                <h5 class="text-truncate text-white" style="margin-bottom: 5px; font-size: 28px;"><?php echo $category->getLiteral('dc:title'); ?></h5>
+                                <p class="m-0 text-white" style="font-size: 14px;"><?php echo $category->getLiteral('dc:description'); ?></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            <?php endforeach; ?>
         </div>
     </div>
+</div>
 
-    <div style="display: flex; justify-content: space-between; align-items: flex-start; padding: 20px; background-color: #f9f9f9; font-family: Arial, sans-serif;">
-    <!-- Resep Autentik -->
-    <div style="display: flex; flex-direction: column; align-items: center; width: 45%; text-align: center;">
-        <div style="background-color: rgba(151, 7, 71, 0.95); width: 60px; height: 60px; display: flex; justify-content: center; align-items: center; border-radius: 50%; margin-bottom: 10px;">
-            <div style="font-size: 28px; color: white;">📖</div>
-        </div>
-        <h3 style="margin: 10px 0 5px; font-size: 18px; color: #333;">Resep Autentik</h3>
-        <p style="margin: 0; font-size: 14px; color: #666;">Panduan memasak untuk menciptakan hidangan khas dari Sabang sampai Merauke.</p>
-    </div>                          
-    <!-- Inspirasi Kuliner -->
-    <div style="display: flex; flex-direction: column; align-items: center; width: 45%; text-align: center;">
-        <div style="background-color: rgba(151, 7, 71, 0.95); width: 60px; height: 60px; display: flex; justify-content: center; align-items: center; border-radius: 50%; margin-bottom: 10px;">
-            <div style="font-size: 28px; color: white;">🍴</div>
-        </div>
-        <h3 style="margin: 10px 0 5px; font-size: 18px; color: #333;">Inspirasi Kuliner</h3>
-        <p style="margin: 0; font-size: 14px; color: #666;">Artikel menarik tentang keunikan di balik hidangan Nusantara.</p>
-    </div>
-    </div>
+
+    <!-- Card End -->
 
     <!-- Footer -->
     <?php include "footer.php" ?>
@@ -390,8 +254,6 @@ $categories = $graph->allOfType('https://example.org/schema/piringlokal#Category
     <script src="assets/js/jquery.nice-select.min.js"></script>
     <script src="assets/js/mixitup.min.js"></script>
     <script src="assets/js/main.js"></script>
-
 </body>
-
 
 </html>
