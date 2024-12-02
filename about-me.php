@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 </head>
 
+<!-- Favicon -->
+<link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+
 <body>
     <!-- Page Preloder -->
     <div id="preloder">
@@ -99,7 +102,7 @@
                 <!-- Card Template -->
                 <div class="col-lg-4 col-md-6 col-sm-12" style="margin-bottom: 30px; display: flex; justify-content: center;">
                     <div style="width: 320px; background-color: #fbe9e7; border-radius: 20px; text-align: center; padding: 30px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
-                        <img src="https://i.pinimg.com/236x/b9/05/ee/b905ee4c20c628207dd7f607f03fa556.jpg" 
+                        <img src="./assets/img/about 1.jpeg" 
                             alt="Guide Photo" 
                             style="width: 130px; height: 130px; object-fit: cover; border-radius: 50%; margin-bottom: 20px;">
                         <h5 style="margin: 0; font-size: 22px; font-weight: bold;">Lisa</h5>
@@ -109,7 +112,7 @@
                 <!-- Member 2 -->
                 <div class="col-lg-4 col-md-6 col-sm-12" style="margin-bottom: 30px; display: flex; justify-content: center;">
                     <div style="width: 320px; background-color: #fbe9e7; border-radius: 20px; text-align: center; padding: 30px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
-                        <img src="https://i.pinimg.com/236x/c0/23/2f/c0232f2d2c285ca50747840515503bbc.jpg" 
+                        <img src="./assets/img/about 2.jpeg" 
                             alt="Guide Photo 2" 
                             style="width: 130px; height: 130px; object-fit: cover; border-radius: 50%; margin-bottom: 20px;">
                         <h5 style="margin: 0; font-size: 22px; font-weight: bold;">Michel</h5>
@@ -119,7 +122,7 @@
                 <!-- Member 3 -->
                 <div class="col-lg-4 col-md-6 col-sm-12" style="margin-bottom: 30px; display: flex; justify-content: center;">
                     <div style="width: 320px; background-color: #fbe9e7; border-radius: 20px; text-align: center; padding: 30px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
-                        <img src="https://i.pinimg.com/236x/80/f9/a2/80f9a2d0f8a5fd2cf8c2fa553ded2efa.jpg" 
+                        <img src="./assets/img/about 3.jpeg" 
                             alt="Guide Photo 3" 
                             style="width: 130px; height: 130px; object-fit: cover; border-radius: 50%; margin-bottom: 20px;">
                         <h5 style="margin: 0; font-size: 22px; font-weight: bold;">Audrey</h5>
@@ -129,7 +132,7 @@
                 <!-- Member 4 -->
                 <div class="col-lg-4 col-md-6 col-sm-12" style="margin-bottom: 30px; display: flex; justify-content: center;">
                     <div style="width: 320px; background-color: #fbe9e7; border-radius: 20px; text-align: center; padding: 30px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
-                        <img src="https://i.pinimg.com/236x/b9/05/ee/b905ee4c20c628207dd7f607f03fa556.jpg" 
+                        <img src="./assets/img/about 4.jpeg" 
                             alt="Guide Photo 4" 
                             style="width: 130px; height: 130px; object-fit: cover; border-radius: 50%; margin-bottom: 20px;">
                         <h5 style="margin: 0; font-size: 22px; font-weight: bold;">Safna</h5>
@@ -139,20 +142,20 @@
                 <!-- Member 5 -->
                 <div class="col-lg-4 col-md-6 col-sm-12" style="margin-bottom: 30px; display: flex; justify-content: center;">
                     <div style="width: 320px; background-color: #fbe9e7; border-radius: 20px; text-align: center; padding: 30px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
-                        <img src="https://i.pinimg.com/236x/b9/05/ee/b905ee4c20c628207dd7f607f03fa556.jpg" 
+                        <img src="./assets/img/about 5.jpeg" 
                             alt="Guide Photo 5" 
                             style="width: 130px; height: 130px; object-fit: cover; border-radius: 50%; margin-bottom: 20px;">
-                        <h5 style="margin: 0; font-size: 22px; font-weight: bold;">Zalfa</h5>
+                        <h5 style="margin: 0; font-size: 22px; font-weight: bold;">Evan</h5>
                         <p style="margin: 10px 0 0; font-size: 16px; color: #bf360c;">Kulinerie</p>
                     </div>
                 </div>
                 <!-- Member 6 -->
                 <div class="col-lg-4 col-md-6 col-sm-12" style="margin-bottom: 30px; display: flex; justify-content: center;">
                     <div style="width: 320px; background-color: #fbe9e7; border-radius: 20px; text-align: center; padding: 30px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
-                        <img src="https://i.pinimg.com/236x/b9/05/ee/b905ee4c20c628207dd7f607f03fa556.jpg" 
+                        <img src="./assets/img/about 6.jpeg" 
                             alt="Guide Photo 6" 
                             style="width: 130px; height: 130px; object-fit: cover; border-radius: 50%; margin-bottom: 20px;">
-                        <h5 style="margin: 0; font-size: 22px; font-weight: bold;">Evan</h5>
+                        <h5 style="margin: 0; font-size: 22px; font-weight: bold;">Zalfa</h5>
                         <p style="margin: 10px 0 0; font-size: 16px; color: #bf360c;">Kulinerie</p>
                     </div>
                 </div>

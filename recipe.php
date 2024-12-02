@@ -1,19 +1,24 @@
+<!-- Favicon -->
+<link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+
 <?php
 
 require "functions.php";
 
-// Cek apakah pengguna melakukan pencarian
+// Inisialisasi
 $recipes = [];
 $keyword = ''; // Inisialisasi $keyword agar tidak undefined
 
+// Cek apakah pengguna melakukan pencarian
 if (isset($_POST["cari"])) {
     $keyword = htmlspecialchars($_POST["keyword"]); // Sanitasi input
-    // Mengambil resep berdasarkan pencarian kata kunci
-    $recipes = searchRecipes($keyword);
+    $recipes = searchRecipes($keyword); // Pencarian berdasarkan kata kunci
+} else {
+    // Jika tidak ada pencarian, ambil data default
+    $recipes = getDefaultRecipes();
 }
 
 ?>
-
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -153,8 +158,8 @@ if (isset($_POST["cari"])) {
 
     <!-- Search End -->
 
-    <!-- Resep -->
-    <div class="container pt-4 pb-2" style="max-width: 1200px;">
+<!-- Resep -->
+<div class="container pt-4 pb-2" style="max-width: 1200px;">
         <div class="row justify-content-center">
             <?php if (count($recipes) > 0): ?>
                 <?php foreach ($recipes as $row): ?>
@@ -166,15 +171,14 @@ if (isset($_POST["cari"])) {
                                 </div>
                                 <div class="text-center py-3" style="background-color: #970747; border-radius: 0 0 10px 10px;">
                                     <h5 class="text-truncate text-white" style="margin-bottom: 5px; font-size: 16px;"><?= htmlspecialchars($row->title) ?></h5>
-                                    <p class="m-0 text-white" style="font-size: 12px;"><?= htmlspecialchars($row->categoryName) ?></p> 
+                                    <p class="m-0 text-white" style="font-size: 12px;"><?= htmlspecialchars($row->categoryName) ?></p>
                                 </div>
                             </div>
                         </a>
                     </div>
                 <?php endforeach; ?>
             <?php else: ?>
-                <!-- Pesan kosong jika tidak ada resep -->
-                <p></p>
+                <p>Resep tidak ditemukan.</p>
             <?php endif; ?>
         </div>
     </div>
