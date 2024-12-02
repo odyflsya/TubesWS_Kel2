@@ -7,13 +7,11 @@
     xmlns:dc="http://purl.org/dc/terms/"
     xmlns:piringlokal="https://example.org/schema/piringlokal">
 
-    <!-- Category: Papua Island -->
+      <!-- Category: Papua Island -->
     <rdf:Description rdf:about="http://example.org/category/Papua_Island">
         <rdf:type rdf:resource="https://example.org/schema/piringlokal#Category"/>
         <dc:title>Pulau Papua</dc:title>
-        <dc:description>
-            Papua memiliki keanekaragaman budaya, kuliner yang beragam serta keindahan alam yang luar biasa. Makanan khas Papua kaya akan cita rasa lokal dan bahan-bahan unik.
-        </dc:description>
+        <dc:description>Papua memiliki keanekaragaman budaya, kuliner yang beragam serta keindahan alam yang luar biasa. Makanan khas Papua kaya akan cita rasa lokal dan bahan-bahan unik.</dc:description>
         <piringlokal:photo rdf:resource="https://i.pinimg.com/736x/5c/09/27/5c0927138144f6d9325a2eca60a0e020.jpg"/>
     </rdf:Description>
 
@@ -21,9 +19,7 @@
     <rdf:Description rdf:about="http://example.org/category/Kalimantan_Island">
         <rdf:type rdf:resource="https://example.org/schema/piringlokal#Category"/>
         <dc:title>Pulau Kalimantan</dc:title>
-        <dc:description>
-                Pulau Kalimantan terkenal dengan julukan “Pulau Seribu Sungai” karena banyaknya sungai yang mengalir di pulau ini. Selain itu, Kalimantan terkenal akan destinasi wisatanya yang menjadi surga para pecinta alam. Begitu juga dengan warisan budayanya yang masih kental. Di samping itu, makanan khas Kalimantan memiliki sajian yang berbeda di tiap daerah, salah satu keunikan tersebut terdapat pada olahan kulinernya. Memadukan antara berbagai sumber daya alam yang ada dengan rempah khasnya, membuat makanan khas Kalimantan memiliki cita rasa yang begitu lezat.
-        </dc:description>
+        <dc:description>Pulau Kalimantan terkenal dengan julukan “Pulau Seribu Sungai” karena banyaknya sungai yang mengalir di pulau ini. Selain itu, Kalimantan terkenal akan destinasi wisatanya yang menjadi surga para pecinta alam. Begitu juga dengan warisan budayanya yang masih kental. Di samping itu, makanan khas Kalimantan memiliki sajian yang berbeda di tiap daerah, salah satu keunikan tersebut terdapat pada olahan kulinernya. Memadukan antara berbagai sumber daya alam yang ada dengan rempah khasnya, membuat makanan khas Kalimantan memiliki cita rasa yang begitu lezat.</dc:description>
         <piringlokal:photo rdf:resource="https://i.pinimg.com/736x/f1/01/4a/f1014a539d540535b871268fc0288bfa.jpg"/>
     </rdf:Description>
 
@@ -39,7 +35,7 @@
     <rdf:Description rdf:about="http://example.org/category/Sulawesi_Island">
         <rdf:type rdf:resource="https://example.org/schema/piringlokal#Category"/>
         <dc:title>Pulau Sulawesi</dc:title>
-        <dc:description>Sulawesi merupakan pulau yang terletak di sebelah timur Indonesia, tepatnya terletak di antara pulau Kalimantan di sebelah barat serta Kepulauan Maluku sebelah di sebelah timur. Penduduk pulau Sulawesi rata- rata didominasi oleh suku Bugis- Makassar yang mayoritas dari mereka merupakan orang dagang. Keelokan alam serta laut pulau Sulawesi memunculkan energi tarik yang begitu kokoh sehingga membuat sekian banyak orang berbondong- bondong tiba ke pulau tersebut. Tidak hanya keelokan pariwisatanya, pulau Sulawesi pula populer dengan suguhan kuliner yang bermacam-macam.</dc:description>
+        <dc:description>Sulawesi merupakan pulau yang terletak di sebelah timur Indonesia, tepatnya terletak di antara pulau Kalimantan di sebelah barat serta Kepulauan Maluku sebelah di sebelah timur. Penduduk pulau Sulawesi rata-rata didominasi oleh suku Bugis-Makassar yang mayoritas dari mereka merupakan orang dagang. Keelokan alam serta laut pulau Sulawesi memunculkan energi tarik yang begitu kokoh sehingga membuat sekian banyak orang berbondong-bondong tiba ke pulau tersebut. Tidak hanya keelokan pariwisatanya, pulau Sulawesi pula populer dengan suguhan kuliner yang bermacam-macam.</dc:description>
         <piringlokal:photo rdf:resource="https://i.pinimg.com/736x/dd/82/08/dd820886d9054015fa3507ce98edc890.jpg"/>
     </rdf:Description>
 

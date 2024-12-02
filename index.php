@@ -4,6 +4,15 @@ require "functions.php";
 
 $recipes = getDefaultRecipes();
 
+use EasyRdf\Graph;
+
+$graph = new Graph();
+
+// Load RDF data from a file
+$graph->parseFile('inc/PiringLokal.rdf');
+
+$categories = $graph->allOfType('https://example.org/schema/piringlokal#Category');
+
 ?>
 
 <!DOCTYPE html>
@@ -117,6 +126,62 @@ $recipes = getDefaultRecipes();
     .carousel-item:hover img {
         transform: scale(1.1);
     }
+
+    /* Ensure the cards are displayed side by side with flexbox */
+    .scrollable-cards {
+        display: flex; /* Align items in a row */
+        gap: 20px; /* Space between the cards */
+        overflow-x: auto; /* Enable horizontal scrolling if content overflows */
+        padding: 20px; /* Space inside the container */
+    }
+
+    /* Style for individual cards */
+    .card {
+        flex: 0 0 auto; /* Prevent cards from shrinking and ensure they don't grow */
+        width: 200px; /* Set a fixed width for the cards */
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background-color: #970747; /* Card background color */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+        transition: transform 0.2s; 
+        color: #ffffff; /* Text color */
+        font-family: 'Arial', sans-serif;
+    }
+
+    .card img {
+        width: 100%; /* Ensure the image takes up the full width of the card */
+        height: 150px; /* Set the height for the images */
+        object-fit: cover; /* Maintain aspect ratio */
+        border-radius: 10px;
+    }
+
+    .card h3 {
+        font-size: 18px; /* Font size for title */
+        font-weight: bold;
+        margin: 10px 0;
+    }
+
+    .card:hover {
+        transform: scale(1.05); /* Scale up card on hover */
+        background-color: #bbdefb; /* Change background on hover */
+    }
+
+    .scrollable-cards::-webkit-scrollbar {
+        height: 8px; /* Custom scrollbar height */
+    }
+
+    .scrollable-cards::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+        border-radius: 10px;
+    }
+
+    .details-section {
+        color: #424242; /* Warna teks untuk bagian detail */
+        font-family: 'Georgia', serif; /* Font untuk bagian detail */
+    }
 </style>
 
 <!-- Scrollable Content Section -->
@@ -124,43 +189,21 @@ $recipes = getDefaultRecipes();
     <div class="container text-center">
         <h2>Petualangan Rasa dari Pulau ke Pulau</h2>
         <p>Nikmati cita rasa asli dari berbagai pulau di Indonesia!</p>
-        <div class="scrollable-cards" style="display: flex; gap: 20px; overflow-x: auto; padding: 20px;">
-            <!-- Card: Papua Island -->
-            <div class="card" onclick="showDetails('Pulau Papua', 'Papua memiliki keanekaragaman budaya, kuliner yang beragam serta keindahan alam yang luar biasa. Makanan khas Papua kaya akan cita rasa lokal dan bahan-bahan unik.')">
-                <img src="https://i.pinimg.com/736x/5c/09/27/5c0927138144f6d9325a2eca60a0e020.jpg" alt="Pulau Papua">
-                <h3>Pulau Papua</h3>
-            </div>
-
-            <!-- Card: Kalimantan Island -->
-            <div class="card" onclick="showDetails('Pulau Kalimantan', 'Pulau Kalimantan terkenal dengan julukan “Pulau Seribu Sungai” karena banyaknya sungai yang mengalir di pulau ini. Kalimantan terkenal akan destinasi wisatanya yang menjadi surga para pecinta alam.')">
-                <img src="https://i.pinimg.com/736x/f1/01/4a/f1014a539d540535b871268fc0288bfa.jpg" alt="Pulau Kalimantan">
-                <h3>Pulau Kalimantan</h3>
-            </div>
-
-            <!-- Card: Sumatera Island -->
-            <div class="card" onclick="showDetails('Pulau Sumatera', 'Sumatera adalah pulau terbesar keenam di dunia dan memiliki kekayaan budaya serta kuliner yang sangat beragam.')">
-                <img src="https://i.pinimg.com/736x/93/c3/23/93c3233f7a3188cc9054ea1a0cdb0051.jpg" alt="Pulau Sumatera">
-                <h3>Pulau Sumatera</h3>
-            </div>
-
-            <!-- Card: Sulawesi Island -->
-            <div class="card" onclick="showDetails('Pulau Sulawesi', 'Sulawesi merupakan pulau yang terletak di sebelah timur Indonesia. Tidak hanya keelokan pariwisatanya, pulau Sulawesi pula populer dengan suguhan kuliner yang bermacam-macam.')">
-                <img src="https://i.pinimg.com/736x/dd/82/08/dd820886d9054015fa3507ce98edc890.jpg" alt="Pulau Sulawesi">
-                <h3>Pulau Sulawesi</h3>
-            </div>
-
-            <!-- Card: Java Island -->
-            <div class="card" onclick="showDetails('Pulau Jawa', 'Pulau Jawa menawarkan keindahan alam yang luar biasa dengan pegunungan, pantai, serta kuliner yang menggugah selera.')">
-                <img src="https://i.pinimg.com/736x/ba/08/5b/ba085b5917aedbf79e8c85475486cb91.jpg" alt="Pulau Jawa">
-                <h3>Pulau Jawa</h3>
-            </div>
+        <div class="scrollable-cards">
+            <?php foreach ($categories as $category): ?>
+                <div class="card" onclick="showDetails('<?php echo $category->getLiteral('dc:title'); ?>', '<?php echo $category->getLiteral('dc:description'); ?>')">
+                    <img src="<?php echo $category->getResource('piringlokal:photo'); ?>" alt="<?php echo $category->getLiteral('dc:title'); ?>">
+                    <h3><?php echo $category->getLiteral('dc:title'); ?></h3>
+                </div>
+            <?php endforeach; ?>
         </div>
     </div>
-    <div class="details-section" style="padding: 20px; margin-top: 20px; background-color:#bbdefb; border-radius: 10px;">
-        <h3 id="details-title">Pilih sebuah pulau</h3>
-        <p id="details-description">Deskripsi pulau akan muncul di sini.</p>
+    <div class="details-section">
+        <h3 id="details-title">Pilih sebuah kategori</h3>
+        <p id="details-description">Deskripsi kategori akan muncul di sini.</p>
     </div>
 </div>
+
 
 <!-- JavaScript -->
 <script>
